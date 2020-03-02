@@ -20,8 +20,8 @@ gulp.task('browser-sync', function() {
 
 // min.css
 gulp.task('minify-css', () => {
-  return gulp.src('css/*.css')
-    .pipe(cleanCSS({compatibility: 'ie8'}))
-    .pipe(rename('styles.min.css'))
-    .pipe(gulp.dest('css'));
+  return gulp.src('css/*.css')  // source directory .css
+    .pipe(cleanCSS({compatibility: 'ie8'})) // cleanCSS himself
+    .pipe(rename('styles.min.css')) // renaming new file, so its do not overwrite original
+    .pipe(gulp.dest('css')); // destination directory
 });
