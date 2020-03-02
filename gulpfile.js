@@ -1,6 +1,7 @@
 const gulp = require('gulp');
 const browserSync = require('browser-sync').create();
 const cleanCSS = require('gulp-clean-css');
+const rename = require('gulp-rename');
 
 gulp.task('hello', function(done) {
   console.log('Hello, world!');
@@ -19,7 +20,8 @@ gulp.task('browser-sync', function() {
 
 // min.css
 gulp.task('minify-css', () => {
-  return gulp.src('styles/*.css')
+  return gulp.src('css/*.css')
     .pipe(cleanCSS({compatibility: 'ie8'}))
-    .pipe(gulp.dest('dist'));
+    .pipe(rename('styles.min.css'))
+    .pipe(gulp.dest('css'));
 });
