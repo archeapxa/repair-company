@@ -21,11 +21,9 @@ function bs() {
       }
   });
   watch("./*.html").on('change', browserSync.reload); 
-  watch("./sass/**/*.sass", browserSync.reload); 
+  watch("./sass/**/*.sass", serveSass); 
   watch("./js/*.html").on('change', browserSync.reload);
 }
-
-
 
 
 // // min.css
