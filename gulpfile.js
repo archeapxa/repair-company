@@ -1,27 +1,39 @@
-const gulp = require('gulp');
+const {src, dest, watch} = require('gulp');
 const browserSync = require('browser-sync').create();
 const cleanCSS = require('gulp-clean-css');
 const rename = require('gulp-rename');
+const sass = require('gulp-sass');
 
-gulp.task('hello', function(done) {
-  console.log('Hello, world!');
-  done();
-});
+// sass
+function serveSass() {
+  return src("./sass/*.sass")
+      .pipe(sass())
+      .pipe(dest("./css"))
+      .pipe(browserSync.stream());
+};
 
 // Static server
-gulp.task('browser-sync', function() {
+function bs() {
+  serveSass();
   browserSync.init({
       server: {
           baseDir: "./"
       }
   });
-  gulp.watch("./*.html").on('change', browserSync.reload); // reload browser page on changes in html
-});
+  watch("./*.html").on('change', browserSync.reload); 
+  watch(".sass/**/*.sass", serveSass); 
+  watch("./js/*.html").on('change', browserSync.reload);
+};
 
-// min.css
-gulp.task('minify-css', () => {
-  return gulp.src('css/*.css')  // source directory .css
-    .pipe(cleanCSS({compatibility: 'ie8'})) // cleanCSS himself
-    .pipe(rename('styles.min.css')) // renaming new file, so its do not overwrite original
-    .pipe(gulp.dest('css')); // destination directory
-});
+
+
+
+// // min.css
+// gulp.task('minify-css', () => {
+//   return src('css/*.css')  // source directory .css
+//     .pipe(cleanCSS({compatibility: 'ie8'})) // cleanCSS himself
+//     .pipe(rename('styles.min.css')) // renaming new file, so its do not overwrite original
+//     .pipe(dest('css')); // destination directory
+// });
+
+exports.serve = bs;
