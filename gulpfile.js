@@ -1,8 +1,8 @@
 const {src, dest, watch} = require('gulp');
 const browserSync = require('browser-sync').create();
-const cleanCSS = require('gulp-clean-css');
-const rename = require('gulp-rename');
 const sass = require('gulp-sass');
+// const cleanCSS = require('gulp-clean-css');
+// const rename = require('gulp-rename');
 
 // sass
 function serveSass() {
@@ -10,7 +10,7 @@ function serveSass() {
       .pipe(sass())
       .pipe(dest("./css"))
       .pipe(browserSync.stream());
-};
+}
 
 // Static server
 function bs() {
@@ -21,9 +21,9 @@ function bs() {
       }
   });
   watch("./*.html").on('change', browserSync.reload); 
-  watch(".sass/**/*.sass", serveSass); 
+  watch("./sass/**/*.sass", browserSync.reload); 
   watch("./js/*.html").on('change', browserSync.reload);
-};
+}
 
 
 
