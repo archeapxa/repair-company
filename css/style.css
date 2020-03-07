@@ -380,7 +380,8 @@ body {
 
 .logo {
   color: #e3b873;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  text-decoration: none; }
 
 .nav__item {
   color: #fff;
