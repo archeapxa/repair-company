@@ -322,13 +322,19 @@ template {
   width: 85%;
   max-width: 1256px;
   margin: auto; }
+  .container__header {
+    margin-left: 5.85rem;
+    width: 100%; }
+  .container--hero-centered {
+    margin-left: 5.9rem;
+    padding-bottom: 5.8rem; }
 
 .button {
-  padding: 11px 24px;
+  padding: 11px 22px;
   border: none;
   border-radius: 2px;
   text-transform: uppercase;
-  font-size: 0.94rem; }
+  font-size: 0.96rem; }
   .button:hover {
     cursor: pointer; }
   .button--primary {
@@ -408,10 +414,6 @@ body {
 .contacts__phone {
   margin-right: 3.07rem; }
 
-.container__header {
-  margin-left: 5.85rem;
-  width: 100%; }
-
 .hero {
   position: relative;
   display: flex;
@@ -434,15 +436,21 @@ body {
     position: relative;
     max-width: 47.85rem;
     margin-left: 4.28rem; }
+  .hero__title {
+    max-width: 39rem; }
   .hero__text {
     font-size: 1.57rem;
     max-width: 500px;
-    line-height: 131%;
+    line-height: 140%;
     margin: 0;
-    margin-bottom: 3rem; }
+    margin-top: 1.2rem;
+    margin-bottom: 3.3rem; }
   .hero__button {
-    margin-right: 20px;
-    padding: 20px 35px; }
+    margin-right: 1.2rem;
+    padding: 18px 26px; }
+    .hero__button--big {
+      padding: 17px 42px;
+      font-size: 0.98rem; }
   .hero__instagram {
     position: absolute;
     left: 0;
@@ -499,11 +507,12 @@ body {
   margin: 0;
   font-family: 'Yeseva One', cursive;
   text-transform: uppercase;
-  font-size: 2.857rem;
-  line-height: 1.35; }
+  font-size: 2.8rem;
+  line-height: 1.37;
+  letter-spacing: 0.5px; }
   .title--primary {
     color: #e3b873;
-    word-spacing: 0.2rem; }
+    font-size: 2.76rem; }
 
 @media screen and (max-width: 1200px) {
   html {
