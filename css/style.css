@@ -382,7 +382,7 @@ body {
   justify-content: space-between;
   align-items: center; }
   .menu__nav {
-    margin-right: 1.2rem; }
+    margin-right: 1.45rem; }
 
 .logo {
   font-size: 1.075rem;
@@ -447,7 +447,8 @@ body {
     position: absolute;
     left: 0;
     top: 0;
-    max-width: 80px;
+    max-width: 84px;
+    max-height: 820px;
     height: 100%; }
   .hero__scroll-down {
     position: absolute;
@@ -484,13 +485,13 @@ body {
     color: #e3b873;
     transform: rotate(90deg);
     line-height: 0.8;
-    font-size: 1.1rem; }
+    font-size: 1.05rem; }
     .instagram__link::after {
       content: '';
-      width: 50px;
+      width: 51px;
       height: 1px;
       background-color: #e3b873;
-      margin-left: 8px; }
+      margin-left: 12px; }
 
 .title {
   margin: 0;
