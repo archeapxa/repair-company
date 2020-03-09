@@ -6,32 +6,40 @@
   z-index: 99
   background-color: $dark
   padding: 24px 0
-
 .menu
   display: flex
   justify-content: space-between
   align-items: center
-
+  &__nav
+    margin-right: 1.2rem
+  &__contacts
+    // margin-left: 0.3rem
 .logo
+  font-size: 1.075rem
   color: $primary
   text-transform: uppercase
   text-decoration: none
-
 .nav
   &__item
     color: $light
     text-decoration: none
     text-transform: uppercase
-    margin-right: 2.85rem
+    margin-right: 2.62rem
     transition: color 0.2s
+    word-spacing: 0px
+    &:last-of-type
+      margin-right: 0
     &:hover
       color: $primary
       
-
 .phone 
   color: $primary
 
-.contacts
+.contacts  
   &__phone
-    margin-right: 45px
+    margin-right: 3.07rem
 
+.container
+  &__header
+    margin-left: 5.85rem
+    width: 100%
