@@ -457,10 +457,12 @@ body {
     justify-content: center;
     left: 0;
     bottom: 0;
-    min-width: 17.64rem;
+    min-width: 17.65rem;
     min-height: 6.92rem;
     background-color: #131313;
     text-transform: uppercase;
+    font-family: 'Yeseva One', cursive;
+    font-size: 0.85rem;
     color: #fff;
     text-decoration: none; }
     .hero__scroll-down::after {
@@ -470,7 +472,7 @@ body {
       height: 30px;
       border: 2px solid #e3b873;
       border-radius: 50%;
-      margin-left: 12px; }
+      margin-left: 1.40rem; }
 
 .instagram {
   display: flex;
