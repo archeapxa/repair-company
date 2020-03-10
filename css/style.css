@@ -323,11 +323,11 @@ template {
   max-width: 1256px;
   margin: auto; }
   .container__header {
-    margin-left: 5.85rem;
-    width: 100%; }
+    width: 100%;
+    max-width: 1356px; }
   .container--hero-centered {
     margin-left: 5.9rem;
-    padding-bottom: 5.8rem; }
+    padding-top: 0.4rem; }
 
 .button {
   padding: 11px 22px;
@@ -381,7 +381,7 @@ body {
   width: 100%;
   z-index: 99;
   background-color: #131313;
-  padding: 24px 0; }
+  padding: 1.714rem 0; }
 
 .menu {
   display: flex;
@@ -389,6 +389,10 @@ body {
   align-items: center; }
   .menu__nav {
     margin-right: 1.45rem; }
+  .menu__logo {
+    padding-left: 2.9rem; }
+  .menu__contacts {
+    padding-right: 4.22rem; }
 
 .logo {
   font-size: 1.075rem;
@@ -455,7 +459,7 @@ body {
     position: absolute;
     left: 0;
     top: 0;
-    max-width: 84px;
+    max-width: 6rem;
     height: 100%; }
   .hero__scroll-down {
     position: absolute;
@@ -495,7 +499,7 @@ body {
     transform: rotate(90deg);
     line-height: 0.8;
     font-size: 1.05rem;
-    padding-right: 1.2rem; }
+    padding-left: 4.95rem; }
     .instagram__link::after {
       content: '';
       width: 51px;
