@@ -364,7 +364,8 @@ img {
   .section-title {
     text-align: center;
     text-transform: uppercase;
-    font-family: 'Yeseva One', cursive; }
+    font-family: 'Yeseva One', cursive;
+    font-size: 0.96rem; }
     .section-title__image {
       display: flex;
       justify-content: center;
@@ -375,6 +376,12 @@ img {
         height: 2px;
         background-color: #e3b873;
         margin: 0 10px; }
+
+.description {
+  font-size: 20px;
+  line-height: 27px;
+  text-align: center;
+  color: #131313; }
 
 .header {
   position: fixed;
@@ -588,6 +595,21 @@ img {
   margin: 0; }
   .card__item span {
     margin-left: -5px; }
+
+.design__container {
+  max-width: 1236px;
+  width: 92%; }
+
+.design__section-title {
+  margin-bottom: 1.25rem; }
+
+.design__description {
+  max-width: 52rem;
+  margin: auto;
+  margin-bottom: 3.4rem; }
+
+.design__card {
+  min-width: 23.5rem; }
 
 @media screen and (max-width: 1200px) {
   html {
