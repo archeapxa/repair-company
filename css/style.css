@@ -667,7 +667,11 @@ img {
     margin-right: 5%;
     width: 90%; }
     .container--hero-centered {
-      margin-top: 4.8rem; } }
+      margin-top: 4.8rem; }
+  .description {
+    font-size: 1.25rem;
+    max-width: 25rem;
+    line-height: 1.45; } }
 
 @media screen and (max-height: 520px) {
   .hero__scroll-down {
@@ -698,3 +702,11 @@ img {
   .card__pricetag {
     padding: 1rem 2.65rem;
     font-size: 1.25rem; } }
+
+@media screen and (max-width: 992px) {
+  .design__card {
+    margin-bottom: 6.85rem; }
+  .design__section-title {
+    margin-bottom: 3.2rem; }
+  .design__container {
+    width: 90.5%; } }
