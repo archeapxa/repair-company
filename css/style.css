@@ -533,6 +533,10 @@ body {
     margin-left: 0; } }
 
 @media screen and (max-width: 570px) {
+  .menu__logo {
+    padding-left: 0; }
+  .menu__contacts {
+    padding-right: 3.2rem; }
   .contacts__phone {
     margin-right: 0;
     color: #fff;
@@ -541,6 +545,8 @@ body {
     display: none; }
   .title {
     font-size: 1.64rem; }
+    .title--primary {
+      font-size: 1.29rem; }
   .hero__scroll-down {
     display: none; }
   .hero__content {
@@ -551,7 +557,10 @@ body {
   .hero__button {
     display: block;
     min-width: 22.86rem;
-    margin-bottom: 1.85rem; } }
+    margin-bottom: 1.85rem; }
+  .container {
+    margin-left: 5%;
+    margin-right: 10%; } }
 
 @media screen and (max-height: 520px) {
   .hero__scroll-down {
