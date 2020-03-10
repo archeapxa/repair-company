@@ -529,7 +529,10 @@ img {
 
 .types__container {
   max-width: 1236px;
-  width: 90%; }
+  width: 92%; }
+
+.types__card {
+  min-width: 23.5rem; }
 
 .row {
   display: flex;
@@ -544,6 +547,7 @@ img {
 .card__text {
   position: relative;
   max-width: 23.57rem;
+  width: 90%;
   margin: 0 auto;
   margin-top: -9.3rem;
   padding: 1.81rem 2.38rem;
@@ -643,15 +647,32 @@ img {
     .container--hero-centered {
       margin-top: 4.8rem; } }
 
-@media screen and (max-width: 570px) {
+@media screen and (max-height: 520px) {
+  .hero__scroll-down {
+    display: none; } }
+
+@media screen and (max-width: 992px) {
+  .section-title {
+    font-size: 1.22rem; }
   .row {
     flex-direction: column;
     align-items: center; }
   .types__card {
-    margin-bottom: 4.29rem; }
+    margin-bottom: 6.85rem; }
+  .types__section-title {
+    margin-bottom: 3.2rem; }
+  .types__container {
+    width: 90.5%; }
   .card__text {
-    margin-left: 0; } }
-
-@media screen and (max-height: 520px) {
-  .hero__scroll-down {
-    display: none; } }
+    margin-left: 0;
+    margin-top: -12rem;
+    max-width: 22.5rem;
+    padding: 1.9rem 2.7rem; }
+  .card__title {
+    font-size: 1.24rem;
+    font-weight: 400; }
+  .card__list {
+    margin-bottom: 1.3rem; }
+  .card__pricetag {
+    padding: 1rem 2.65rem;
+    font-size: 1.25rem; } }
