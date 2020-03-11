@@ -7,6 +7,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
   const switchModal = () => {
     modal.classList.toggle('modal--visible');
   }
+  const removeModal = () => {
+    modal.classList.remove('modal--visible');
+  }
 
   modalBtn.forEach(element => {
     element.addEventListener('click', () => {
@@ -16,13 +19,27 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
   closeBtn.addEventListener('click', switchModal); // переключаем(закрываем) модал по клику на closeBtn
 
-  document.addEventListener('keydown', (e) => {
-    if(e.keyCode === 27) {
-      modal.classList.remove('modal--visible');//удаляем класс при отпускании esc
+  document.addEventListener('keydown', removeModal);
+
+
+  document.addEventListener('click', (e) => {
+    if (e.target.classList.contains('modal')) {
+      removeModal()
     }
   });
 
-  
+
+  // modal.addEventListener('click', (e) => {
+    
+  //     modal.classList.remove('modal--visible');//удаляем класс при отпускании esc
+    
+  // })
+
+  // document.addEventListener('click', (e) => {
+  //   if (e.currentTarget.className != 'modalDialog') {
+  //     modal.classList.remove('modal--visible');
+  //   } 
+  // })
 
 });
 
@@ -36,11 +53,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
   // });
 
 
-  // document.addEventListener('click', (e) => {
-  //   if (e.target.className != 'modalDialog') {
-  //     modal.classList.toggle('modal--visible');
-  //   } 
-  // })
+
 
     // if(e.keyCode === 27) {
     //   modal.classList.toggle('modal--visible');
