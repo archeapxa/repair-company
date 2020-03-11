@@ -634,6 +634,8 @@ img {
   background-color: #e3b873;
   color: #fff;
   padding: 1.214rem 2.6rem; }
+  .card__pricetag--long {
+    padding-right: 5.3rem; }
 
 .card__item {
   padding-left: 0px;
