@@ -563,6 +563,9 @@ img {
 
 .card__image {
   align-items: center; }
+  .card__image--dark {
+    -webkit-filter: brightness(70%);
+    filter: brightness(70%); }
 
 .card__title {
   font-family: 'Yeseva One', cursive;
