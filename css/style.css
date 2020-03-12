@@ -388,6 +388,22 @@ template {
     cursor: pointer;
     margin-right: 0.64rem; }
 
+#toTop {
+  width: 100px;
+  border: 1px solid #e3b873;
+  background: #e3b873;
+  text-align: center;
+  padding: 5px;
+  border-radius: 3px;
+  position: fixed;
+  bottom: 10px;
+  right: 50px;
+  cursor: pointer;
+  display: none;
+  color: #fff;
+  font-family: inherit;
+  font-size: 14px; }
+
 *, *:before, *:after {
   box-sizing: border-box; }
 
