@@ -19,7 +19,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
   closeBtn.addEventListener('click', switchModal); // переключаем(закрываем) модал по клику на closeBtn
 
-  document.addEventListener('keydown', removeModal);
+  document.addEventListener('keydown', (e) => {
+    if(e.keyCode === 27) {
+      removeModal()
+    }
+  });
 
 
   document.addEventListener('click', (e) => {
