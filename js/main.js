@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function(event) { 
+/*document.addEventListener("DOMContentLoaded", function(event) { 
   //do work
   const modal = document.querySelector('.modal');
   const modalDialog = document.querySelector('.modal__dialog');
@@ -29,33 +29,32 @@ document.addEventListener("DOMContentLoaded", function(event) {
   });
 
 
-  // modal.addEventListener('click', (e) => {
-    
-  //     modal.classList.remove('modal--visible');//удаляем класс при отпускании esc
-    
-  // })
+})*/
 
-  // document.addEventListener('click', (e) => {
-  //   if (e.currentTarget.className != 'modalDialog') {
-  //     modal.classList.remove('modal--visible');
-  //   } 
-  // })
+$(document).ready(function () {
+  var modal = $('.modal'),
+      modalBtn = $('[data-toggle=modal]'),
+      closeBtn = $('.modal__close');
+
+  modalBtn.on('click', function () {
+    modal.toggleClass('modal--visible');
+  });
+  closeBtn.on('click', function() {
+    modal.toggleClass('modal--visible');
+  });
+
+  $(document).mouseup(function (e) { //переписанная функция закрытия окна по клику вне его. Переделанный код из интернетиков...
+    var div = $('.modal__dialog');
+    if (!div.is(e.target) // если клик был не по нашему блоку
+		    && div.has(e.target).length === 0) { // и не по его дочерним элементам
+          modal.removeClass('modal--visible');
+		}
+  });
+
+  $(document).keydown(function(eventObject){ //закрытие окна по esc. Еще одна копипаста
+    if ( eventObject.which == 27 ) { // нажата клавиша Esc
+      modal.removeClass('modal--visible');// ваша функция закрытия окна
+    };
+  });
 
 });
-
-  // modalBtn.forEach(element => {
-  //   element.addEventListener('click', switchModal); // переключаем по клику на любой из елементов подходящих под modalBtn
-  // });
-
-
-  // modalBtn.forEach(element => {
-  //   element.addEventListener('click', switchModal); // переключаем по клику на любой из елементов подходящих под modalBtn
-  // });
-
-
-
-
-    // if(e.keyCode === 27) {
-    //   modal.classList.toggle('modal--visible');
-    //   console.log('e.keyCode');
-    // }
