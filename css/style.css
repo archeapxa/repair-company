@@ -339,6 +339,12 @@ template {
 .col-50 {
   width: 50%; }
 
+.col-45 {
+  width: 45%; }
+
+.col-55 {
+  width: 55%; }
+
 .button {
   padding: 11px 22px;
   border: none;
@@ -447,13 +453,14 @@ img {
       line-height: 138.6%; }
     .section-title__word {
       display: flex;
-      align-items: center; }
+      align-items: center;
+      font-size: 1.75rem; }
       .section-title__word::after {
         content: '';
         width: 91px;
         height: 1px;
         background-color: #e3b873;
-        margin-left: 2rem; }
+        margin-left: 2.4rem; }
     .section-title__image {
       display: flex;
       justify-content: center;
@@ -627,11 +634,22 @@ img {
     color: #e3b873;
     font-size: 2.76rem; }
 
-.projects__description {
-  text-align: left;
-  font-size: 1.28rem;
-  line-height: 2.07rem;
-  max-width: 31.57rem; }
+.projects {
+  padding-top: 9.2rem; }
+  .projects__container {
+    max-width: 1234px;
+    width: 90%; }
+  .projects__section-title {
+    font-size: 1.74rem;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    line-height: 148%; }
+  .projects__description {
+    text-align: left;
+    font-size: 1.28rem;
+    line-height: 2.08rem;
+    max-width: 31.57rem;
+    margin-bottom: 2.05rem; }
 
 .swiper-container-horizontal > .swiper-pagination-bullets {
   width: auto;
@@ -639,13 +657,14 @@ img {
 
 .swiper-slide {
   display: flex;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  overflow: hidden; }
   .swiper-slide__text {
     flex-basis: 50%;
     margin-bottom: 0.42rem;
     padding-bottom: 2rem; }
   .swiper-slide__heading {
-    font-size: 1.285rem;
+    font-size: 1.26rem;
     line-height: 1.78rem;
     font-family: 'Yeseva One', cursive;
     color: #e3b873;
