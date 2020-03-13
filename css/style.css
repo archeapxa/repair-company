@@ -660,7 +660,8 @@ img {
   .swiper-slide__text-wrapper {
     width: 68%;
     display: flex;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    padding-bottom: 4.7rem; }
   .swiper-slide__text {
     flex-basis: 50%;
     margin-bottom: 0.42rem;
@@ -681,7 +682,8 @@ img {
   width: auto; }
 
 .swiper-pagination-bullet {
-  background-color: rgba(255, 255, 255, 0.3); }
+  background-color: rgba(255, 255, 255, 0.7);
+  margin-left: 10px; }
   .swiper-pagination-bullet-active {
     background-color: #fff; }
 
