@@ -89,13 +89,15 @@ $(document).ready(function () {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
+    slidesPerView: 1,
   })
 
   var next = $('.swiper-button-next');
   var prev = $('.swiper-button-prev');
   var bullets = $('.swiper-pagination');
 
-  next.css('left', prev.width() + 10 + bullets.width() + 10)
-  bullets.css('left', prev.width() +10)
+  console.log(prev)
+  next.css('left', prev.width() + 10 + bullets.width() + 10 + prev.position().left)
+  bullets.css('left', prev.width() + 10 + prev.position().left)
 
 });

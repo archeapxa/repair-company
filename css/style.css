@@ -665,33 +665,37 @@ img {
     line-height: 2.08rem;
     max-width: 31.57rem;
     margin-bottom: 3.3rem; }
+  .projects__img {
+    display: block;
+    margin: auto; }
 
 .swiper-container-horizontal > .swiper-pagination-bullets {
   width: auto;
   bottom: -1px; }
 
-.swiper-slide {
-  overflow: hidden; }
-  .swiper-slide__text-wrapper {
-    width: 68%;
-    display: flex;
-    flex-wrap: wrap;
-    padding-bottom: 4.7rem; }
-  .swiper-slide__text {
-    flex-basis: 50%;
-    margin-bottom: 0.42rem;
-    padding-bottom: 2.1rem; }
-  .swiper-slide__heading {
-    font-size: 1.26rem;
-    line-height: 1.78rem;
-    font-family: 'Yeseva One', cursive;
-    color: #e3b873;
-    text-transform: uppercase;
-    margin-bottom: 0.5rem;
-    margin-top: 0; }
-  .swiper-slide__value {
-    font-size: 1.05rem;
-    line-height: 1.38; }
+.swiper-slide__text-wrapper {
+  width: 68%;
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 4.7rem; }
+
+.swiper-slide__text {
+  flex-basis: 50%;
+  margin-bottom: 0.42rem;
+  padding-bottom: 2.1rem; }
+
+.swiper-slide__heading {
+  font-size: 1.26rem;
+  line-height: 1.78rem;
+  font-family: 'Yeseva One', cursive;
+  color: #e3b873;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+  margin-top: 0; }
+
+.swiper-slide__value {
+  font-size: 1.05rem;
+  line-height: 1.38; }
 
 .swiper-pagination-bullets {
   width: auto; }
@@ -945,3 +949,36 @@ img {
     margin-bottom: 1.4rem; }
   .design__container {
     width: 90.5%; } }
+
+@media screen and (max-width: 960px) {
+  .projects__row {
+    max-height: 1000px;
+    align-items: center; }
+  .projects__col-45 {
+    order: 1;
+    max-width: 100%; }
+  .projects__col-55 {
+    max-width: 100%;
+    margin-bottom: 2rem; }
+  .projects__title-col {
+    max-width: 100%; }
+  .swiper-slide__text-wrapper {
+    margin: auto; }
+  .swiper-button-prev {
+    left: 50%;
+    transform: translateX(-80px); } }
+
+@media screen and (max-width: 640px) {
+  .swiper-slide__text-wrapper {
+    margin: auto;
+    width: 100%; }
+  .section-title--left {
+    text-align: center; }
+  .section-title__word {
+    display: block; }
+    .section-title__word::after {
+      content: none; }
+  .projects {
+    padding-top: 2.57rem; }
+  .hero::after {
+    content: none; } }
