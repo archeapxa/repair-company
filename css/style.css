@@ -333,6 +333,9 @@ template {
   .row--types {
     margin-left: 2px; }
 
+.col-30 {
+  width: 30%; }
+
 .col-32 {
   flex-basis: 31.7%; }
 
@@ -344,6 +347,9 @@ template {
 
 .col-55 {
   width: 55%; }
+
+.col-70 {
+  width: 70%; }
 
 .button {
   padding: 11px 22px;
