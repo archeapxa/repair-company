@@ -13,28 +13,34 @@
     font-size: 1.28rem
     line-height: 2.08rem
     max-width: 31.57rem
-    margin-bottom: 2.05rem
+    margin-bottom: 3.3rem
 
 .swiper-container-horizontal>.swiper-pagination-bullets
   width: auto
   bottom: -1px
 .swiper
   &-slide
-    
-    display: flex
-    flex-wrap: wrap
     overflow: hidden
+    &__text-wrapper
+      width: 68%
+      display: flex
+      flex-wrap: wrap
     &__text
       flex-basis: 50%
       margin-bottom: 0.42rem
-      padding-bottom: 2rem
+      padding-bottom: 2.1rem
     &__heading
       font-size: 1.26rem
       line-height: 1.78rem
       font-family: 'Yeseva One', cursive
       color: $primary
       text-transform: uppercase
-      margin-bottom: 0.64rem
+      margin-bottom: 0.5rem
+      margin-top: 0
+    &__value
+      font-size: 1.05rem
+      line-height: 1.38
+    
   &-pagination
     &-bullets
       width: auto
