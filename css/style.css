@@ -343,10 +343,10 @@ template {
   width: 50%; }
 
 .col-45 {
-  width: 45%; }
+  max-width: 45%; }
 
 .col-55 {
-  width: 55%; }
+  max-width: 55%; }
 
 .col-70 {
   width: 70%; }
@@ -479,9 +479,11 @@ img {
         margin: 0 10px; }
 
 .description {
+  font-family: 'Futura Book', sans-serif;
   font-size: 1.428rem;
   line-height: 1.928rem;
-  text-align: center; }
+  text-align: center;
+  text-transform: none; }
 
 .header {
   position: fixed;
@@ -645,6 +647,13 @@ img {
   .projects__container {
     max-width: 1234px;
     width: 90%; }
+  .projects__row {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-height: 500px; }
+  .projects__title-col {
+    max-width: 45%; }
   .projects__section-title {
     font-size: 1.74rem;
     margin-top: 0;
