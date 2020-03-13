@@ -950,6 +950,10 @@ img {
   .design__container {
     width: 90.5%; } }
 
+@media screen and (max-width: 992px) {
+  .swiper-slide__text-wrapper {
+    min-width: 310px; } }
+
 @media screen and (max-width: 960px) {
   .projects__row {
     max-height: 1000px;
