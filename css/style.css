@@ -326,6 +326,19 @@ template {
     margin-left: 5.9rem;
     padding-top: 0.4rem; }
 
+.row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between; }
+  .row--types {
+    margin-left: 2px; }
+
+.col-32 {
+  flex-basis: 31.7%; }
+
+.col-50 {
+  flex-basis: 50%; }
+
 .button {
   padding: 11px 22px;
   border: none;
@@ -419,11 +432,28 @@ img {
 
 .section {
   padding: 60px 0; }
+  .section--dark {
+    background-color: #131313;
+    color: #fff; }
   .section-title {
     text-align: center;
     text-transform: uppercase;
     font-family: 'Yeseva One', cursive;
     font-size: 0.96rem; }
+    .section-title--left {
+      text-align: left; }
+    .section-title__heading--primary {
+      color: #e3b873;
+      line-height: 138.6%; }
+    .section-title__word {
+      display: flex;
+      align-items: center; }
+      .section-title__word::after {
+        content: '';
+        width: 91px;
+        height: 1px;
+        background-color: #e3b873;
+        margin-left: 2rem; }
     .section-title__image {
       display: flex;
       justify-content: center;
@@ -436,10 +466,9 @@ img {
         margin: 0 10px; }
 
 .description {
-  font-size: 20px;
-  line-height: 27px;
-  text-align: center;
-  color: #131313; }
+  font-size: 1.428rem;
+  line-height: 1.928rem;
+  text-align: center; }
 
 .header {
   position: fixed;
@@ -506,6 +535,15 @@ img {
     width: 100%;
     height: 100%;
     background-color: rgba(19, 19, 19, 0.7); }
+  .hero::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 3.46rem;
+    background-color: #131313; }
   .hero__content {
     position: relative;
     max-width: 47.85rem;
@@ -533,6 +571,7 @@ img {
     height: 100%; }
   .hero__scroll-down {
     position: absolute;
+    z-index: 3;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -588,6 +627,12 @@ img {
     color: #e3b873;
     font-size: 2.76rem; }
 
+.projects__description {
+  text-align: left;
+  font-size: 1.28rem;
+  line-height: 2.07rem;
+  max-width: 31.57rem; }
+
 .types__section-title {
   margin-bottom: 2.2rem;
   font-size: 0.94rem; }
@@ -598,16 +643,6 @@ img {
 
 .types__card {
   min-width: 23.5rem; }
-
-.row {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between; }
-  .row--types {
-    margin-left: 2px; }
-
-.col {
-  flex-basis: 31.7%; }
 
 .card__text {
   position: relative;
