@@ -97,7 +97,7 @@ $(document).ready(function () {
   var bullets = $('.swiper-pagination');
 
   console.log(prev)
-  next.css('left', prev.width() + 10 + bullets.width() + 10 + prev.position().left)
-  bullets.css('left', prev.width() + 10 + prev.position().left)
+  next.css('left', prev.width() + 21 + bullets.width() + 21 + prev.position().left)
+  bullets.css('left', prev.width() + 21 + prev.position().left)
 
 });
