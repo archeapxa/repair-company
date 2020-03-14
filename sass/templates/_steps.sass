@@ -1,0 +1,29 @@
+.steps
+  &__container
+    position: relative
+    max-width: 1238px
+    width: 90%
+  &__row
+    display: flex
+    align-items: center
+  &__section-title
+    position: absolute
+    left: 0
+    top: -100px
+
+  &__swiper-text-wrap
+    max-width: 24.28rem
+  &__button
+    &-prev, &-next
+      bottom: 0
+      top: auto
+      background-size: 42px 
+      width: 42px
+      height: 14px
+      &::after
+        display: none
+    &-prev
+        left: 0
+        background: url('../img/arrow-prev.svg') no-repeat center
+    &-next 
+        background: url('../img/arrow-next.svg') no-repeat center

@@ -100,4 +100,27 @@ $(document).ready(function () {
   next.css('left', prev.width() + 21 + bullets.width() + 21 + prev.position().left)
   bullets.css('left', prev.width() + 21 + prev.position().left)
 
+  var mySwiper2 = new Swiper ('.swiper-2', {
+
+    pagination: {
+      el: '.steps__pagination',
+      type: 'bullets',
+      clickable: 'clickable',
+    },
+    navigation: {
+      nextEl: '.steps__button-next',
+      prevEl: '.steps__button-prev',
+    },
+
+    loop: true,
+
+  })
+
+  var next = $('.steps__button-next');
+  var prev = $('.steps__button-prev');
+  var bullets = $('.steps__pagination');
+
+  next.css('left', prev.width() + 21 + bullets.width() + 21 + prev.position().left)
+  bullets.css('left', prev.width() + 21 + prev.position().left)
+
 });

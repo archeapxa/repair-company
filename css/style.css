@@ -339,14 +339,20 @@ template {
 .col-32 {
   flex-basis: 31.7%; }
 
-.col-50 {
-  width: 50%; }
+.col-38-2 {
+  width: 38.2%; }
 
 .col-45 {
   max-width: 45%; }
 
+.col-50 {
+  width: 50%; }
+
 .col-55 {
   max-width: 55%; }
+
+.col-61-8 {
+  width: 61.8%; }
 
 .col-70 {
   width: 70%; }
@@ -799,6 +805,39 @@ img {
 
 .design__card {
   min-width: 23.5rem; }
+
+.steps__container {
+  position: relative;
+  max-width: 1238px;
+  width: 90%; }
+
+.steps__row {
+  display: flex;
+  align-items: center; }
+
+.steps__section-title {
+  position: absolute;
+  left: 0;
+  top: -100px; }
+
+.steps__swiper-text-wrap {
+  max-width: 24.28rem; }
+
+.steps__button-prev, .steps__button-next {
+  bottom: 0;
+  top: auto;
+  background-size: 42px;
+  width: 42px;
+  height: 14px; }
+  .steps__button-prev::after, .steps__button-next::after {
+    display: none; }
+
+.steps__button-prev {
+  left: 0;
+  background: url("../img/arrow-prev.svg") no-repeat center; }
+
+.steps__button-next {
+  background: url("../img/arrow-next.svg") no-repeat center; }
 
 .modal {
   opacity: 0;
