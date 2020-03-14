@@ -78,7 +78,7 @@ $(document).ready(function () {
 
 
     //initialize swiper when document ready
-  var mySwiper = new Swiper ('.swiper-container', {
+  var mySwiper = new Swiper ('.swiper-1', {
 
     loop: true,
     pagination: {
@@ -105,14 +105,33 @@ $(document).ready(function () {
     pagination: {
       el: '.steps__pagination',
       type: 'bullets',
-      clickable: 'clickable',
+    },
+    // navigation: {
+    //   nextEl: '.steps__button-next',
+    //   prevEl: '.steps__button-prev',
+    // },
+    loop: true,
+    controller: {
+      control: mySwiper3,
+    },
+
+  })
+
+    var mySwiper3 = new Swiper ('.swiper-3', {
+
+    pagination: {
+      el: '.steps__counter-pagination',
+      type: 'fraction',
     },
     navigation: {
       nextEl: '.steps__button-next',
       prevEl: '.steps__button-prev',
     },
-
     loop: true,
+    controller: {
+      control: mySwiper2,
+    },
+
 
   })
 
@@ -120,7 +139,26 @@ $(document).ready(function () {
   var prev = $('.steps__button-prev');
   var bullets = $('.steps__pagination');
 
-  next.css('left', prev.width() + 21 + bullets.width() + 21 + prev.position().left)
   bullets.css('left', prev.width() + 21 + prev.position().left)
+  next.css('left', prev.width() + 21 + bullets.width() + 21 + prev.position().left)
+
+  $(".steps__button--1").click(function(){
+    mySwiper3.slideTo(1); 
+  });
+  $(".steps__button--2").click(function(){
+    mySwiper3.slideTo(2); 
+  });
+  $(".steps__button--3").click(function(){
+    mySwiper3.slideTo(3); 
+  });
+  $(".steps__button--4").click(function(){
+    mySwiper3.slideTo(4); 
+  });
+  $(".steps__button--5").click(function(){
+    mySwiper3.slideTo(5); 
+  });
+  $(".steps__button--6").click(function(){
+    mySwiper3.slideTo(6); 
+  });
 
 });
