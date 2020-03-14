@@ -82,21 +82,21 @@ $(document).ready(function () {
 
     loop: true,
     pagination: {
-      el: '.swiper-pagination',
+      el: '.projects__pagination',
       type: 'bullets',
     },
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+      nextEl: '.projects__swiper-button-next',
+      prevEl: '.projects__swiper-button-prev',
     },
     slidesPerView: 1,
   })
 
-  var next = $('.swiper-button-next');
-  var prev = $('.swiper-button-prev');
-  var bullets = $('.swiper-pagination');
+  var next = $('.projects__swiper-button-next');
+  var prev = $('.projects__swiper-button-prev');
+  var bullets = $('.projects__pagination');
 
-  console.log(prev)
+  // console.log(prev)
   next.css('left', prev.width() + 21 + bullets.width() + 21 + prev.position().left)
   bullets.css('left', prev.width() + 21 + prev.position().left)
 
