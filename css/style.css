@@ -861,7 +861,17 @@ img {
   justify-content: space-between; }
 
 .steps__button {
-  width: 10rem; }
+  width: 10rem;
+  font-size: 15px;
+  line-height: 18px;
+  margin-bottom: 38px; }
+  .steps__button-text {
+    max-width: 10rem; }
+  .steps__button-number {
+    display: inline-block;
+    border: none;
+    border-bottom: 1px solid #e3b873;
+    margin-bottom: 11px; }
 
 .steps__name {
   font-family: 'Yeseva One', cursive;

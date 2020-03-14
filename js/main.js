@@ -142,22 +142,22 @@ $(document).ready(function () {
   bullets.css('left', prev.width() + 21 + prev.position().left)
   next.css('left', prev.width() + 21 + bullets.width() + 21 + prev.position().left)
 
-  $(".steps__button--1").click(function(){
+  $("#steps-button-1").click(function(){
     mySwiper3.slideTo(1); 
   });
-  $(".steps__button--2").click(function(){
+  $("#steps-button-2").click(function(){
     mySwiper3.slideTo(2); 
   });
-  $(".steps__button--3").click(function(){
+  $("#steps-button-3").click(function(){
     mySwiper3.slideTo(3); 
   });
-  $(".steps__button--4").click(function(){
+  $("#steps-button-4").click(function(){
     mySwiper3.slideTo(4); 
   });
-  $(".steps__button--5").click(function(){
+  $("#steps-button-5").click(function(){
     mySwiper3.slideTo(5); 
   });
-  $(".steps__button--6").click(function(){
+  $("#steps-button-6").click(function(){
     mySwiper3.slideTo(6); 
   });
 
