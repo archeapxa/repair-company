@@ -463,6 +463,12 @@ img {
     .section-title__heading--primary {
       color: #e3b873;
       line-height: 138.6%; }
+    .section-title-before-text {
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 21px;
+      text-transform: uppercase;
+      color: #fff; }
     .section-title__word {
       display: flex;
       align-items: center;
@@ -695,6 +701,11 @@ img {
 .swiper-container-horizontal > .swiper-pagination-bullets > .swiper-pagination-bullet {
   margin: 0 0.6rem; }
 
+.swiper-pagination-fraction {
+  font-weight: 700;
+  font-family: 'Yeseva one', cursive;
+  font-size: 18px; }
+
 .swiper-slide__text-wrapper {
   width: 68%;
   display: flex;
@@ -818,7 +829,17 @@ img {
 .steps__section-title {
   position: absolute;
   left: 0;
-  top: -100px; }
+  top: -80px; }
+
+.steps__heading {
+  font-size: 27px;
+  line-height: 37px;
+  text-transform: uppercase; }
+
+.steps__title-word {
+  font-size: 27px;
+  line-height: 37px;
+  text-transform: uppercase; }
 
 .steps__swiper-text-wrap {
   max-width: 24.28rem;
@@ -866,7 +887,8 @@ img {
   line-height: 18px;
   margin-bottom: 38px; }
   .steps__button-text {
-    max-width: 10rem; }
+    max-width: 10rem;
+    min-width: 6rem; }
   .steps__button-number {
     display: inline-block;
     border: none;
@@ -878,7 +900,8 @@ img {
   font-size: 15px;
   line-height: 23px;
   text-transform: uppercase;
-  color: #e3b873; }
+  color: #e3b873;
+  max-width: 15rem; }
 
 .modal {
   opacity: 0;
