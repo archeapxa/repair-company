@@ -54,6 +54,7 @@
     flex-wrap: wrap
     justify-content: space-between
   &__button 
+    position: relative
     width: 10rem
     font-size: 15px
     line-height: 18px
@@ -67,6 +68,7 @@
       border-bottom: 1px solid $primary
       margin-bottom: 11px
       font-family: 'Yeseva One', cursive
+      border-bottom-color: $primary
   &__name
     font-family: 'Yeseva One', cursive
     font-size: 15px
@@ -74,3 +76,6 @@
     text-transform: uppercase
     color: $primary
     max-width: 15rem
+.inactive
+  color: $secondary
+  border-bottom-color: transparentize($primary,.5)

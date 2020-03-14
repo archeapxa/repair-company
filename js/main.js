@@ -154,7 +154,7 @@ $(document).ready(function () {
   });
   $("#steps-button-3").click(function(){
     mySwiper3.slideTo(3); 
-  });
+    });
   $("#steps-button-4").click(function(){
     mySwiper3.slideTo(4); 
   });
@@ -163,6 +163,10 @@ $(document).ready(function () {
   });
   $("#steps-button-6").click(function(){
     mySwiper3.slideTo(6); 
+  });
+
+  mySwiper3.on('slideChange', function (color) {
+
   });
 
 });

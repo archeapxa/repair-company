@@ -882,6 +882,7 @@ img {
   justify-content: space-between; }
 
 .steps__button {
+  position: relative;
   width: 10rem;
   font-size: 15px;
   line-height: 18px;
@@ -894,7 +895,8 @@ img {
     border: none;
     border-bottom: 1px solid #e3b873;
     margin-bottom: 11px;
-    font-family: 'Yeseva One', cursive; }
+    font-family: 'Yeseva One', cursive;
+    border-bottom-color: #e3b873; }
 
 .steps__name {
   font-family: 'Yeseva One', cursive;
@@ -903,6 +905,10 @@ img {
   text-transform: uppercase;
   color: #e3b873;
   max-width: 15rem; }
+
+.inactive {
+  color: #959595;
+  border-bottom-color: rgba(227, 184, 115, 0.5); }
 
 .modal {
   opacity: 0;
