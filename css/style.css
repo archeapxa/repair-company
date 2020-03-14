@@ -893,7 +893,8 @@ img {
     display: inline-block;
     border: none;
     border-bottom: 1px solid #e3b873;
-    margin-bottom: 11px; }
+    margin-bottom: 11px;
+    font-family: 'Yeseva One', cursive; }
 
 .steps__name {
   font-family: 'Yeseva One', cursive;
