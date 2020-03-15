@@ -1099,3 +1099,7 @@ img {
     padding-top: 2.57rem; }
   .hero::after {
     content: none; } }
+
+@media screen and (max-width: 992px) {
+  .steps {
+    display: none; } }
