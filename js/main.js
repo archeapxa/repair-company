@@ -110,7 +110,6 @@ $(document).ready(function () {
     //   nextEl: '.steps__button-next',
     //   prevEl: '.steps__button-prev',
     // },
-    loop: true,
     controller: {
       control: mySwiper3,
     },
@@ -127,7 +126,6 @@ $(document).ready(function () {
       nextEl: '.steps__button-next',
       prevEl: '.steps__button-prev',
     },
-    loop: true,
     controller: {
       control: mySwiper2,
     },
@@ -146,26 +144,33 @@ $(document).ready(function () {
   bullets.css('left', prev.width() + 21 + prev.position().left)
   next.css('left', prev.width() + 21 + bullets.width() + 21 + prev.position().left)
 
+  $("#steps-button-0").click(function(){
+    mySwiper3.slideTo(0); 
+  });
   $("#steps-button-1").click(function(){
     mySwiper3.slideTo(1); 
   });
   $("#steps-button-2").click(function(){
     mySwiper3.slideTo(2); 
-  });
+    });
   $("#steps-button-3").click(function(){
     mySwiper3.slideTo(3); 
-    });
+  });
   $("#steps-button-4").click(function(){
     mySwiper3.slideTo(4); 
   });
   $("#steps-button-5").click(function(){
     mySwiper3.slideTo(5); 
   });
-  $("#steps-button-6").click(function(){
-    mySwiper3.slideTo(6); 
-  });
 
-  mySwiper3.on('slideChange', function (color) {
+  mySwiper3.on('slideChange', function () {
+    var activeSlide = ('#steps-button-' + mySwiper3.realIndex);
+    var prevSlide = ('#steps-button-' + mySwiper3.previousIndex)
+    // console.log(activeSlide);
+    // console.log(prevSlide);
+    
+    $(activeSlide).removeClass('inactive');
+    $(prevSlide).addClass('inactive');
 
   });
 
