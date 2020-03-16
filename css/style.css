@@ -756,8 +756,10 @@ img {
   margin-bottom: 4.42rem;
   max-width: 58.4rem;
   min-height: 31rem;
+  width: 100%;
   background: #131313 url("../img/video-mask.jpg") center no-repeat;
-  box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.15); }
+  box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.15);
+  background-size: cover; }
   .control__video::before {
     content: '';
     position: absolute;
@@ -792,8 +794,7 @@ img {
 .control__input-group {
   display: flex;
   flex-direction: column;
-  flex-basis: 33%;
-  max-width: 16.6rem; }
+  flex-basis: 31%; }
 
 .control__label {
   margin-bottom: -4px; }
@@ -1102,6 +1103,58 @@ img {
 @media screen and (max-height: 520px) {
   .hero__scroll-down {
     display: none; } }
+
+@media screen and (max-width: 640px) {
+  .control {
+    background-color: #131313;
+    padding-bottom: 0; }
+    .control__video {
+      min-height: 24.28rem; }
+    .control__form {
+      align-items: stretch;
+      color: #fff; }
+    .control__text {
+      color: #fff; }
+    .control__label {
+      color: #959595; }
+    .control__input {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.45);
+      width: 100%; }
+      .control__input::-webkit-input-placeholder {
+        color: #fff; }
+      .control__input::-moz-placeholder {
+        color: #fff; }
+      .control__input:-ms-input-placeholder {
+        color: #fff; }
+      .control__input::-ms-input-placeholder {
+        color: #fff; }
+      .control__input::placeholder {
+        color: #fff; }
+      .control__input-group {
+        flex-basis: 100%; }
+        .control__input-group:first-of-type {
+          margin-bottom: 5.25rem; }
+    .control__form {
+      display: flex;
+      flex-direction: column;
+      max-width: 55rem;
+      margin: auto; }
+    .control__button {
+      order: 3;
+      font-weight: 500;
+      font-size: 15px;
+      padding-top: 1.6rem;
+      padding-bottom: 1.6rem;
+      margin-bottom: -2.2rem; }
+    .control__policy-label {
+      margin-bottom: 5.2rem; }
+    .control__policy {
+      margin-top: 0.5rem;
+      align-self: start; } }
+
+@media screen and (max-width: 520px) {
+  .control__video {
+    min-height: 17.25rem; } }
 
 @media screen and (max-width: 992px) {
   .section-title {
