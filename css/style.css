@@ -658,7 +658,7 @@ img {
 
 .projects {
   padding-top: 9.2rem;
-  padding-bottom: 30rem; }
+  padding-bottom: 29.6rem; }
   .projects__container {
     max-width: 1234px;
     width: 90%; }
@@ -745,15 +745,16 @@ img {
     background-color: #fff; }
 
 .control__section-title {
-  margin-bottom: 2.21rem;
-  margin-top: -30rem; }
+  margin-bottom: 2.1rem;
+  margin-top: -28.5rem;
+  font-size: 0.95rem; }
 
 .control__video {
   position: relative;
   display: flex;
   margin: auto;
   margin-bottom: 4.42rem;
-  max-width: 58.35rem;
+  max-width: 58.4rem;
   min-height: 31rem;
   background: #131313 url("../img/video-mask.jpg") center no-repeat;
   box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.15); }
@@ -770,12 +771,12 @@ img {
   text-align: center;
   font-size: 1.428rem;
   line-height: 2.42rem;
-  margin-bottom: 4.28rem; }
+  margin-bottom: 4.5rem; }
   .control__text::before {
     content: '';
     display: block;
     margin: auto;
-    margin-bottom: 2.5rem;
+    margin-bottom: 2rem;
     width: 55px;
     height: 2px;
     background-color: #e3b873;
@@ -791,16 +792,18 @@ img {
 .control__input-group {
   display: flex;
   flex-direction: column;
-  flex-basis: 30%; }
+  flex-basis: 33%;
+  max-width: 16.6rem; }
 
 .control__label {
-  margin-bottom: -7px; }
+  margin-bottom: -4px; }
 
 .control__input {
   border-bottom: 1px solid rgba(54, 54, 54, 0.3); }
 
 .control__button {
-  padding: 1.286rem 4.78rem; }
+  padding: 1.2rem 4.25rem;
+  font-size: 1.13rem; }
 
 .control__policy {
   flex-basis: 100%;
