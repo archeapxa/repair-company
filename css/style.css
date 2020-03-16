@@ -679,7 +679,9 @@ img {
     font-size: 1.28rem;
     line-height: 2.08rem;
     max-width: 31.57rem;
-    margin-bottom: 3.3rem; }
+    margin-bottom: 3.3rem;
+    -webkit-animation-delay: 0.5s;
+    animation-delay: 0.5s; }
   .projects__img {
     display: block;
     margin: auto; }
