@@ -333,6 +333,9 @@ template {
   .row--types {
     margin-left: 2px; }
 
+.col-25 {
+  flex-basis: 25%; }
+
 .col-30 {
   width: 30%; }
 
@@ -403,7 +406,7 @@ template {
 
 .policy__checkbox {
   opacity: 0;
-  visibility: hidden;
+  position: absolute;
   display: none; }
   .policy__checkbox:checked + .policy__label::before {
     background: #e3b873 url("../img/check.svg") no-repeat center/0.8rem; }
@@ -905,7 +908,8 @@ img {
 
 .steps {
   margin-top: -35rem;
-  padding-top: 37rem; }
+  padding-top: 37rem;
+  padding-bottom: 34rem; }
   .steps__container {
     position: relative;
     max-width: 1238px;
@@ -987,6 +991,85 @@ img {
 .inactive {
   color: #959595;
   border-bottom-color: rgba(227, 184, 115, 0.5); }
+
+.team {
+  padding-bottom: 30rem; }
+  .team__container {
+    max-width: 1030px; }
+  .team__section-title {
+    margin-top: -34rem; }
+  .team__description {
+    color: #fff;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.42rem;
+    line-height: 1.928rem;
+    text-align: center;
+    max-width: 32.14rem;
+    margin: auto;
+    margin-top: 1.64rem;
+    margin-bottom: 5.28rem; }
+  .team__text {
+    max-width: 40rem;
+    margin: auto;
+    text-align: center;
+    font-size: 1.428rem;
+    line-height: 2.42rem;
+    margin-bottom: 4.5rem; }
+    .team__text::before {
+      content: '';
+      display: block;
+      margin: auto;
+      margin-bottom: 2rem;
+      margin-top: 3.78rem;
+      width: 55px;
+      height: 2px;
+      background-color: #e3b873;
+      border-radius: 30px; }
+  .team__card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .team__icon {
+    position: absolute;
+    top: -35px;
+    left: -35px;
+    background-color: #e3b873;
+    padding: 0.9rem;
+    box-shadow: 0px 5px 20px rgba(227, 184, 115, 0.5); }
+  .team__plate {
+    background: #fff;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.05);
+    max-width: 16.64rem;
+    width: 100%;
+    margin-top: -5rem; }
+  .team__names {
+    font-family: Yeseva One, cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.28rem;
+    line-height: 1.78rem;
+    text-align: center;
+    margin-bottom: 6px; }
+  .team__position {
+    margin-top: 0;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.28rem;
+    line-height: 1.78rem;
+    text-align: center;
+    color: #959595; }
+  .team__experience {
+    text-transform: uppercase;
+    font-family: Yeseva One, cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.94rem;
+    text-align: center;
+    color: #fff;
+    background-color: #e3b873;
+    padding: 1rem 1rem; }
 
 .footer {
   background: #131313 url("../img/footer-bg.jpg") no-repeat center/cover;
