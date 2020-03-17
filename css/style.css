@@ -1086,6 +1086,8 @@ img {
 
 .footer {
   background: #131313 url("../img/footer-bg.jpg") no-repeat center/cover; }
+  .footer__container {
+    background: #131313; }
   .footer__wrap {
     background-color: #181818;
     max-width: 63.07rem;
@@ -1128,7 +1130,13 @@ img {
     font-size: 1.13rem; }
   .footer__menu {
     background-color: #131313;
-    padding: 2.285rem 0; }
+    padding: 3.285rem 0;
+    max-width: 1356px;
+    margin: auto; }
+  .footer__logo {
+    padding-left: 3.5rem; }
+  .footer__contacts {
+    padding-right: 3.6rem; }
 
 .modal {
   opacity: 0;
