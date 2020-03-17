@@ -178,7 +178,7 @@ $(document).ready(function () {
 
 
     // mask for phone
-    $('[type=tel]').mask('+7 (000) 00-00-000', {placeholder: "+7 (___) __-__-___"});
+    $('[type=tel]').mask('+7 (000) 000-00-00', {placeholder: "+7 (___) ___-__-__"});
 
   $('.modal__form').validate({
     errorClass: 'invalid',
@@ -222,7 +222,7 @@ $('.control__form').validate({
       rangelength: [2, 15]
     },
     // compound rule
-    userPhone: "required",
+    controlPhone: "required",
   }, // messages
   errorElement: 'div',
   messages: {
