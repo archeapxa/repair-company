@@ -150,10 +150,15 @@
 // DESIGN SECTION
 @media screen and ( max-width: 992px )
   .design
+    background-color: $black
+    padding-bottom: 0
     &__card
       margin-bottom: 6.85rem
     &__section-title
       margin-bottom: 1.4rem
+      color: $light
+    &__description
+      color: $light
     &__container
       width: 90.5%
 
@@ -210,3 +215,45 @@
 @media screen and ( max-width: 992px )
   .steps
     display: none
+
+// TEAM SECTION
+
+@media screen and ( max-width: 992px )
+  .team
+    background-color: $black
+    &__card
+      margin-bottom: 9rem
+    &__section-title
+      margin-top: 0
+    &__text
+      display: none
+
+@media screen and ( max-width: 570px )
+  .reviews
+    display: none
+
+
+// FOOTER SECTION
+@media screen and ( max-width: 570px )
+  .footer
+    background: $black
+    &__menu
+      width: 90%
+      margin: auto
+    &__wrap
+      transform: translateY(0)
+      background: $black
+      padding: 0
+    &__title
+      margin-top: 0
+    &__input-group
+      flex-basis: 100%
+      &--full-width
+        margin-bottom: 1rem
+    &__policy-label
+      justify-content: flex-start
+    &__button
+      display: block
+      width: 100%
+    &__input
+      border-color: rgba($light, 0.5)
