@@ -988,6 +988,50 @@ img {
   color: #959595;
   border-bottom-color: rgba(227, 184, 115, 0.5); }
 
+.footer {
+  background: #131313 url("../img/footer-bg.jpg") no-repeat center/cover;
+  padding-top: 3rem; }
+  .footer__wrap {
+    background-color: #181818;
+    max-width: 63.07rem;
+    margin: auto;
+    padding: 2.5rem;
+    margin-bottom: 3.71rem; }
+  .footer__title {
+    text-transform: uppercase;
+    font-family: "Yeseva One", cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.428rem;
+    text-align: center;
+    margin-bottom: 3.214rem;
+    margin-top: 0; }
+  .footer__form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 37.142rem;
+    margin: auto; }
+  .footer__input {
+    padding-top: 0.3rem; }
+    .footer__input-group {
+      display: flex;
+      flex-direction: column;
+      flex-basis: 45%;
+      margin-bottom: 3.1rem; }
+      .footer__input-group--full-width {
+        flex-basis: 100%; }
+  .footer__policy {
+    flex-basis: 100%;
+    margin-bottom: 3.6rem; }
+    .footer__policy-label {
+      justify-content: center; }
+  .footer__button {
+    margin: auto; }
+  .footer__menu {
+    background-color: #131313;
+    padding: 2.285rem 0; }
+
 .modal {
   opacity: 0;
   visibility: hidden;
