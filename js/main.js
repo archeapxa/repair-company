@@ -176,4 +176,35 @@ $(document).ready(function () {
 
   new WOW().init();
 
+  $('.modal__form').validate({
+    errorClass: 'invalid',
+    rules: {
+      // simple rule, converted to {required:true}
+      userName: {
+        required: true,
+        rangelength: [2, 15]
+      },
+      // compound rule
+      userPhone: "required",
+      userEmail: {
+        required: true,
+        email: true
+      }
+    }, // messages
+    errorElement: 'div',
+    messages: {
+      userName: {
+        required: "Заполните поле",
+        rangelength: "Имя не короче 2 символов и не длиннее 15 символов"
+      },
+      userPhone: "Заполните поле",
+      userEmail: {
+        required: "Заполните поле",
+        email: "Введите корректный email"
+      }
+    }
+  });
+  // mask for phone
+  $('[type=tel]').mask('+7 (000) 00-00-000', {placeholder: "+7 (___) __-__-___"});
+
 });

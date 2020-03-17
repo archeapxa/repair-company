@@ -435,6 +435,12 @@ template {
   font-family: inherit;
   font-size: 14px; }
 
+div.invalid {
+  color: tomato; }
+
+input.invalid {
+  border-bottom: 1px solid tomato; }
+
 *, *:before, *:after {
   box-sizing: border-box; }
 
@@ -1075,9 +1081,11 @@ img {
   .modal__form {
     display: flex;
     flex-direction: column; }
-  .modal__input {
+  .modal__input-group {
+    display: flex;
+    flex-direction: column;
     margin-bottom: 3.43rem; }
-    .modal__input:last-of-type {
+    .modal__input-group:last-of-type {
       margin-bottom: 1.15rem; }
   .modal__policy {
     margin-bottom: 2.7rem; }
