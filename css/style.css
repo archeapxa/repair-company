@@ -808,7 +808,8 @@ img {
   margin-bottom: -4px; }
 
 .control__input {
-  border-bottom: 1px solid rgba(54, 54, 54, 0.3); }
+  border-bottom: 1px solid rgba(54, 54, 54, 0.3);
+  color: #131313; }
 
 .control__button {
   padding: 1.2rem 4.25rem;

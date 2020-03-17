@@ -176,6 +176,10 @@ $(document).ready(function () {
 
   new WOW().init();
 
+
+    // mask for phone
+    $('[type=tel]').mask('+7 (000) 00-00-000', {placeholder: "+7 (___) __-__-___"});
+
   $('.modal__form').validate({
     errorClass: 'invalid',
     rules: {
@@ -204,7 +208,30 @@ $(document).ready(function () {
       }
     }
   });
-  // mask for phone
-  $('[type=tel]').mask('+7 (000) 00-00-000', {placeholder: "+7 (___) __-__-___"});
+
+  
+
+// validation for control section form
+
+$('.control__form').validate({
+  errorClass: 'invalid',
+  rules: {
+    // simple rule, converted to {required:true}
+    controlName: {
+      required: true,
+      rangelength: [2, 15]
+    },
+    // compound rule
+    userPhone: "required",
+  }, // messages
+  errorElement: 'div',
+  messages: {
+    controlName: {
+      required: "Заполните поле",
+      rangelength: "Имя не короче 2 символов и не длиннее 15 символов"
+    },
+    controlPhone: "Заполните поле",
+  }
+});
 
 });
