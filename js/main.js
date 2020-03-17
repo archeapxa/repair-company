@@ -234,4 +234,35 @@ $('.control__form').validate({
   }
 });
 
+// validation for footer section form
+
+$('.footer__form').validate({
+  errorClass: 'invalid',
+  rules: {
+    // simple rule, converted to {required:true}
+    footerName: {
+      required: true,
+      rangelength: [2, 15]
+    },
+    // compound rule
+    footerPhone: "required",
+    footerAsk: {
+      required: true,
+      rangelength: [10, 255]
+    }
+  }, // messages
+  errorElement: 'div',
+  messages: {
+    footerName: {
+      required: "Заполните поле",
+      rangelength: "Имя не короче 2 символов и не длиннее 15 символов"
+    },
+    footerPhone: "Заполните поле",
+    footerAsk: {
+      required: "Заполните поле",
+      rangelength: "Не короче 10 символов"
+    }
+  }
+});
+
 });

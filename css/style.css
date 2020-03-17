@@ -403,7 +403,8 @@ template {
 
 .policy__checkbox {
   opacity: 0;
-  visibility: hidden; }
+  visibility: hidden;
+  display: none; }
   .policy__checkbox:checked + .policy__label::before {
     background: #e3b873 url("../img/check.svg") no-repeat center/0.8rem; }
 
