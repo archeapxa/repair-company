@@ -889,7 +889,8 @@ img {
 
 .design__container {
   max-width: 1236px;
-  width: 92%; }
+  width: 92%;
+  margin-bottom: 0rem; }
 
 .design__section-title {
   margin-bottom: 1.25rem; }
@@ -902,95 +903,86 @@ img {
 .design__card {
   min-width: 23.5rem; }
 
-.steps__container {
-  position: relative;
-  max-width: 1238px;
-  width: 90%; }
-
-.steps__row {
-  display: flex;
-  align-items: center; }
-
-.steps__section-title {
-  position: absolute;
-  left: 0;
-  top: -80px; }
-
-.steps__heading {
-  font-size: 27px;
-  line-height: 37px;
-  text-transform: uppercase; }
-
-.steps__title-word {
-  font-size: 27px;
-  line-height: 37px;
-  text-transform: uppercase; }
-
-.steps__swiper-text-wrap {
-  max-width: 24.28rem;
-  padding-bottom: 5rem; }
-  .steps__swiper-text-wrap p {
+.steps {
+  margin-top: -35rem;
+  padding-top: 37rem; }
+  .steps__container {
+    position: relative;
+    max-width: 1238px;
+    width: 90%; }
+  .steps__row {
+    margin-top: 0;
+    display: flex;
+    align-items: center; }
+  .steps__section-title {
+    position: absolute;
+    left: 0;
+    top: -9rem; }
+  .steps__heading {
+    font-size: 27px;
+    line-height: 37px;
+    text-transform: uppercase; }
+  .steps__title-word {
+    font-size: 27px;
+    line-height: 37px;
+    text-transform: uppercase; }
+  .steps__swiper-text-wrap {
+    max-width: 24.28rem;
+    padding-bottom: 5rem; }
+    .steps__swiper-text-wrap p {
+      font-size: 15px;
+      line-height: 25px;
+      color: #fff; }
+  .steps__button-prev, .steps__button-next {
+    bottom: 0;
+    top: auto;
+    background-size: 42px;
+    width: 42px;
+    height: 14px; }
+    .steps__button-prev::after, .steps__button-next::after {
+      display: none; }
+  .steps__button-prev {
+    left: 0;
+    background: url("../img/arrow-prev.svg") no-repeat center; }
+  .steps__button-next {
+    background: url("../img/arrow-next.svg") no-repeat center; }
+  .steps__pagination-bullets {
+    width: auto; }
+  .steps__pagination-bullet {
+    background-color: rgba(255, 255, 255, 0.7);
+    margin-left: 10px;
+    width: 10px;
+    height: 10px; }
+    .steps__pagination-bullet-active {
+      background-color: #fff; }
+  .steps__button-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+  .steps__button {
+    position: relative;
+    width: 10rem;
     font-size: 15px;
-    line-height: 25px;
-    color: #fff; }
-
-.steps__button-prev, .steps__button-next {
-  bottom: 0;
-  top: auto;
-  background-size: 42px;
-  width: 42px;
-  height: 14px; }
-  .steps__button-prev::after, .steps__button-next::after {
-    display: none; }
-
-.steps__button-prev {
-  left: 0;
-  background: url("../img/arrow-prev.svg") no-repeat center; }
-
-.steps__button-next {
-  background: url("../img/arrow-next.svg") no-repeat center; }
-
-.steps__pagination-bullets {
-  width: auto; }
-
-.steps__pagination-bullet {
-  background-color: rgba(255, 255, 255, 0.7);
-  margin-left: 10px;
-  width: 10px;
-  height: 10px; }
-  .steps__pagination-bullet-active {
-    background-color: #fff; }
-
-.steps__button-wrap {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between; }
-
-.steps__button {
-  position: relative;
-  width: 10rem;
-  font-size: 15px;
-  line-height: 18px;
-  margin-bottom: 38px;
-  border-bottom-color: #e3b873; }
-  .steps__button-text {
-    max-width: 10rem;
-    min-width: 6rem; }
-  .steps__button-number {
-    display: inline-block;
-    border: none;
-    border-bottom: 1px solid #e3b873;
-    margin-bottom: 11px;
+    line-height: 18px;
+    margin-bottom: 38px;
+    border-bottom-color: #e3b873; }
+    .steps__button-text {
+      max-width: 10rem;
+      min-width: 6rem; }
+    .steps__button-number {
+      display: inline-block;
+      border: none;
+      border-bottom: 1px solid #e3b873;
+      margin-bottom: 11px;
+      font-family: 'Yeseva One', cursive;
+      border-bottom-color: inherit; }
+  .steps__name {
     font-family: 'Yeseva One', cursive;
-    border-bottom-color: inherit; }
-
-.steps__name {
-  font-family: 'Yeseva One', cursive;
-  font-size: 15px;
-  line-height: 23px;
-  text-transform: uppercase;
-  color: #e3b873;
-  max-width: 15rem; }
+    font-size: 15px;
+    line-height: 23px;
+    text-transform: uppercase;
+    color: #e3b873;
+    max-width: 15rem; }
 
 .inactive {
   color: #959595;
@@ -1035,7 +1027,8 @@ img {
     .footer__policy-label {
       justify-content: center; }
   .footer__button {
-    margin: auto; }
+    margin: auto;
+    padding: 1rem 3.5rem; }
   .footer__menu {
     background-color: #131313;
     padding: 2.285rem 0; }
