@@ -105,6 +105,7 @@ $(document).ready(function () {
 
   var mySwiper2 = new Swiper('.swiper-2', {
     effect: 'fade',
+    speed: 800,
     pagination: {
       el: '.steps__pagination',
       type: 'bullets',
@@ -124,6 +125,7 @@ $(document).ready(function () {
 
   var mySwiper3 = new Swiper('.swiper-3', {
     effect: 'fade',
+    speed: 800,
     pagination: {
       el: '.steps__counter-pagination',
       type: 'fraction',
