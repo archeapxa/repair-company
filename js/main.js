@@ -104,7 +104,7 @@ $(document).ready(function () {
   bullets.css('left', prev.width() + 21 + prev.position().left)
 
   var mySwiper2 = new Swiper('.swiper-2', {
-
+    effect: 'fade',
     pagination: {
       el: '.steps__pagination',
       type: 'bullets',
@@ -115,12 +115,12 @@ $(document).ready(function () {
     // },
     controller: {
       control: mySwiper3,
-    },
+    }
 
   })
 
   var mySwiper3 = new Swiper('.swiper-3', {
-
+    effect: 'fade',
     pagination: {
       el: '.steps__counter-pagination',
       type: 'fraction',
