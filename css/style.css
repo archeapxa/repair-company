@@ -446,6 +446,10 @@ div.invalid {
 input.invalid {
   border-bottom: 1px solid tomato; }
 
+.map {
+  width: 100%;
+  height: 33.2rem; }
+
 *, *:before, *:after {
   box-sizing: border-box; }
 
@@ -1145,7 +1149,8 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 66rem; }
+  max-width: 66rem;
+  margin-bottom: 4rem; }
   .map-wrap__head {
     display: flex;
     flex-direction: column;

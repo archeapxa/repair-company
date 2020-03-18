@@ -37,48 +37,51 @@
 
 $(document).ready(function () {
   var modal = $('.modal'),
-      modalBtn = $('[data-toggle=modal]'),
-      closeBtn = $('.modal__close');
+    modalBtn = $('[data-toggle=modal]'),
+    closeBtn = $('.modal__close');
 
   modalBtn.on('click', function () {
     modal.toggleClass('modal--visible');
   });
-  closeBtn.on('click', function() {
+  closeBtn.on('click', function () {
     modal.toggleClass('modal--visible');
   });
 
   $(document).mouseup(function (e) { //переписанная функция закрытия окна по клику вне его. Переделанный код из интернетиков...
     var div = $('.modal__dialog');
     if (!div.is(e.target) // если клик был не по нашему блоку
-		    && div.has(e.target).length === 0) { // и не по его дочерним элементам
-          modal.removeClass('modal--visible');
-		}
+      &&
+      div.has(e.target).length === 0) { // и не по его дочерним элементам
+      modal.removeClass('modal--visible');
+    }
   });
 
-  $(document).keydown(function(eventObject){ //закрытие окна по esc. Еще одна копипаста
-    if ( eventObject.which == 27 ) { // нажата клавиша Esc
-      modal.removeClass('modal--visible');// ваша функция закрытия окна
+  $(document).keydown(function (eventObject) { //закрытие окна по esc. Еще одна копипаста
+    if (eventObject.which == 27) { // нажата клавиша Esc
+      modal.removeClass('modal--visible'); // ваша функция закрытия окна
     };
   });
 
 
 
-  $(function() {  //появление кнопки Вверх при прокрутке страницы, промотка страницы вверх при нажатии
-    $(window).scroll(function() {
-    if($(this).scrollTop() != 0) {
-    $('#toTop').fadeIn();
-    } else {
-    $('#toTop').fadeOut();
-    }
+  $(function () { //появление кнопки Вверх при прокрутке страницы, промотка страницы вверх при нажатии
+    $(window).scroll(function () {
+      if ($(this).scrollTop() != 0) {
+        $('#toTop').fadeIn();
+      } else {
+        $('#toTop').fadeOut();
+      }
     });
-    $('#toTop').click(function() {
-    $('body,html').animate({scrollTop:0},800);
+    $('#toTop').click(function () {
+      $('body,html').animate({
+        scrollTop: 0
+      }, 800);
     });
-    });
+  });
 
 
-    //initialize swiper when document ready
-  var mySwiper = new Swiper ('.swiper-1', {
+  //initialize swiper when document ready
+  var mySwiper = new Swiper('.swiper-1', {
 
     loop: true,
     pagination: {
@@ -100,7 +103,7 @@ $(document).ready(function () {
   next.css('left', prev.width() + 21 + bullets.width() + 21 + prev.position().left)
   bullets.css('left', prev.width() + 21 + prev.position().left)
 
-  var mySwiper2 = new Swiper ('.swiper-2', {
+  var mySwiper2 = new Swiper('.swiper-2', {
 
     pagination: {
       el: '.steps__pagination',
@@ -116,7 +119,7 @@ $(document).ready(function () {
 
   })
 
-    var mySwiper3 = new Swiper ('.swiper-3', {
+  var mySwiper3 = new Swiper('.swiper-3', {
 
     pagination: {
       el: '.steps__counter-pagination',
@@ -131,9 +134,9 @@ $(document).ready(function () {
     },
     renderFraction: function (currentClass, totalClass) {
       return '<span class="' + currentClass + '"></span>' +
-              ' of ' +
-              '<span class="' + totalClass + '"></span>';
-  }
+        ' of ' +
+        '<span class="' + totalClass + '"></span>';
+    }
 
   })
 
@@ -144,23 +147,23 @@ $(document).ready(function () {
   bullets.css('left', prev.width() + 21 + prev.position().left)
   next.css('left', prev.width() + 21 + bullets.width() + 21 + prev.position().left)
 
-  $("#steps-button-0").click(function(){
-    mySwiper3.slideTo(0); 
+  $("#steps-button-0").click(function () {
+    mySwiper3.slideTo(0);
   });
-  $("#steps-button-1").click(function(){
-    mySwiper3.slideTo(1); 
+  $("#steps-button-1").click(function () {
+    mySwiper3.slideTo(1);
   });
-  $("#steps-button-2").click(function(){
-    mySwiper3.slideTo(2); 
-    });
-  $("#steps-button-3").click(function(){
-    mySwiper3.slideTo(3); 
+  $("#steps-button-2").click(function () {
+    mySwiper3.slideTo(2);
   });
-  $("#steps-button-4").click(function(){
-    mySwiper3.slideTo(4); 
+  $("#steps-button-3").click(function () {
+    mySwiper3.slideTo(3);
   });
-  $("#steps-button-5").click(function(){
-    mySwiper3.slideTo(5); 
+  $("#steps-button-4").click(function () {
+    mySwiper3.slideTo(4);
+  });
+  $("#steps-button-5").click(function () {
+    mySwiper3.slideTo(5);
   });
 
   mySwiper3.on('slideChange', function () {
@@ -168,7 +171,7 @@ $(document).ready(function () {
     var prevSlide = ('#steps-button-' + mySwiper3.previousIndex)
     // console.log(activeSlide);
     // console.log(prevSlide);
-    
+
     $(activeSlide).removeClass('inactive');
     $(prevSlide).addClass('inactive');
 
@@ -177,8 +180,10 @@ $(document).ready(function () {
   new WOW().init();
 
 
-    // mask for phone
-    $('[type=tel]').mask('+7 (000) 000-00-00', {placeholder: "+7 (___) ___-__-__"});
+  // mask for phone
+  $('[type=tel]').mask('+7 (000) 000-00-00', {
+    placeholder: "+7 (___) ___-__-__"
+  });
 
   $('.modal__form').validate({
     errorClass: 'invalid',
@@ -209,60 +214,96 @@ $(document).ready(function () {
     }
   });
 
-  
 
-// validation for control section form
 
-$('.control__form').validate({
-  errorClass: 'invalid',
-  rules: {
-    // simple rule, converted to {required:true}
-    controlName: {
-      required: true,
-      rangelength: [2, 15]
-    },
-    // compound rule
-    controlPhone: "required",
-  }, // messages
-  errorElement: 'div',
-  messages: {
-    controlName: {
-      required: "Заполните поле",
-      rangelength: "Имя не короче 2 символов и не длиннее 15 символов"
-    },
-    controlPhone: "Заполните поле",
-  }
-});
+  // validation for control section form
 
-// validation for footer section form
-
-$('.footer__form').validate({
-  errorClass: 'invalid',
-  rules: {
-    // simple rule, converted to {required:true}
-    footerName: {
-      required: true,
-      rangelength: [2, 15]
-    },
-    // compound rule
-    footerPhone: "required",
-    footerAsk: {
-      required: true,
-      rangelength: [10, 255]
+  $('.control__form').validate({
+    errorClass: 'invalid',
+    rules: {
+      // simple rule, converted to {required:true}
+      controlName: {
+        required: true,
+        rangelength: [2, 15]
+      },
+      // compound rule
+      controlPhone: "required",
+    }, // messages
+    errorElement: 'div',
+    messages: {
+      controlName: {
+        required: "Заполните поле",
+        rangelength: "Имя не короче 2 символов и не длиннее 15 символов"
+      },
+      controlPhone: "Заполните поле",
     }
-  }, // messages
-  errorElement: 'div',
-  messages: {
-    footerName: {
-      required: "Заполните поле",
-      rangelength: "Имя не короче 2 символов и не длиннее 15 символов"
-    },
-    footerPhone: "Заполните поле",
-    footerAsk: {
-      required: "Заполните поле",
-      rangelength: "Не короче 10 символов"
+  });
+
+  // validation for footer section form
+
+  $('.footer__form').validate({
+    errorClass: 'invalid',
+    rules: {
+      // simple rule, converted to {required:true}
+      footerName: {
+        required: true,
+        rangelength: [2, 15]
+      },
+      // compound rule
+      footerPhone: "required",
+      footerAsk: {
+        required: true,
+        rangelength: [10, 255]
+      }
+    }, // messages
+    errorElement: 'div',
+    messages: {
+      footerName: {
+        required: "Заполните поле",
+        rangelength: "Имя не короче 2 символов и не длиннее 15 символов"
+      },
+      footerPhone: "Заполните поле",
+      footerAsk: {
+        required: "Заполните поле",
+        rangelength: "Не короче 10 символов"
+      }
     }
-  }
-});
+  });
+
+  // yandex map
+
+  ymaps.ready(function () {
+    var myMap = new ymaps.Map('map', {
+        center: [47.244729, 39.723187],
+        zoom: 13
+      }, {
+        searchControlProvider: 'yandex#search'
+      }),
+
+      // Создаём макет содержимого.
+      MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
+        '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
+      ),
+
+      myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+        hintContent: 'Repair Company',
+        balloonContent: 'офис 2112'
+      }, {
+        // Опции.
+        // Необходимо указать данный тип макета.
+        iconLayout: 'default#image',
+        // Своё изображение иконки метки.
+        iconImageHref: 'img/map-mark.png',
+        // Размеры метки.
+        iconImageSize: [32, 32],
+        // Смещение левого верхнего угла иконки относительно
+        // её "ножки" (точки привязки).
+        iconImageOffset: [-5, -38]
+      });
+
+      myMap.geoObjects
+      .add(myPlacemark);
+  });
+
 
 });

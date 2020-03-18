@@ -12,6 +12,10 @@
   <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
   <link rel="stylesheet" href="css/style.css">
+
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=413c87fc-f285-4212-abc8-c324c98ec8c8&lang=ru_RU" type="text/javascript">
+  </script> // yandex api
+
 </head>
 
 <body>
@@ -771,9 +775,10 @@
         </div>
         <!-- /.map-wrap__header -->
 
-        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A70dc62719d9df64ef8e28b1cc90d086581c6f43f8f6c960139da0e54d5e7e971&amp;width=100%25&amp;height=465&amp;lang=ru_UA&amp;scroll=false"></script>
+        <div class="map footer__map" id="map"></div>
+        <!-- /.map -->
       </div>
-      <!-- /.map -->
+      <!-- /.map-wrap -->
 
     </div>
     <!-- /.container -->
