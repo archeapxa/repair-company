@@ -115,6 +115,9 @@ $(document).ready(function () {
     // },
     controller: {
       control: mySwiper3,
+    },
+    fadeEffect: {
+      crossFade: true
     }
 
   })
@@ -136,6 +139,9 @@ $(document).ready(function () {
       return '<span class="' + currentClass + '"></span>' +
         ' of ' +
         '<span class="' + totalClass + '"></span>';
+    },
+    fadeEffect: {
+      crossFade: true
     }
 
   })
