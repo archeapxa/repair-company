@@ -1157,7 +1157,7 @@ img {
   margin-right: 1.1rem; }
 
 .footer {
-  background: #131313 url("../img/footer-bg.jpg") no-repeat center/cover; }
+  background: linear-gradient(rgba(19, 19, 19, 0.6), rgba(19, 19, 19, 0.8)), url("../img/footer-bg.jpg") no-repeat center/cover; }
   .footer__container {
     background: #131313; }
   .footer__wrap {
@@ -1225,6 +1225,7 @@ img {
     align-items: center;
     margin-bottom: 2.2rem; }
   .map-wrap__header {
+    max-width: 35rem;
     font-family: "Yeseva One", cursive;
     font-style: normal;
     font-weight: normal;
@@ -1236,7 +1237,7 @@ img {
     margin-top: 0; }
   .map-wrap__icons {
     display: flex;
-    width: 5.07rem;
+    width: 71px;
     justify-content: space-between; }
 
 .modal {
@@ -1510,6 +1511,7 @@ img {
   .footer {
     background: #181818; }
     .footer__menu {
+      display: none;
       width: 90%;
       margin: auto; }
     .footer__wrap {
@@ -1530,4 +1532,13 @@ img {
     .footer__input {
       border-color: rgba(255, 255, 255, 0.5); }
     .footer__map-wrap {
-      display: none; } }
+      margin-bottom: 0;
+      margin-top: 0; }
+    .footer__map {
+      max-height: 300px;
+      max-width: 100%;
+      margin-bottom: 2rem; }
+  .map-wrap__head {
+    order: 1; }
+  .map-wrap__header {
+    max-width: 28.3rem; } }

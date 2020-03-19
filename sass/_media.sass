@@ -238,6 +238,7 @@
   .footer
     background: $black
     &__menu
+      display: none
       width: 90%
       margin: auto
     &__wrap
@@ -258,4 +259,14 @@
     &__input
       border-color: rgba($light, 0.5)
     &__map-wrap
-      display: none
+      margin-bottom: 0
+      margin-top: 0
+    &__map
+      max-height: 300px
+      max-width: 100%
+      margin-bottom: 2rem
+  .map-wrap
+    &__head
+      order: 1
+    &__header
+      max-width: 28.3rem
