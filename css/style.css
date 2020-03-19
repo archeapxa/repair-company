@@ -857,6 +857,7 @@ img {
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03); }
 
 .card__image {
+  display: block;
   align-items: center; }
   .card__image--dark {
     -webkit-filter: brightness(70%);
@@ -1462,6 +1463,8 @@ img {
     min-width: 310px; } }
 
 @media screen and (max-width: 960px) {
+  .projects__section-title {
+    text-align: left; }
   .projects__row {
     max-height: 1000px;
     align-items: center; }
