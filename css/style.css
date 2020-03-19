@@ -971,13 +971,13 @@ img {
     justify-content: space-between; }
   .steps__button {
     position: relative;
-    width: 10rem;
+    width: 12rem;
     font-size: 15px;
     line-height: 18px;
     margin-bottom: 38px;
     border-bottom-color: #e3b873; }
     .steps__button-text {
-      max-width: 10rem;
+      max-width: 12rem;
       min-width: 6rem; }
     .steps__button-number {
       display: inline-block;
@@ -1325,26 +1325,31 @@ img {
     line-height: 1.48; }
     .title--primary {
       font-size: 1.66rem; }
-  .hero__scroll-down {
-    display: none; }
-  .hero__content {
-    max-width: 100%;
-    margin-right: 0; }
-  .hero__title {
-    max-width: 340px; }
-  .hero__text {
-    max-width: 26.7rem;
-    margin-top: 1.05rem;
-    margin-bottom: 2.55rem;
-    line-height: 1.39;
-    font-size: 1.5rem; }
-  .hero__button {
-    display: block;
-    width: 100%;
-    margin-bottom: 2.24rem;
-    font-size: 1.12rem; }
-    .hero__button--big {
-      font-size: 1.07rem; }
+  .hero {
+    height: auto;
+    padding-bottom: 4rem; }
+    .hero__scroll-down {
+      display: none; }
+    .hero__content {
+      max-width: 100%;
+      margin-right: 0; }
+    .hero__title {
+      max-width: 340px;
+      font-style: normal;
+      font-weight: normal; }
+    .hero__text {
+      max-width: 26.7rem;
+      margin-top: 1.05rem;
+      margin-bottom: 2.55rem;
+      line-height: 1.39;
+      font-size: 1.5rem; }
+    .hero__button {
+      display: block;
+      width: 100%;
+      margin-bottom: 2.24rem;
+      font-size: 1.12rem; }
+      .hero__button--big {
+        font-size: 1.07rem; }
   .container {
     margin-left: 5%;
     margin-right: 5%;
