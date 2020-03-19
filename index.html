@@ -71,10 +71,7 @@
 
     <section class="section section--dark projects">
       <div class="container projects__container">
-
-
         <div class="projects__row">
-
           <div class="projects__title-col">
             <div class="section-title section-title--left">
               <!-- first flex element -->
@@ -231,7 +228,7 @@
           зайти на наш сайт и следить за ходом работы в вашей квартире. Посмотрите прямую трансляцию с одного из наших
           объектов! Оставьте заявку ниже чтобы получить ссылку на трансляцию.
         </p>
-        <form action="#" class="form control__form">
+        <form action="send.php" method="POST" class="form control__form">
 
           <div class="control__input-group">
             <label for="control__user-name" class="label form__label control__label">Имя</label>
@@ -245,7 +242,7 @@
               placeholder="Ваш номер телефона:" name="controlPhone">
           </div>
 
-          <button class="button button--primary control__button">Отправить</button>
+          <button class="button button--primary control__button" type="submit">Отправить</button>
 
           <div class="policy control__policy">
             <input class="policy__checkbox" type="checkbox" name="policy-checkbox" id="control__policy-checkbox"
@@ -817,7 +814,7 @@
       <div class="footer__wrap">
         <h3 class="footer__title">Остались вопросы?</h3>
         <!-- /.footer__title -->
-        <form action="#" class="form footer__form">
+        <form action="send.php" method="POST" class="form footer__form">
           <div class="input-group footer__input-group">
             <label for="user-name" class="label form__label label--light">Имя</label>
             <input type="text" class="input form__input input--light footer__input" id="user-name"
@@ -895,7 +892,7 @@
     <div class="modal__dialog">
       <button class="modal__close"></button>
       <h3 class="modal__title">Оставьте заявку и наш менеджер свяжется с вами </h3>
-      <form action="#" class="form modal__form">
+      <form action="send.php" method="POST" class="form modal__form">
         <div class="input-group modal__input-group">
           <label for="user-name" class="label form__label label--light">Имя</label>
           <input type="text" name="userName" class="input form__input input--light modal__input" id="user-name"
@@ -917,7 +914,7 @@
         </div>
         <!-- /.policy -->
 
-        <button class="button button--primary modal__button">Отправить заявку</button>
+        <button class="button button--primary modal__button" type="submit">Отправить заявку</button>
       </form>
       <!-- /.form modal__form -->
     </div>

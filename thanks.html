@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Repair Company</title>
+
+
+  <link href="/img/favicon.ico" rel="shortcut icon" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css?family=Yeseva+One&display=swap&subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=413c87fc-f285-4212-abc8-c324c98ec8c8&lang=ru_RU"
+    type="text/javascript">
+  </script> <!-- yandex api  -->
+
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="container header__container">
+      <div class="menu">
+        <a href="index.html" class="logo menu__logo">Repair Design Project</a>
+
+        <nav class="nav menu__nav">
+          <a href="#" class="nav__item">Главная</a>
+          <a href="#" class="nav__item">Проекты</a>
+          <a href="#" class="nav__item">Замер</a>
+          <a href="#" class="nav__item">Команда</a>
+          <a href="#" class="nav__item">Отзывы</a>
+          <a href="#" class="nav__item">Контакты</a>
+        </nav>
+
+        <div class="contacts menu__contacts">
+          <a href="tel:+79997683299" class="phone contacts__phone">+7 (999) 768-32-99</a>
+          <button class="button contacts__button button--primary" data-toggle="modal">Заказать звонок</button>
+        </div>
+        <!-- /.contacts -->
+      </div>
+      <!-- /.menu -->
+    </div>
+    <!-- /.container -->
+  </header>
+
+  <main class="main">
+    <section class="hero">
+      <div class="instagram hero__instagram">
+        <a href="#" class="instagram__link">Instagram</a>
+      </div>
+
+
+      <div class="container container--hero-centered">
+        <div class="hero__content">
+          <h1 class="title hero__title wow fadeInRight">Спасибо за заявку&nbsp;<span class="title--primary "></span></h1>
+          <p class="hero__text wow fadeInRight delay-1s">Наш менеджер перезвонит вам</p>
+        </div>
+        <!-- /.hero__content -->
+      </div>
+      <!-- /.container -->
+
+      <a href="#" class="hero__scroll-down">Листайте вниз</a>
+    </section>
+    <!-- /.hero -->
+
+  </main>
+
+  <div class="modal">
+    <div class="modal__dialog">
+      <button class="modal__close"></button>
+      <h3 class="modal__title">Оставьте заявку и наш менеджер свяжется с вами </h3>
+      <form action="send.php" method="POST" class="form modal__form">
+        <div class="input-group modal__input-group">
+          <label for="user-name" class="label form__label label--light">Имя</label>
+          <input type="text" name="userName" class="input form__input input--light modal__input" id="user-name"
+            placeholder="Как вас зовут:">
+        </div>
+        <div class="input-group modal__input-group">
+          <label for="user-phone" class="label form__label label--light">Телефон</label>
+          <input type="tel" name="userPhone" class="input form__input input--light modal__input" id="user-phone"
+            placeholder="Ваш номер телефона:">
+        </div>
+        <div class="input-group modal__input-group">
+          <label for="user-email" class="label form__label label--light">Email</label>
+          <input type="email" name="userEmail" class="input form__input input--light modal__input" id="user-email"
+            placeholder="Ваш email">
+        </div>
+        <div class="policy modal__policy">
+          <input class="policy__checkbox" type="checkbox" name="policy-checkbox" id="policy-checkbox" checked>
+          <label class="policy__label" for="policy-checkbox">Я соглашаюсь с обработкой данных</label>
+        </div>
+        <!-- /.policy -->
+
+        <button class="button button--primary modal__button">Отправить заявку</button>
+      </form>
+      <!-- /.form modal__form -->
+    </div>
+    <!-- /.modal__dialog -->
+  </div>
+  <!-- /.modal -->
+
+  <div id="toTop"> Наверх </div> <!-- кнопка промотки вверх -->
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
+  <script src="js/jquery.mask.min.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>
