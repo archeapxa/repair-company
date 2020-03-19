@@ -1,20 +1,8 @@
 <?php 
 
-$userName = $_POST['userName'];
-$userPhone = $_POST['userPhone'];
-$userEmail = $_POST['userEmail'];
-
-$controlName = $_POST['controlName'];
-$controlPhone = $_POST['controlPhone'];
-
 $footerName = $_POST['footerName'];
 $footerPhone = $_POST['footerPhone'];
 $footerAsk = $_POST['footerAsk'];
-
-
-
-
-
 
 // Load Composer's autoloader
 require 'phpmailer/Exception.php';
@@ -40,9 +28,10 @@ try {
     $mail->addAddress('stanislav.iushkevich@gmail.com');     // Add a recipient
 
     // Content
+    $mail->CharSet = "UTF-8";
     $mail->isHTML(true);                                  // Set email format to HTML
     $mail->Subject = 'New request from website';
-    $mail->Body    = "Имя пользователя: ${userName}, телефон ${userPhone} , почта ${userEmail}. Контроль - ${controlName}, ${controlPhone}. ${footerName}, с тел ${footerPhone}, уточняет: ${footerAsk}.";
+    $mail->Body    = "Вопрос от ${footerName}, с тел ${footerPhone}, спрашивает: ${footerAsk}.";
 
     $mail->send();
     header('Location: thanks.html');
