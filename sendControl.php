@@ -33,8 +33,12 @@ try {
     $mail->Subject = 'New request from website';
     $mail->Body    = "Клиент заказал контроль - ${controlName}, ${controlPhone}.";
 
-    $mail->send();
-    header('Location: thanks.html');
+    if ($mail->send()) {
+        echo "ok";
+    } else {
+        echo "Письмо не отправлено, ошибка. Mailer Error: {$mail->ErrorInfo}";
+    }
+    
 } catch (Exception $e) {
     echo "Письмо не отправлено, ошибка. Mailer Error: {$mail->ErrorInfo}";
 }

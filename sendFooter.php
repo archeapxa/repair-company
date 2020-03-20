@@ -32,9 +32,13 @@ try {
     $mail->isHTML(true);                                  // Set email format to HTML
     $mail->Subject = 'New request from website';
     $mail->Body    = "Вопрос от ${footerName}, с тел ${footerPhone}, спрашивает: ${footerAsk}.";
+    
+    if ($mail->send()) {
+        echo "ok";
+    } else {
+        echo "Письмо не отправлено, ошибка. Mailer Error: {$mail->ErrorInfo}";
+    }
 
-    $mail->send();
-    header('Location: thanks.html');
 } catch (Exception $e) {
     echo "Письмо не отправлено, ошибка. Mailer Error: {$mail->ErrorInfo}";
 }

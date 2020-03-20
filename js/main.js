@@ -36,15 +36,17 @@
 })*/
 
 $(document).ready(function () {
-  var modal = $('.modal'),
+  var modal = $('[data-modal]'),
     modalBtn = $('[data-toggle=modal]'),
-    closeBtn = $('.modal__close');
+    closeBtn = $('.modal__close'),
+    modalSuccess = $('[data-success]');
 
   modalBtn.on('click', function () {
-    modal.toggleClass('modal--visible');
+    modal.addClass('modal--visible');
   });
   closeBtn.on('click', function () {
-    modal.toggleClass('modal--visible');
+    modal.removeClass('modal--visible');
+    modalSuccess.removeClass('modal--visible');
   });
 
   $(document).mouseup(function (e) { //переписанная функция закрытия окна по клику вне его. Переделанный код из интернетиков...
@@ -193,6 +195,8 @@ $(document).ready(function () {
     placeholder: "+7 (___) ___-__-__"
   });
 
+
+  // валидация форм
   $('.modal__form').validate({
     errorClass: 'invalid',
     rules: {
@@ -219,6 +223,22 @@ $(document).ready(function () {
         required: "Заполните поле",
         email: "Введите корректный email"
       }
+    },
+    submitHandler: function(form) {
+      $.ajax({
+        type: "POST",
+        url: "sendModal.php",
+        data: $(form).serialize(),
+        success: function (response) {
+          // alert('Форма отправлена, мы свяжемся с вами через 10 минут');
+          $(form)[0].reset();
+          modal.removeClass('modal--visible');
+          modalSuccess.addClass('modal--visible');
+        },
+        error: function (response) {
+          console.error('Ошибка запроса ' + response);
+        },
+      });
     }
   });
 
@@ -244,6 +264,22 @@ $(document).ready(function () {
         rangelength: "Имя не короче 2 символов и не длиннее 15 символов"
       },
       controlPhone: "Заполните поле",
+    },
+    submitHandler: function(form) {
+      $.ajax({
+        type: "POST",
+        url: "sendControl.php",
+        data: $(form).serialize(),
+        success: function (response) {
+          // alert('Форма отправлена, мы свяжемся с вами через 10 минут');
+          $(form)[0].reset();
+          modal.removeClass('modal--visible');
+          modalSuccess.addClass('modal--visible');
+        },
+        error: function (response) {
+          console.error('Ошибка запроса ' + response);
+        },
+      });
     }
   });
 
@@ -275,6 +311,22 @@ $(document).ready(function () {
         required: "Заполните поле",
         rangelength: "Не короче 10 символов"
       }
+    },
+    submitHandler: function(form) {
+      $.ajax({
+        type: "POST",
+        url: "sendFooter.php",
+        data: $(form).serialize(),
+        success: function (response) {
+          // alert('Форма отправлена, мы свяжемся с вами через 10 минут');
+          $(form)[0].reset();
+          modal.removeClass('modal--visible');
+          modalSuccess.addClass('modal--visible');
+        },
+        error: function (response) {
+          console.error('Ошибка запроса ' + response);
+        },
+      });
     }
   });
 
