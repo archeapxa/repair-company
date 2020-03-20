@@ -271,10 +271,9 @@ $(document).ready(function () {
         url: "sendControl.php",
         data: $(form).serialize(),
         success: function (response) {
-          // alert('Форма отправлена, мы свяжемся с вами через 10 минут');
           $(form)[0].reset();
-          modal.removeClass('modal--visible');
-          modalSuccess.addClass('modal--visible');
+          $('.control__form').replaceWith('<h3 class="control__success">Заявка отправлена, мы свяжемся с вами через 10 минут <br><br> А пока можете подписаться на нашу <a class="modal-success__link" href="#">группу Вконтакте</a></h3>');
+          
         },
         error: function (response) {
           console.error('Ошибка запроса ' + response);
