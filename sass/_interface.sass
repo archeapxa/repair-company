@@ -28,6 +28,8 @@
   color: $light
   padding: 0.5rem 0
   outline: none
+  &-group
+    position: relative
   &--light
     border-bottom: 1px solid rgba(255, 255, 255, 0.15)
     &::placeholder
@@ -71,6 +73,9 @@
 
 div.invalid
   color: tomato
+  position: absolute
+  left: 0 
+  bottom: -1rem
 input
   &.invalid
     border-bottom: 1px solid tomato

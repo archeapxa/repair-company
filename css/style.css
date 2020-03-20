@@ -393,6 +393,8 @@ template {
   color: #fff;
   padding: 0.5rem 0;
   outline: none; }
+  .input-group {
+    position: relative; }
   .input--light {
     border-bottom: 1px solid rgba(255, 255, 255, 0.15); }
     .input--light::-webkit-input-placeholder {
@@ -442,7 +444,10 @@ template {
   font-size: 14px; }
 
 div.invalid {
-  color: tomato; }
+  color: tomato;
+  position: absolute;
+  left: 0;
+  bottom: -1rem; }
 
 input.invalid {
   border-bottom: 1px solid tomato; }
@@ -1281,6 +1286,12 @@ img {
     text-align: center;
     margin: 0;
     margin-bottom: 2.42rem; }
+    .modal__title--success {
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+      font-size: 2rem;
+      color: #e3b873;
+      margin-bottom: 2rem; }
   .modal__form {
     display: flex;
     flex-direction: column; }
@@ -1294,6 +1305,13 @@ img {
     margin-bottom: 2.7rem; }
   .modal__button {
     align-self: flex-end; }
+
+.modal-success__text {
+  text-align: center;
+  font-size: 1.2rem; }
+
+.modal-success__link {
+  color: #fff; }
 
 @media screen and (max-width: 1200px) {
   html {
