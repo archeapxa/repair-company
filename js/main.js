@@ -210,7 +210,7 @@ $(document).ready(function () {
       userEmail: {
         required: true,
         email: true
-      }
+      },
     }, // messages
     errorElement: 'div',
     messages: {
@@ -230,10 +230,10 @@ $(document).ready(function () {
         url: "sendModal.php",
         data: $(form).serialize(),
         success: function (response) {
-          // alert('Форма отправлена, мы свяжемся с вами через 10 минут');
           $(form)[0].reset();
-          modal.removeClass('modal--visible');
-          modalSuccess.addClass('modal--visible');
+          $('.modal__form').css('display', 'none');
+          $('.modal__title').html('Заявка отправлена, мы свяжемся с вами через 10 минут <br><br> А пока можете подписаться на нашу <a class="modal-success__link" href="#">группу Вконтакте</a>');
+          $('.modal__title').css('margin-top', '2rem');
         },
         error: function (response) {
           console.error('Ошибка запроса ' + response);
