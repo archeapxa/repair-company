@@ -224,7 +224,7 @@ $(document).ready(function () {
         email: "Введите корректный email"
       }
     },
-    submitHandler: function(form) {
+    submitHandler: function (form) {
       $.ajax({
         type: "POST",
         url: "sendModal.php",
@@ -265,7 +265,7 @@ $(document).ready(function () {
       },
       controlPhone: "Заполните поле",
     },
-    submitHandler: function(form) {
+    submitHandler: function (form) {
       $.ajax({
         type: "POST",
         url: "sendControl.php",
@@ -273,7 +273,7 @@ $(document).ready(function () {
         success: function (response) {
           $(form)[0].reset();
           $('.control__form').replaceWith('<h3 class="control__success">Заявка отправлена, мы свяжемся с вами через 10 минут <br><br> А пока можете подписаться на нашу <a class="modal-success__link" href="#">группу Вконтакте</a></h3>');
-          
+
         },
         error: function (response) {
           console.error('Ошибка запроса ' + response);
@@ -311,7 +311,7 @@ $(document).ready(function () {
         rangelength: "Не короче 10 символов"
       }
     },
-    submitHandler: function(form) {
+    submitHandler: function (form) {
       $.ajax({
         type: "POST",
         url: "sendFooter.php",
@@ -333,15 +333,14 @@ $(document).ready(function () {
   ymaps.ready(function () {
     var myMap = new ymaps.Map('map', {
         center: [47.244729, 39.723187],
+        controls: [],
         zoom: 13
-      }, {
-        searchControlProvider: 'yandex#search'
       }),
 
-      // Создаём макет содержимого.
-      MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
-        '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
-      ),
+      // // Создаём макет содержимого.
+      // MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
+      //   '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
+      // ),
 
       myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
         hintContent: 'Repair Company',
@@ -359,7 +358,13 @@ $(document).ready(function () {
         iconImageOffset: [-5, -38]
       });
 
-      myMap.geoObjects
+    myMap.behaviors
+      // Отключаем часть включенных по умолчанию поведений:
+      //  - drag - перемещение карты при нажатой левой кнопки мыши;
+      //  - magnifier.rightButton - увеличение области, выделенной правой кнопкой мыши.
+      .disable(['drag', 'rightMouseButtonMagnifier'])
+
+    myMap.geoObjects
       .add(myPlacemark);
   });
 

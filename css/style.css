@@ -520,6 +520,10 @@ img {
   text-align: center;
   text-transform: none; }
 
+.ymaps-2-1-76-ground-pane {
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1); }
+
 .header {
   position: fixed;
   left: 0;
