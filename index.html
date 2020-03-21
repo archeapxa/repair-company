@@ -7,7 +7,7 @@
   <title>Repair Company</title>
 
 
-  <link href="/img/favicon.ico" rel="shortcut icon" type="image/x-icon">
+  <link href="img/favicon.ico" rel="shortcut icon" type="image/x-icon">
   <link href="https://fonts.googleapis.com/css?family=Yeseva+One&display=swap&subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
@@ -245,7 +245,7 @@
           <button class="button button--primary control__button" type="submit">Отправить</button>
 
           <div class="policy control__policy">
-            <input class="policy__checkbox" type="checkbox" name="policyCheckbox" id="control__policy-checkbox"
+            <input class="policy__checkbox" type="checkbox" name="controlCheckbox" id="control__policy-checkbox"
               checked>
             <label class="policy__label control__policy-label" for="control__policy-checkbox">Я соглашаюсь с обработкой
               данных</label>
@@ -366,7 +366,23 @@
     </section>
     <!-- /.section types -->
 
-    
+    <section class="section order">
+      <div class="container">
+        <div class="row">
+          <div class="col-40">
+
+          </div>
+          <!-- /.col-40 -->
+          <div class="col-60">
+
+          </div>
+          <!-- /.col-60 -->
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.section order -->
 
     <section class="section design">
       <div class="container design__container">
@@ -910,8 +926,8 @@
           <input type="email" name="userEmail" class="input form__input input--light modal__input" id="user-email"
             placeholder="Ваш email">
         </div>
-        <div class="policy modal__policy">
-          <input class="policy__checkbox" type="checkbox" name="policyCheckbox" id="policy-checkbox" checked>
+        <div class="policy modal__policy error">
+          <input class="policy__checkbox" title="Please agree to our policy!" type="checkbox" name="policyCheckbox" id="policy-checkbox" checked required>
           <label class="policy__label" for="policy-checkbox">Я соглашаюсь с обработкой данных</label>
         </div>
         <!-- /.policy -->

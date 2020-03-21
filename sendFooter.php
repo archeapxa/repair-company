@@ -12,6 +12,7 @@ require 'phpmailer/SMTP.php';
 // Instantiation and passing `true` enables exceptions
 $mail = new PHPMailer\PHPMailer\PHPMailer();
 
+
 try {
     //Server settings
     $mail->SMTPDebug = 0;                      // Enable verbose debug output

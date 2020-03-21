@@ -199,6 +199,7 @@ $(document).ready(function () {
   // валидация форм
   $('.modal__form').validate({
     errorClass: 'invalid',
+    ignore: ":disabled",
     rules: {
       // simple rule, converted to {required:true}
       userName: {
@@ -211,6 +212,9 @@ $(document).ready(function () {
         required: true,
         email: true
       },
+      policyCheckbox: {
+        required: true,
+      },
     }, // messages
     errorElement: 'div',
     messages: {
@@ -222,6 +226,9 @@ $(document).ready(function () {
       userEmail: {
         required: "Заполните поле",
         email: "Введите корректный email"
+      },
+      policyCheckbox: {
+        required: "Требуется соглашение с обработкой данных"
       }
     },
     submitHandler: function (form) {
@@ -248,6 +255,7 @@ $(document).ready(function () {
 
   $('.control__form').validate({
     errorClass: 'invalid',
+    ignore: ":disabled",
     rules: {
       // simple rule, converted to {required:true}
       controlName: {
@@ -256,6 +264,9 @@ $(document).ready(function () {
       },
       // compound rule
       controlPhone: "required",
+      controlCheckbox: {
+        required: true,
+      },
     }, // messages
     errorElement: 'div',
     messages: {
@@ -264,6 +275,9 @@ $(document).ready(function () {
         rangelength: "Имя не короче 2 символов и не длиннее 15 символов"
       },
       controlPhone: "Заполните поле",
+      controlCheckbox: {
+        required: "Требуется соглашение с обработкой данных"
+      },
     },
     submitHandler: function (form) {
       $.ajax({
