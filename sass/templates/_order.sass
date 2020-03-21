@@ -1,51 +1,36 @@
 .order
   background: url(../img/order/bg-house.png) no-repeat left, url(../img/order/order-circle.svg) no-repeat left
+  position: relative
+  margin-top: 10rem
+  &__wrap
+    // position: relative
+  &__step
+    position: absolute
+    display: flex
+    align-items: center
+    &--01
+      top: 128px
+      left: 348px
+    &--02
+      top: 237px
+      left: 425px
+    &--03
+      top: 397px
+      left: 450px
+    &--04
+      top: 560px
+      left: 380px
   &__text
-    display: block
-    &--01-step
-      &::before
-        content: '01'
-        padding: 0.785rem
-        border-radius: 50%
-        background-color: $primary
-        margin-right: 1.2rem
-        font-family: "Yeseva One", cursive
-        font-size: 1.285rem
-        font-weight: normal
-        color: $light
-    &--02-step
-      &::before
-        content: '02'
-        padding: 0.785rem
-        border-radius: 50%
-        background-color: $primary
-        margin-right: 1.2rem
-        font-family: "Yeseva One", cursive
-        font-size: 1.285rem
-        font-weight: normal
-        color: $light
-    &--03-step
-      &::before
-        content: '03'
-        padding: 0.785rem
-        border-radius: 50%
-        background-color: $primary
-        margin-right: 1.2rem
-        font-family: "Yeseva One", cursive
-        font-size: 1.285rem
-        font-weight: normal
-        color: $light
-    &--04-step
-      &::before
-        content: '04'
-        padding: 0.785rem
-        border-radius: 50%
-        background-color: $primary
-        margin-right: 1.2rem
-        font-family: "Yeseva One", cursive
-        font-size: 1.285rem
-        font-weight: normal
-        color: $light
+    margin-left: 1.1rem
+    font-style: normal
+    font-weight: 600
+    font-size: 1.285rem
+    line-height: 1.5rem
+    &--01
+      max-width: 26rem
+    &--04
+      max-width: 18.28rem
+
   &__dialog
     position: relative
     max-width: 36.36rem

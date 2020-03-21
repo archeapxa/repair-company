@@ -373,12 +373,23 @@
         <div class="row">
           <div class="col-60 order__col-60">
             <div class="order__wrap">
-              <strong class="order__text order__text--01-step">Наш специалист приедет для замеров в день контакта или
-                назначит удобную для вас дату</strong>
-              <strong class="order__text order__text--02-step">Бесплатный замер</strong>
-              <strong class="order__text order__text--03-step">Бесплатная консультация</strong>
-              <strong class="order__text order__text--04-step">Получите смету расходов и сроки вашего будущего ремонта
-              </strong>
+              <div class="order__step order__step--01">
+                <img src="img/order/frame-1.png" alt="step-01">
+                <strong class="order__text order__text--01">Наш специалист приедет для замеров в день контакта или
+                  назначит удобную для вас дату</strong>
+              </div>
+              <div class="order__step order__step--02">
+                <img src="img/order/frame-2.png" alt="step-02">
+                <strong class="order__text order__text--02">Бесплатный замер</strong>
+              </div>
+              <div class="order__step order__step--03">
+                <img src="img/order/frame-3.png" alt="step-03">
+                <strong class="order__text order__text--03">Бесплатная консультация</strong>
+              </div>
+              <div class="order__step order__step--04">
+                <img src="img/order/frame-4.png" alt="step-04">
+                <strong class="order__text order__text--04">Получите смету расходов и сроки вашего будущего ремонта</strong>
+              </div>
             </div>
           </div>
           <!-- /.col-40 -->
@@ -388,13 +399,13 @@
               <form action="sendOrder.php" method="POST" class="form order__form">
                 <div class="input-group order__input-group">
                   <label for="order-user-name" class="label form__label label--light">Имя</label>
-                  <input type="text" name="orderName" class="input form__input input--light order__input" id="order-user-name"
-                    placeholder="Как вас зовут:">
+                  <input type="text" name="orderName" class="input form__input input--light order__input"
+                    id="order-user-name" placeholder="Как вас зовут:">
                 </div>
                 <div class="input-group order__input-group">
                   <label for="order-user-phone" class="label form__label label--light">Телефон</label>
-                  <input type="tel" name="orderPhone" class="input form__input input--light order__input" id="order-user-phone"
-                    placeholder="Ваш номер телефона:">
+                  <input type="tel" name="orderPhone" class="input form__input input--light order__input"
+                    id="order-user-phone" placeholder="Ваш номер телефона:">
                 </div>
                 <div class="input-group order__input-group">
                   <label for="order-user-email" class="label form__label label--light">Email</label>
