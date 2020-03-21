@@ -923,6 +923,9 @@ img {
     position: absolute;
     display: flex;
     align-items: center; }
+    .order__step-number {
+      height: 42px;
+      width: 42px; }
     .order__step--01 {
       top: 125px;
       left: 345px; }
