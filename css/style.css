@@ -918,14 +918,14 @@ img {
 .order {
   background: url(../img/order/bg-house.png) no-repeat left, url(../img/order/order-circle.svg) no-repeat left;
   position: relative;
-  margin-top: 10rem; }
+  margin-top: 140px; }
   .order__step {
     position: absolute;
     display: flex;
     align-items: center; }
     .order__step--01 {
-      top: 128px;
-      left: 348px; }
+      top: 125px;
+      left: 345px; }
     .order__step--02 {
       top: 237px;
       left: 425px; }
@@ -1589,6 +1589,36 @@ img {
   .card__pricetag {
     padding: 1rem 2.65rem;
     font-size: 1.25rem; } }
+
+@media screen and (max-width: 1300px) {
+  .order__step {
+    max-width: 25.57rem; } }
+
+@media screen and (max-width: 1230px) {
+  .order__step--03 {
+    max-width: 15rem; } }
+
+@media screen and (max-width: 1200px) {
+  .order {
+    background-position: -200px center; }
+    .order__step {
+      max-width: 30rem; }
+      .order__step--01 {
+        top: 88px;
+        left: 145px; }
+      .order__step--02 {
+        top: 195px;
+        left: 225px; }
+      .order__step--03 {
+        top: 355px;
+        left: 250px; }
+      .order__step--04 {
+        top: 520px;
+        left: 180px; } }
+
+@media screen and (max-width: 992px) {
+  .order {
+    display: none; } }
 
 @media screen and (max-width: 992px) {
   .design {
