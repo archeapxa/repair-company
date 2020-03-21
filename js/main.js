@@ -254,7 +254,7 @@ $(document).ready(function () {
   // validation for control section form
 
   $('.control__form').validate({
-    errorClass: 'invalid invalid--control',
+    errorClass: 'invalid invalid--centered',
     ignore: ":disabled",
     rules: {
       // simple rule, converted to {required:true}
@@ -299,7 +299,8 @@ $(document).ready(function () {
   // validation for footer section form
 
   $('.footer__form').validate({
-    errorClass: 'invalid',
+    errorClass: 'invalid invalid--centered',
+    ignore: ":disabled",
     rules: {
       // simple rule, converted to {required:true}
       footerName: {
@@ -308,6 +309,7 @@ $(document).ready(function () {
       },
       // compound rule
       footerPhone: "required",
+      footerCheckbox : "required",
       footerAsk: {
         required: true,
         rangelength: [10, 255]
@@ -320,6 +322,7 @@ $(document).ready(function () {
         rangelength: "Имя не короче 2 символов и не длиннее 15 символов"
       },
       footerPhone: "Заполните поле",
+      footerCheckbox : "Требуется соглашение с обработкой данных",
       footerAsk: {
         required: "Заполните поле",
         rangelength: "Не короче 10 символов"
