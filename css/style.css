@@ -915,67 +915,122 @@ img {
   .card__item span {
     margin-left: -5px; }
 
-.order--visible {
-  opacity: 1;
-  visibility: visible; }
-
-.order__dialog {
-  position: relative;
-  max-width: 36.36rem;
-  height: 38.85rem;
-  background: #131313 url("../img/bg-lines.svg") no-repeat center;
-  padding: 2.36rem 3.5rem 1.92rem;
-  color: #fff; }
-
-.order__close {
-  position: absolute;
-  top: 0;
-  right: 0;
-  height: 28px;
-  width: 28px;
-  background: transparent url("../img/close.svg") no-repeat center;
-  border: none;
-  margin: 12px;
-  cursor: pointer; }
-
-.order__title {
-  font-size: 1.357rem;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 1.428rem;
-  line-height: 1,78rem;
-  text-align: center;
-  margin: 0;
-  margin-bottom: 2.42rem; }
-  .order__title--success {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    font-size: 2rem;
-    color: #e3b873;
-    margin-bottom: 2rem; }
-
-.order__form {
-  display: flex;
-  flex-direction: column; }
-
-.order__input-group {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 3.43rem; }
-  .order__input-group:last-of-type {
-    margin-bottom: 1.15rem; }
-
-.order__policy {
-  margin-bottom: 2.7rem; }
-
-.order__button {
-  align-self: flex-end;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 0.928rem;
-  line-height: 1.285rem;
-  text-transform: uppercase;
-  padding: 1.2rem 3rem; }
+.order {
+  background: url(../img/order/bg-house.png) no-repeat left, url(../img/order/order-circle.svg) no-repeat left; }
+  .order__text {
+    display: block; }
+    .order__text--01-step::before {
+      content: '01';
+      padding: 0.785rem;
+      border-radius: 50%;
+      background-color: #e3b873;
+      margin-right: 1.2rem;
+      font-family: "Yeseva One", cursive;
+      font-size: 1.285rem;
+      font-weight: normal;
+      color: #fff; }
+    .order__text--02-step::before {
+      content: '02';
+      padding: 0.785rem;
+      border-radius: 50%;
+      background-color: #e3b873;
+      margin-right: 1.2rem;
+      font-family: "Yeseva One", cursive;
+      font-size: 1.285rem;
+      font-weight: normal;
+      color: #fff; }
+    .order__text--03-step::before {
+      content: '03';
+      padding: 0.785rem;
+      border-radius: 50%;
+      background-color: #e3b873;
+      margin-right: 1.2rem;
+      font-family: "Yeseva One", cursive;
+      font-size: 1.285rem;
+      font-weight: normal;
+      color: #fff; }
+    .order__text--04-step::before {
+      content: '04';
+      padding: 0.785rem;
+      border-radius: 50%;
+      background-color: #e3b873;
+      margin-right: 1.2rem;
+      font-family: "Yeseva One", cursive;
+      font-size: 1.285rem;
+      font-weight: normal;
+      color: #fff; }
+  .order__dialog {
+    position: relative;
+    max-width: 36.36rem;
+    height: 38.85rem;
+    background: #131313 url("../img/bg-lines.svg") no-repeat center;
+    padding: 2.36rem 3.5rem 1.92rem;
+    color: #fff; }
+  .order__close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 28px;
+    width: 28px;
+    background: transparent url("../img/close.svg") no-repeat center;
+    border: none;
+    margin: 12px;
+    cursor: pointer; }
+  .order__title {
+    max-width: 21.42rem;
+    margin: auto;
+    margin-bottom: 2.42rem;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.428rem;
+    line-height: 1.78rem;
+    text-align: center; }
+    .order__title--success {
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+      font-size: 2rem;
+      color: #e3b873;
+      margin-bottom: 2rem; }
+  .order__form {
+    display: flex;
+    flex-direction: column; }
+  .order__input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3.43rem; }
+    .order__input-group:last-of-type {
+      margin-bottom: 1.15rem; }
+  .order__policy {
+    margin-bottom: 2.7rem; }
+  .order__button {
+    align-self: flex-end;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 0.928rem;
+    line-height: 1.285rem;
+    text-transform: uppercase;
+    padding: 1.2rem 3rem; }
+  .order__advantage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2.7rem; }
+    .order__advantage-icon {
+      background-color: #e3b873;
+      color: #fff;
+      border-radius: 50%;
+      height: 72px;
+      width: 72px;
+      padding: 16px;
+      margin-right: 25.5px; }
+    .order__advantage-text {
+      max-width: 22.7rem;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 1.428rem;
+      line-height: 1.785rem;
+      color: #e3b873;
+      text-shadow: 0px 3px 10px rgba(227, 184, 115, 0.15); }
 
 .design__container {
   max-width: 1236px;

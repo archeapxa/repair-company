@@ -1,7 +1,51 @@
 .order
-  &--visible
-    opacity: 1
-    visibility: visible
+  background: url(../img/order/bg-house.png) no-repeat left, url(../img/order/order-circle.svg) no-repeat left
+  &__text
+    display: block
+    &--01-step
+      &::before
+        content: '01'
+        padding: 0.785rem
+        border-radius: 50%
+        background-color: $primary
+        margin-right: 1.2rem
+        font-family: "Yeseva One", cursive
+        font-size: 1.285rem
+        font-weight: normal
+        color: $light
+    &--02-step
+      &::before
+        content: '02'
+        padding: 0.785rem
+        border-radius: 50%
+        background-color: $primary
+        margin-right: 1.2rem
+        font-family: "Yeseva One", cursive
+        font-size: 1.285rem
+        font-weight: normal
+        color: $light
+    &--03-step
+      &::before
+        content: '03'
+        padding: 0.785rem
+        border-radius: 50%
+        background-color: $primary
+        margin-right: 1.2rem
+        font-family: "Yeseva One", cursive
+        font-size: 1.285rem
+        font-weight: normal
+        color: $light
+    &--04-step
+      &::before
+        content: '04'
+        padding: 0.785rem
+        border-radius: 50%
+        background-color: $primary
+        margin-right: 1.2rem
+        font-family: "Yeseva One", cursive
+        font-size: 1.285rem
+        font-weight: normal
+        color: $light
   &__dialog
     position: relative
     max-width: 36.36rem
@@ -20,14 +64,14 @@
     margin: 12px
     cursor: pointer
   &__title
-    font-size: 1.357rem
+    max-width: 21.42rem
+    margin: auto
+    margin-bottom: 2.42rem
     font-style: normal
     font-weight: 500
     font-size: 1.428rem
-    line-height: 1,78rem
+    line-height: 1.78rem
     text-align: center
-    margin: 0
-    margin-bottom: 2.42rem
     &--success
       margin-top: 2rem
       margin-bottom: 2rem
@@ -54,3 +98,24 @@
     line-height: 1.285rem
     text-transform: uppercase
     padding: 1.2rem 3rem
+  &__advantage
+    display: flex
+    justify-content: center
+    align-items: center
+    margin-top: 2.7rem
+    &-icon
+      background-color: $primary
+      color: $light
+      border-radius: 50%
+      height: 72px
+      width: 72px
+      padding: 16px
+      margin-right: 25.5px
+    &-text
+      max-width: 22.7rem
+      font-style: normal
+      font-weight: 500
+      font-size: 1.428rem
+      line-height: 1.785rem
+      color: $primary
+      text-shadow: 0px 3px 10px rgba(227, 184, 115, 0.15)
