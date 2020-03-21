@@ -916,38 +916,31 @@ img {
     margin-left: -5px; }
 
 .order {
-  background: url(../img/order/bg-house.png) no-repeat left, url(../img/order/order-circle.svg) no-repeat left;
+  background: url(../img/order/bg-order.png) no-repeat left;
   position: relative;
   margin-top: 140px; }
   .order__step {
     position: absolute;
-    display: flex;
-    align-items: center; }
-    .order__step-number {
-      height: 42px;
-      width: 42px; }
+    display: flex; }
     .order__step--01 {
-      top: 125px;
-      left: 345px; }
+      top: 137px;
+      left: 415px;
+      max-width: 26rem; }
     .order__step--02 {
-      top: 237px;
-      left: 425px; }
+      top: 258px;
+      left: 490px; }
     .order__step--03 {
-      top: 397px;
-      left: 450px; }
+      top: 418px;
+      left: 515px; }
     .order__step--04 {
-      top: 560px;
-      left: 380px; }
+      top: 570px;
+      left: 450px;
+      max-width: 21rem; }
   .order__text {
-    margin-left: 1.1rem;
     font-style: normal;
     font-weight: 600;
     font-size: 1.285rem;
     line-height: 1.5rem; }
-    .order__text--01 {
-      max-width: 26rem; }
-    .order__text--04 {
-      max-width: 18.28rem; }
   .order__dialog {
     position: relative;
     max-width: 36.36rem;
@@ -1595,29 +1588,25 @@ img {
 
 @media screen and (max-width: 1300px) {
   .order__step {
-    max-width: 25.57rem; } }
-
-@media screen and (max-width: 1230px) {
-  .order__step--03 {
-    max-width: 15rem; } }
+    max-width: 20.57rem; } }
 
 @media screen and (max-width: 1200px) {
   .order {
     background-position: -200px center; }
     .order__step {
-      max-width: 30rem; }
+      max-width: 26rem; }
       .order__step--01 {
-        top: 88px;
-        left: 145px; }
+        top: 96px;
+        left: 215px; }
       .order__step--02 {
-        top: 195px;
-        left: 225px; }
+        top: 215px;
+        left: 290px; }
       .order__step--03 {
-        top: 355px;
-        left: 250px; }
+        top: 376px;
+        left: 315px; }
       .order__step--04 {
-        top: 520px;
-        left: 180px; } }
+        top: 530px;
+        left: 250px; } }
 
 @media screen and (max-width: 992px) {
   .order {
