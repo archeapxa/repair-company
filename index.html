@@ -192,9 +192,11 @@
                 <!-- Slides -->
                 <div class="swiper-slide"><img class="projects__img" src="img/projects/project-1.jpg" alt="project">
                 </div>
-                <div class="swiper-slide"><img class="projects__img" src="https://via.placeholder.com/680x483?text=02" alt="project">
+                <div class="swiper-slide"><img class="projects__img" src="https://via.placeholder.com/680x483?text=02"
+                    alt="project">
                 </div>
-                <div class="swiper-slide"><img class="projects__img" src="https://via.placeholder.com/680x483?text=03" alt="project">
+                <div class="swiper-slide"><img class="projects__img" src="https://via.placeholder.com/680x483?text=03"
+                    alt="project">
                 </div>
               </div>
 
@@ -369,12 +371,46 @@
     <section class="section order">
       <div class="container">
         <div class="row">
-          <div class="col-40">
-
+          <div class="col-60">
+            <strong class="order__text order__text--01-step">Наш специалист приедет для замеров в день<br> контакта или
+              назначит удобную для вас дату</strong>
+            <strong class="order__text order__text--02-step">Бесплатный замер</strong>
+            <strong class="order__text order__text--03-step">Бесплатная консультация</strong>
+            <strong class="order__text order__text--04-step">Получите смету расходов и сроки<br> вашего будущего ремонта
+            </strong>
           </div>
           <!-- /.col-40 -->
-          <div class="col-60">
+          <div class="col-40">
+            <div class="order__dialog">
+              <h3 class="order__title">Оставьте заявку на бесплатный выезд замерщика</h3>
+              <form action="sendOrder.php" method="POST" class="form order__form">
+                <div class="input-group order__input-group">
+                  <label for="order-user-name" class="label form__label label--light">Имя</label>
+                  <input type="text" name="orderName" class="input form__input input--light order__input" id="order-user-name"
+                    placeholder="Как вас зовут:">
+                </div>
+                <div class="input-group order__input-group">
+                  <label for="order-user-phone" class="label form__label label--light">Телефон</label>
+                  <input type="tel" name="orderPhone" class="input form__input input--light order__input" id="order-user-phone"
+                    placeholder="Ваш номер телефона:">
+                </div>
+                <div class="input-group order__input-group">
+                  <label for="order-user-email" class="label form__label label--light">Email</label>
+                  <input type="email" name="orderEmail" class="input form__input input--light order__input"
+                    id="order-user-email" placeholder="Ваш email">
+                </div>
+                <div class="policy order__policy">
+                  <input class="policy__checkbox" title="Please agree to our policy!" type="checkbox"
+                    name="orderCheckbox" id="order-policy-checkbox" checked required>
+                  <label class="policy__label" for="order-policy-checkbox">Я соглашаюсь с обработкой данных</label>
+                </div>
+                <!-- /.policy -->
 
+                <button class="button button--primary order__button" type="submit">Вызвать замерщика</button>
+              </form>
+              <!-- /.form modal__form -->
+            </div>
+            <!-- /.modal__dialog -->
           </div>
           <!-- /.col-60 -->
         </div>
@@ -767,13 +803,16 @@
               <p class="reviews__text">Я хочу поблагодарить ребят за их работу. Они вложили душу в ремонт. Я очень
                 благодарна, что сделали как для самих себя. Большое спасибо, я выражаю проектному менеджеру за его
                 профессионализм и подход. Процесс ремонта был завершен быстрее, чем ожидалось. Команда мобильная и
-                профессиональная. Работы выполнены качественно без нареканий. Цены демократические.<br> Я рекомендую этих
+                профессиональная. Работы выполнены качественно без нареканий. Цены демократические.<br> Я рекомендую
+                этих
                 мастеров.</p>
             </div>
             <!-- reviews card -->
             <div class="tags reviews__tags">
-              <strong class="reviews__square"><img class="tags__square-icon" src="img/reviews/square-icon.svg" alt="square icon"> 40 m<sup>2</sup></strong>
-              <strong class="reviews__period"><img class="tags__tablet-icon" src="img/reviews/tablet-icon.svg" alt="tablet icon">48 дней</strong>
+              <strong class="reviews__square"><img class="tags__square-icon" src="img/reviews/square-icon.svg"
+                  alt="square icon"> 40 m<sup>2</sup></strong>
+              <strong class="reviews__period"><img class="tags__tablet-icon" src="img/reviews/tablet-icon.svg"
+                  alt="tablet icon">48 дней</strong>
             </div>
             <!-- tags -->
           </div>
@@ -792,8 +831,10 @@
             </div>
             <!-- reviews card -->
             <div class="tags reviews__tags">
-              <strong class="reviews__square"><img class="tags__square-icon" src="img/reviews/square-icon.svg" alt="square icon">90 m<sup>2</sup></strong>
-              <strong class="reviews__period"><img class="tags__tablet-icon" src="img/reviews/tablet-icon.svg" alt="tablet icon">128 дней</strong>
+              <strong class="reviews__square"><img class="tags__square-icon" src="img/reviews/square-icon.svg"
+                  alt="square icon">90 m<sup>2</sup></strong>
+              <strong class="reviews__period"><img class="tags__tablet-icon" src="img/reviews/tablet-icon.svg"
+                  alt="tablet icon">128 дней</strong>
             </div>
             <!-- tags -->
           </div>
@@ -807,12 +848,15 @@
               <p class="reviews__text">Я хочу поблагодарить ребят за их работу. Они вложили душу в ремонт. Я очень
                 благодарна, что сделали как для самих себя. Большое спасибо, я выражаю проектному менеджеру за его
                 профессионализм и подход. Процесс ремонта был завершен быстрее, чем ожидалось. Команда мобильная и
-                профессиональная. Работы выполнены качественно без нареканий. Качество высокое.<br> Цены демократические.</p>
+                профессиональная. Работы выполнены качественно без нареканий. Качество высокое.<br> Цены
+                демократические.</p>
             </div>
             <!-- reviews card -->
             <div class="tags reviews__tags">
-              <strong class="reviews__square"><img class="tags__square-icon" src="img/reviews/square-icon.svg" alt="square icon">56 m<sup>2</sup></strong>
-              <strong class="reviews__period"><img class="tags__tablet-icon" src="img/reviews/tablet-icon.svg" alt="tablet icon">86 дней</strong>
+              <strong class="reviews__square"><img class="tags__square-icon" src="img/reviews/square-icon.svg"
+                  alt="square icon">56 m<sup>2</sup></strong>
+              <strong class="reviews__period"><img class="tags__tablet-icon" src="img/reviews/tablet-icon.svg"
+                  alt="tablet icon">86 дней</strong>
             </div>
             <!-- tags -->
           </div>
@@ -927,7 +971,8 @@
             placeholder="Ваш email">
         </div>
         <div class="policy modal__policy">
-          <input class="policy__checkbox" title="Please agree to our policy!" type="checkbox" name="policyCheckbox" id="policy-checkbox" checked required>
+          <input class="policy__checkbox" title="Please agree to our policy!" type="checkbox" name="policyCheckbox"
+            id="policy-checkbox" checked required>
           <label class="policy__label" for="policy-checkbox">Я соглашаюсь с обработкой данных</label>
         </div>
         <!-- /.policy -->
@@ -940,7 +985,7 @@
   </div>
   <!-- /.modal -->
 
-  
+
   <!-- success modal commented
   <div class="modal modal-success" data-success>
     <div class="modal__dialog">
@@ -953,7 +998,7 @@
   </div> -->
 
 
-  
+
 
   <div id="toTop"> Наверх </div> <!-- кнопка промотки вверх -->
 

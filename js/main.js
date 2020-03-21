@@ -296,6 +296,63 @@ $(document).ready(function () {
     }
   });
 
+// validate for order section
+  $('.order__form').validate({
+    errorClass: 'invalid',
+    ignore: ":disabled",
+    rules: {
+      // simple rule, converted to {required:true}
+      orderName: {
+        required: true,
+        rangelength: [2, 15]
+      },
+      // compound rule
+      orderPhone: "required",
+      orderEmail: {
+        required: true,
+        email: true
+      },
+      policyCheckbox: {
+        required: true,
+      },
+    }, // messages
+    errorElement: 'div',
+    messages: {
+      orderName: {
+        required: "Заполните поле",
+        rangelength: "Имя не короче 2 символов и не длиннее 15 символов"
+      },
+      orderPhone: "Заполните поле",
+      orderEmail: {
+        required: "Заполните поле",
+        email: "Введите корректный email"
+      },
+      orderCheckbox: {
+        required: "Требуется соглашение с обработкой данных"
+      }
+    },
+    submitHandler: function (form) {
+      $.ajax({
+        type: "POST",
+        url: "sendOrder.php",
+        data: $(form).serialize(),
+        success: function (response) {
+          $(form)[0].reset();
+          $('.order__form').css('display', 'none');
+          $('.order__title').html('Заявка отправлена, мы свяжемся с вами через 10 минут <br><br> А пока можете подписаться на нашу <a class="modal-success__link" href="#">группу Вконтакте</a>');
+          $('.order__title').css('margin-top', '2rem');
+        },
+        error: function (response) {
+          console.error('Ошибка запроса ' + response);
+        },
+      });
+    }
+  });
+
+
+
+
+
   // validation for footer section form
 
   $('.footer__form').validate({

@@ -346,6 +346,9 @@ template {
 .col-38-2 {
   width: 38.2%; }
 
+.col-40 {
+  flex-basis: 40%; }
+
 .col-45 {
   max-width: 45%; }
 
@@ -354,6 +357,9 @@ template {
 
 .col-55 {
   max-width: 55%; }
+
+.col-60 {
+  flex-basis: 60%; }
 
 .col-61-8 {
   width: 61.8%; }
@@ -908,6 +914,68 @@ img {
   margin: 0; }
   .card__item span {
     margin-left: -5px; }
+
+.order--visible {
+  opacity: 1;
+  visibility: visible; }
+
+.order__dialog {
+  position: relative;
+  max-width: 36.36rem;
+  height: 38.85rem;
+  background: #131313 url("../img/bg-lines.svg") no-repeat center;
+  padding: 2.36rem 3.5rem 1.92rem;
+  color: #fff; }
+
+.order__close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 28px;
+  width: 28px;
+  background: transparent url("../img/close.svg") no-repeat center;
+  border: none;
+  margin: 12px;
+  cursor: pointer; }
+
+.order__title {
+  font-size: 1.357rem;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.428rem;
+  line-height: 1,78rem;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 2.42rem; }
+  .order__title--success {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: #e3b873;
+    margin-bottom: 2rem; }
+
+.order__form {
+  display: flex;
+  flex-direction: column; }
+
+.order__input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3.43rem; }
+  .order__input-group:last-of-type {
+    margin-bottom: 1.15rem; }
+
+.order__policy {
+  margin-bottom: 2.7rem; }
+
+.order__button {
+  align-self: flex-end;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.928rem;
+  line-height: 1.285rem;
+  text-transform: uppercase;
+  padding: 1.2rem 3rem; }
 
 .design__container {
   max-width: 1236px;
