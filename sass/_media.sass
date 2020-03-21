@@ -80,7 +80,6 @@
   .control
     background-color: $dark
     padding-bottom: 0
-
     &__video
       min-height: 24.28rem
     &__form
@@ -93,6 +92,7 @@
     &__input
       border-bottom: 1px solid rgba(255, 255, 255, 0.45)
       width: 100%
+      color: $light
       &::placeholder
         color: $light
       &-group
@@ -116,6 +116,9 @@
     &__policy
       margin-top: 0.5rem
       align-self: start
+    &__success
+      color: $light
+      padding-bottom: 10rem
 
 @media screen and ( max-width: 520px )
   .control
