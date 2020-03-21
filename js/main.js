@@ -254,7 +254,7 @@ $(document).ready(function () {
   // validation for control section form
 
   $('.control__form').validate({
-    errorClass: 'invalid',
+    errorClass: 'invalid invalid--control',
     ignore: ":disabled",
     rules: {
       // simple rule, converted to {required:true}

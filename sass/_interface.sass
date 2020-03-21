@@ -35,6 +35,7 @@
     &::placeholder
       color: $light
 .policy
+  position: relative
   &__checkbox
     opacity: 0
     // visibility: hidden
@@ -75,7 +76,12 @@ div.invalid
   color: tomato
   position: absolute
   left: 0 
-  bottom: -1rem
+  bottom: -1.1rem
+  &--control
+    left: 50%
+    transform: translateX(-50%)
+    // right: 0
+  
 input
   &.invalid
     border-bottom: 1px solid tomato
