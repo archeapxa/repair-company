@@ -421,33 +421,33 @@ $(document).ready(function () {
 
   // yandex map
 
-  // ymaps.ready(function () {
-  //   var myMap = new ymaps.Map('map', {
-  //       center: [47.244729, 39.723187],
-  //       controls: [],
-  //       zoom: 13
-  //     }),
+  ymaps.ready(function () {
+    var myMap = new ymaps.Map('map', {
+        center: [47.244729, 39.723187],
+        controls: [],
+        zoom: 13
+      }),
 
 
-  //     myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
-  //       hintContent: 'Repair Company',
-  //       balloonContent: 'офис 2112'
-  //     }, {
-  //       iconLayout: 'default#image',
+      myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+        hintContent: 'Repair Company',
+        balloonContent: 'офис 2112'
+      }, {
+        iconLayout: 'default#image',
 
-  //       iconImageHref: 'img/map-mark.png',
+        iconImageHref: 'img/map-mark.png',
 
-  //       iconImageSize: [32, 32],
+        iconImageSize: [32, 32],
 
-  //       iconImageOffset: [-5, -38]
-  //     });
+        iconImageOffset: [-5, -38]
+      });
 
-  //   myMap.behaviors
-  //     .disable(['drag', 'rightMouseButtonMagnifier'])
+    myMap.behaviors
+      .disable(['drag', 'rightMouseButtonMagnifier'])
 
-  //   myMap.geoObjects
-  //     .add(myPlacemark);
-  // });
+    myMap.geoObjects
+      .add(myPlacemark);
+  });
 
   $(function() {
     // var thisClass = this.className;
