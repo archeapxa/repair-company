@@ -421,43 +421,33 @@ $(document).ready(function () {
 
   // yandex map
 
-  ymaps.ready(function () {
-    var myMap = new ymaps.Map('map', {
-        center: [47.244729, 39.723187],
-        controls: [],
-        zoom: 13
-      }),
+  // ymaps.ready(function () {
+  //   var myMap = new ymaps.Map('map', {
+  //       center: [47.244729, 39.723187],
+  //       controls: [],
+  //       zoom: 13
+  //     }),
 
-      // // Создаём макет содержимого.
-      // MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
-      //   '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
-      // ),
 
-      myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
-        hintContent: 'Repair Company',
-        balloonContent: 'офис 2112'
-      }, {
-        // Опции.
-        // Необходимо указать данный тип макета.
-        iconLayout: 'default#image',
-        // Своё изображение иконки метки.
-        iconImageHref: 'img/map-mark.png',
-        // Размеры метки.
-        iconImageSize: [32, 32],
-        // Смещение левого верхнего угла иконки относительно
-        // её "ножки" (точки привязки).
-        iconImageOffset: [-5, -38]
-      });
+  //     myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+  //       hintContent: 'Repair Company',
+  //       balloonContent: 'офис 2112'
+  //     }, {
+  //       iconLayout: 'default#image',
 
-    myMap.behaviors
-      // Отключаем часть включенных по умолчанию поведений:
-      //  - drag - перемещение карты при нажатой левой кнопки мыши;
-      //  - magnifier.rightButton - увеличение области, выделенной правой кнопкой мыши.
-      .disable(['drag', 'rightMouseButtonMagnifier'])
+  //       iconImageHref: 'img/map-mark.png',
 
-    myMap.geoObjects
-      .add(myPlacemark);
-  });
+  //       iconImageSize: [32, 32],
+
+  //       iconImageOffset: [-5, -38]
+  //     });
+
+  //   myMap.behaviors
+  //     .disable(['drag', 'rightMouseButtonMagnifier'])
+
+  //   myMap.geoObjects
+  //     .add(myPlacemark);
+  // });
 
   $(function() {
     // var thisClass = this.className;

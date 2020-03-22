@@ -9,9 +9,7 @@ const autoprefixer = require('gulp-autoprefixer');
 function serveSass() {
   return src("./sass/**/*.sass", "./sass/**/*.scss")
       .pipe(sass())
-      .pipe(autoprefixer({
-        cascade: false
-    }))
+      .pipe(autoprefixer())
       .pipe(dest("./css"))
       .pipe(browserSync.stream());
 }
