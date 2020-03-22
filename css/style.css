@@ -1044,6 +1044,8 @@ img {
     line-height: 220%;
     margin-bottom: 5rem;
     cursor: pointer; }
+    .stylisation__list li:hover {
+      color: #e3b873; }
   .stylisation__tab-1 {
     display: none;
     margin-top: -2.92rem;
