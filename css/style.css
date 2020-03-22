@@ -1686,9 +1686,9 @@ img {
 
 @media screen and (max-width: 1200px) {
   .stylisation__right-col {
-    display: none; }
-  .stylisation__center-col {
     flex-basis: 45%; }
+  .stylisation__center-col {
+    display: none; }
   .stylisation__left-col {
     flex-basis: 45%; } }
 
