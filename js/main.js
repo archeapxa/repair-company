@@ -442,5 +442,22 @@ $(document).ready(function () {
       .add(myPlacemark);
   });
 
+  $(function() {
+    // var thisClass = this.className;
+    $('ul.stylisation__list').on('click', 'li:not(.active)', function() {
+      $(this).addClass('active').siblings().removeClass('active');
+      
+      
+      
+      
+      $('[data-tab-1]').find('div.tabs__content').removeClass('tabs--active').eq($(this).index()).addClass('tabs--active');
+      $('[data-tab-2]').find('div.tabs__content').removeClass('tabs--active').eq($(this).index()).addClass('tabs--active');
+        // .closest('div.tabs').find('div.tabs__content').removeClass('active').eq($(this).index()).addClass('active');
+        
+      // $('div.'+ thisClass).addClass('tabs--active').siblings().removeClass('tabs--active');
+      // console.log(thisClass);
+    })
+  
+  });
 
 });

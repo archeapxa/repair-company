@@ -186,6 +186,31 @@
   .order
     display: none
 
+// STYLISATION SECTION
+@media screen and ( max-width: 1350px )
+  .stylisation
+    &__section-title
+      font-size: 22px
+      max-width: 350px
+@media screen and ( max-width: 1300px )
+  .stylisation
+    &__tab-1
+      margin-bottom: 0
+      margin-top: 0
+    &__tab-2
+      margin-bottom: 0
+      margin-top: -2.9rem
+    &__image
+      min-width: 312px
+@media screen and ( max-width: 1200px )
+    .stylisation
+      &__right-col
+        display: none
+      &__center-col
+        flex-basis: 45%
+      &__left-col
+        flex-basis: 45%
+
 // DESIGN SECTION
 @media screen and ( max-width: 992px )
   .design

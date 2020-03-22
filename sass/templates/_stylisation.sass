@@ -1,0 +1,47 @@
+.stylisation
+  background: linear-gradient(rgba($dark, 0.85), rgba($dark, 0.85)), url('../img/stylisation/stylisation-bg.jpg') no-repeat center / cover
+  padding-top: 0
+  padding-bottom: 0
+  // min-height: 864px
+  &__section-title
+    margin-top: 10rem
+    margin-bottom: 2rem
+    max-width: 29.35rem
+    font-style: normal
+    font-weight: normal 
+    font-size: 1.92rem
+    line-height: 2.64rem
+  &__list
+    padding-left: 0
+    list-style: none
+    color: $light
+    font-style: normal
+    font-weight: 500
+    font-size: 20px
+    line-height: 220%
+    margin-bottom: 5rem
+  &__tab-1
+    display: none
+    margin-top: -2.92rem
+    margin-bottom: -2.92rem
+  &__tab-2
+    display: none
+    margin-top: -8.8rem
+    margin-bottom: 2.9rem
+  &__image
+    &:first-of-type
+      margin-bottom: 2.9rem
+.tabs--active
+  display: block
+.active
+  color: $primary
+  position: relative
+  &::after
+    content: ''
+    position: absolute
+    width: 120px
+    height: 1px
+    bottom: 0.5rem
+    left: 0
+    // right: 0
+    background-color: $primary
