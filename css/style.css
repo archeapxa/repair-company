@@ -698,7 +698,8 @@ img {
 
 .projects {
   padding-top: 9.2rem;
-  padding-bottom: 29.6rem; }
+  padding-bottom: 29.6rem;
+  background: #131313 url("../img/bg/house-bg-hero.png") no-repeat bottom; }
   .projects__container {
     max-width: 1234px;
     width: 90%; }
@@ -1281,7 +1282,8 @@ img {
   padding: 1rem 1rem; }
 
 .reviews {
-  padding-top: 1.6rem; }
+  padding-top: 1.6rem;
+  background: #fff url("../img/bg/house-bg-hero.png") no-repeat bottom; }
   .reviews__container {
     padding-bottom: 11.95rem;
     max-width: 1256px;
