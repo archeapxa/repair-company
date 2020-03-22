@@ -203,19 +203,35 @@
     &__image
       min-width: 312px
 @media screen and ( max-width: 1200px )
-    .stylisation
-      &__right-col
-        flex-basis: 45%
-      &__center-col
-        display: none
-      &__left-col
-        flex-basis: 45%
+  .stylisation
+    &__right-col
+      flex-basis: 45%
+    &__center-col
+      display: none
+    &__left-col
+      flex-basis: 45%
+@media screen and ( max-width: 992px )
+  .stylisation
+    background: $light
+    padding-bottom: 20rem
+    &__right-col
+      display: none
+    &__center-col
+      display: none
+    &__left-col
+      display: none
+    &__swiper
+      display: block
+
+
 
 // DESIGN SECTION
 @media screen and ( max-width: 992px )
   .design
     background-color: $black
     padding-bottom: 0
+    padding-top: 18rem
+    margin-top: -30rem
     &__card
       margin-bottom: 6.85rem
     &__section-title
@@ -248,14 +264,17 @@
       margin-bottom: 2rem
     &__title-col
       max-width: 100%
+    &__swiper-button-prev
+      left: 50%
+      transform: translateX(-100px) 
   .swiper
     &-slide
       &__text-wrapper
         margin: auto
-    &-button 
-      &-prev
-        left: 50%
-        transform: translateX(-100px) 
+    // &-button 
+    //   &-prev
+    //     left: 50%
+    //     transform: translateX(-100px) 
       
 // SWIPER
 @media screen and ( max-width: 640px )

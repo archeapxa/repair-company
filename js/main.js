@@ -154,6 +154,20 @@ $(document).ready(function () {
   var prev = $('.steps__button-prev');
   var bullets = $('.steps__pagination');
 
+
+  
+  var mySwiper4 = new Swiper('.swiper-4', {
+    loop: true,
+    speed: 800,
+    navigation: {
+      nextEl: '.stylisation__next',
+      prevEl: '.stylisation__prev',
+    },
+    slidesPerView: 1,
+
+  })
+
+
   bullets.css('left', prev.width() + 21 + prev.position().left)
   next.css('left', prev.width() + 21 + bullets.width() + 21 + prev.position().left)
 
@@ -186,6 +200,9 @@ $(document).ready(function () {
     $(prevSlide).addClass('inactive');
 
   });
+
+
+
 
   new WOW().init();
 
