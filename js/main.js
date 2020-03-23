@@ -1,39 +1,3 @@
-/*document.addEventListener("DOMContentLoaded", function(event) { 
-  //do work
-  const modal = document.querySelector('.modal');
-  const modalDialog = document.querySelector('.modal__dialog');
-  const modalBtn = document.querySelectorAll('[data-toggle=modal]');
-  const closeBtn = document.querySelector('.modal__close');
-  const switchModal = () => {
-    modal.classList.toggle('modal--visible');
-  }
-  const removeModal = () => {
-    modal.classList.remove('modal--visible');
-  }
-
-  modalBtn.forEach(element => {
-    element.addEventListener('click', () => {
-      modal.classList.add('modal--visible');
-    }); // добавляем класс
-  });
-
-  closeBtn.addEventListener('click', switchModal); // переключаем(закрываем) модал по клику на closeBtn
-
-  document.addEventListener('keydown', (e) => {
-    if(e.keyCode === 27) {
-      removeModal()
-    }
-  });
-
-
-  document.addEventListener('click', (e) => {
-    if (e.target.classList.contains('modal')) {
-      removeModal()
-    }
-  });
-
-
-})*/
 
 $(document).ready(function () {
   var modal = $('[data-modal]'),
@@ -450,19 +414,11 @@ $(document).ready(function () {
   });
 
   $(function() {
-    // var thisClass = this.className;
+
     $('ul.stylisation__list').on('click', 'li:not(.active)', function() {
       $(this).addClass('active').siblings().removeClass('active');
-      
-      
-      
-      
       $('[data-tab-1]').find('div.tabs__content').removeClass('tabs--active').eq($(this).index()).addClass('tabs--active');
       $('[data-tab-2]').find('div.tabs__content').removeClass('tabs--active').eq($(this).index()).addClass('tabs--active');
-        // .closest('div.tabs').find('div.tabs__content').removeClass('active').eq($(this).index()).addClass('active');
-        
-      // $('div.'+ thisClass).addClass('tabs--active').siblings().removeClass('tabs--active');
-      // console.log(thisClass);
     })
   
   });
