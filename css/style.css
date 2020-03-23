@@ -546,6 +546,12 @@ input.invalid {
 .reviews {
   position: relative; }
 
+.team {
+  position: relative; }
+
+.footer {
+  position: relative; }
+
 *, *:before, *:after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
@@ -1366,19 +1372,21 @@ img {
       font-size: 15px;
       line-height: 25px;
       color: #fff; }
-  .steps__button-prev, .steps__button-next {
-    bottom: 0;
-    top: auto;
-    background-size: 42px;
-    width: 42px;
-    height: 14px; }
-    .steps__button-prev::after, .steps__button-next::after {
-      display: none; }
-  .steps__button-prev {
-    left: 0;
-    background: url("../img/arrow-prev.svg") no-repeat center; }
-  .steps__button-next {
-    background: url("../img/arrow-next.svg") no-repeat center; }
+  .steps__button {
+    cursor: pointer; }
+    .steps__button-prev, .steps__button-next {
+      bottom: 0;
+      top: auto;
+      background-size: 42px;
+      width: 42px;
+      height: 14px; }
+      .steps__button-prev::after, .steps__button-next::after {
+        display: none; }
+    .steps__button-prev {
+      left: 0;
+      background: url("../img/arrow-prev.svg") no-repeat center; }
+    .steps__button-next {
+      background: url("../img/arrow-next.svg") no-repeat center; }
   .steps__pagination-bullets {
     width: auto; }
   .steps__pagination-bullet {
@@ -2239,3 +2247,13 @@ img {
             order: 1; }
   .map-wrap__header {
     max-width: 28.3rem; } }
+
+@media screen and (max-width: 760px) {
+  .lines-hero {
+    display: none; }
+  .lines-control {
+    display: none; }
+  .lines-design {
+    display: none; }
+  .lines-steps {
+    display: none; } }

@@ -47,7 +47,9 @@ function buildJS(done) {
     .pipe(minify({
       ext:{
         min:'.js'
-      }
+      },
+      noSource: true,
+
     }))
     .pipe(dest('dist/js'));
     src('js/**.min.js')
@@ -82,7 +84,7 @@ function imagemin(done) {
       key: 'QThwWb4y5m8SCkN037L9dsWYPt4J4xcp',
       }))
     .pipe(dest('dist/img/'));
-  src('img/**/**.svg')
+  src('img/**/**.{svg,ico}')
     .pipe(dest('dist/img/'));
   done();
 }
