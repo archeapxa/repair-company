@@ -421,11 +421,15 @@ template {
     transition: box-shadow 0.2s, -webkit-box-shadow 0.2s; }
     .button--primary:hover {
       -webkit-box-shadow: none;
-              box-shadow: none; }
+              box-shadow: none;
+      background-color: #dba249;
+      text-decoration: underline; }
   .button--outline {
     border: 1px solid #fff;
     background-color: transparent;
     color: #fff; }
+    .button--outline:hover {
+      text-decoration: underline; }
 
 .label {
   font-size: 1.07rem; }
@@ -771,6 +775,8 @@ img {
 
 .contacts__phone {
   margin-right: 3.07rem; }
+  .contacts__phone:hover {
+    color: #dfad5e; }
 
 .hero {
   position: relative;
@@ -903,13 +909,18 @@ img {
             transform: rotate(90deg);
     line-height: 0.8;
     font-size: 1.05rem;
-    padding-left: 4.95rem; }
+    padding-left: 4.95rem;
+    -webkit-transition: font-size 0.3s;
+    -o-transition: font-size 0.3s;
+    transition: font-size 0.3s; }
     .instagram__link::after {
       content: '';
       width: 51px;
       height: 1px;
       background-color: #e3b873;
       margin-left: 12px; }
+    .instagram__link:hover {
+      font-size: 1.2rem; }
 
 .title {
   margin: 0;

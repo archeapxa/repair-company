@@ -13,10 +13,14 @@
     transition: box-shadow 0.2s
     &:hover
       box-shadow: none
+      background-color: darken($primary, 10%)
+      text-decoration: underline
   &--outline
     border: 1px solid $light
     background-color: transparent
     color: $light
+    &:hover
+      text-decoration: underline
 .label
   font-size: 1.07rem
   &--light
