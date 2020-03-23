@@ -6,14 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Repair Company</title>
 
-
+	<link rel="preconnect" href="//api-maps.yandex.ru">
+	<link rel="dns-prefetch" href="//api-maps.yandex.ru">
   <link href="img/favicon.ico" rel="shortcut icon" type="image/x-icon">
   <link href="https://fonts.googleapis.com/css?family=Yeseva+One&display=swap&subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
   <link rel="stylesheet" href="css/style.css">
 
-  <script src="https://api-maps.yandex.ru/2.1/?apikey=413c87fc-f285-4212-abc8-c324c98ec8c8&lang=ru_RU"></script>
+
   <!-- yandex api  -->
 
 </head>
@@ -26,12 +27,12 @@
         <a href="index.html" class="logo menu__logo">Repair Design Project</a>
 
         <nav class="nav menu__nav">
-          <a href="#" class="nav__item">Главная</a>
-          <a href="#" class="nav__item">Проекты</a>
-          <a href="#" class="nav__item">Замер</a>
-          <a href="#" class="nav__item">Команда</a>
-          <a href="#" class="nav__item">Отзывы</a>
-          <a href="#" class="nav__item">Контакты</a>
+          <a href="#main-page" class="nav__item">Главная</a>
+          <a href="#projects-page" class="nav__item">Проекты</a>
+          <a href="#order-page" class="nav__item">Замер</a>
+          <a href="#team-page" class="nav__item">Команда</a>
+          <a href="#reviews-page" class="nav__item">Отзывы</a>
+          <a href="#contacts-page" class="nav__item">Контакты</a>
         </nav>
 
         <div class="contacts menu__contacts">
@@ -46,7 +47,7 @@
   </header>
   <img class="lines-hero" src="img/bg/lines-bg-hero.svg" alt="lines bg">
   <main class="main">
-    <section class="hero">
+    <section id="main-page" class="hero">
       <div class="instagram hero__instagram">
         <a href="#" class="instagram__link">Instagram</a>
       </div>
@@ -70,7 +71,7 @@
 
 
 
-    <section class="section section--dark projects">
+    <section id="projects-page" class="section section--dark projects">
       <div class="container projects__container">
         <div class="projects__row">
           <div class="projects__title-col">
@@ -370,7 +371,7 @@
     </section>
     <!-- /.section types -->
 
-    <section class="section order">
+    <section id="order-page" class="section order">
       <div class="container">
         <div class="row">
           <div class="col-60 order__col-60">
@@ -902,9 +903,9 @@
     </section>
     <!-- /.section steps -->
 
-    <section class="section team">
+    <section  class="section team">
       <div class="container team__container">
-        <div class="section-title team__section-title section-title--light wow fadeIn fast">
+        <div id="team-page" class="section-title team__section-title section-title--light wow fadeIn fast">
           <h2 class="section-title__heading">Наша команда</h2>
           <!-- /.section-title__heading -->
           <div class="section-title__image">
@@ -983,7 +984,7 @@
     </section>
     <!-- /.section team -->
 
-    <section class="section reviews">
+    <section id="reviews-page" class="section reviews">
       <div class="container reviews__container">
         <div class="section-title reviews__section-title wow fadeIn fast">
           <h2 class="section-title__heading">Наши клиенты</h2>
@@ -1076,7 +1077,7 @@
 
   </main>
 
-  <footer class="footer section--dark">
+  <footer id="contacts-page" class="footer section--dark">
     <div class="container">
       <div class="footer__wrap">
         <h3 class="footer__title">Остались вопросы?</h3>
@@ -1120,7 +1121,11 @@
         </div>
         <!-- /.map-wrap__header -->
 
-        <div class="map footer__map" id="map"></div>
+        <div class="map-container footer__map">
+          <div class="loader loader-default"></div>
+          <div class="map" id="map"></div>
+        </div>
+        <!-- /.map-container -->
         <!-- /.map -->
       </div>
       <!-- /.map-wrap -->
@@ -1198,7 +1203,7 @@
   <script src="js/jquery.validate.min.js"></script>
   <script src="js/jquery.mask.min.js"></script>
   <script src="js/main.js"></script>
-
+  
 </body>
 
 </html>
