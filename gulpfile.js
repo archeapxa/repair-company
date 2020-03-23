@@ -9,7 +9,11 @@ const autoprefixer = require('gulp-autoprefixer');
 function serveSass() {
   return src("./sass/**/*.sass", "./sass/**/*.scss")
       .pipe(sass())
-      .pipe(autoprefixer())
+      .pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], {
+        add: true,
+        cascade: false,
+        flexbox: true,
+      }))
       .pipe(dest("./css"))
       .pipe(browserSync.stream());
 }
