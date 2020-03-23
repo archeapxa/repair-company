@@ -28,19 +28,13 @@ $(document).ready(function () {
   });
 
 
-
-  $(function () { //появление кнопки Вверх при прокрутке страницы, промотка страницы вверх при нажатии
-    $(window).scroll(function () {
-      if ($(this).scrollTop() != 0) {
-        $('#toTop').fadeIn();
-      } else {
-        $('#toTop').fadeOut();
-      }
-    });
-    $('#toTop').click(function () {
+//появление кнопки Вверх при прокрутке страницы, промотка страницы вверх при нажатии
+  $(function () { 
+    var windowHeight = $(window).height();
+    $('.hero__scroll-down').click(function () {
       $('body,html').animate({
-        scrollTop: 0
-      }, 800);
+        scrollTop: windowHeight - 200
+      }, 1500);
     });
   });
 
@@ -381,36 +375,6 @@ $(document).ready(function () {
       });
     }
   });
-
-  // yandex map
-
-  // ymaps.ready(function () {
-  //   var myMap = new ymaps.Map('map', {
-  //       center: [47.244729, 39.723187],
-  //       controls: [],
-  //       zoom: 13
-  //     }),
-
-
-  //     myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
-  //       hintContent: 'Repair Company',
-  //       balloonContent: 'офис 2112'
-  //     }, {
-  //       iconLayout: 'default#image',
-
-  //       iconImageHref: 'img/map-mark.png',
-
-  //       iconImageSize: [32, 32],
-
-  //       iconImageOffset: [-16, -32]
-  //     });
-
-  //   myMap.behaviors
-  //     .disable(['drag', 'rightMouseButtonMagnifier'])
-
-  //   myMap.geoObjects
-  //     .add(myPlacemark);
-  // });
 
   // заставляем яндекс карты грузиться при клике
   var spinner = $('.map-container').children('.loader');

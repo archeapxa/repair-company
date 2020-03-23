@@ -2111,7 +2111,10 @@ img {
               align-self: start; }
     .control__success {
       color: #fff;
-      padding-bottom: 10rem; } }
+      padding-bottom: 10rem; }
+  .video__play {
+    height: 60px;
+    width: 60px; } }
 
 @media screen and (max-width: 520px) {
   .control__video {
