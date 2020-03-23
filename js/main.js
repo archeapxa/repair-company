@@ -424,7 +424,7 @@ $(document).ready(function () {
     var myMapTemp = new ymaps.Map("map", {
       center: [47.244729, 39.723187], // координаты центра на карте
       zoom: 13, // коэффициент приближения карты
-      controls: [] // выбираем только те функции, которые необходимы при использовании
+      controls: ['zoomControl'] // выбираем только те функции, которые необходимы при использовании
     });
     var myPlacemarkTemp = new ymaps.Placemark([47.244729, 39.723187], {
       balloonContent: "офис 2112",
@@ -440,6 +440,7 @@ $(document).ready(function () {
       // её "ножки" (точки привязки).
       iconImageOffset: [-16, -32],
     });
+    myMapTemp.behaviors.disable('scrollZoom');
     myMapTemp.geoObjects.add(myPlacemarkTemp); // помещаем флажок на карту
 
     // Получаем первый экземпляр коллекции слоев, потом первый слой коллекции
