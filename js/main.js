@@ -212,9 +212,10 @@ $(document).ready(function () {
         data: $(form).serialize(),
         success: function (response) {
           $(form)[0].reset();
-          $('.modal__form').css('display', 'none');
-          $('.modal__title').html('Заявка отправлена, мы свяжемся с вами через 10 минут <br><br> А пока можете подписаться на нашу <a class="modal-success__link" href="#">группу Вконтакте</a>');
-          $('.modal__title').css('margin-top', '2rem');
+          // $('.modal__form').css('display', 'none');
+          // $('.modal__title').html('Заявка отправлена, мы свяжемся с вами через 10 минут <br><br> А пока можете подписаться на нашу <a class="modal-success__link" href="#">группу Вконтакте</a>');
+          $('.modal__title--success').css('margin-top', '2rem');
+          modalSuccess.addClass('modal--visible');
           ym(61217218,'reachGoal','request'); return true;
         },
         error: function (response) {
@@ -261,8 +262,9 @@ $(document).ready(function () {
         data: $(form).serialize(),
         success: function (response) {
           $(form)[0].reset();
-          $('.control__form').replaceWith('<h3 class="control__success">Заявка отправлена, мы свяжемся с вами через 10 минут <br><br> А пока можете подписаться на нашу <a class="modal-success__link" href="#">группу Вконтакте</a></h3>');
-
+          // $('.control__form').replaceWith('<h3 class="control__success">Заявка отправлена, мы свяжемся с вами через 10 минут <br><br> А пока можете подписаться на нашу <a class="modal-success__link" href="#">группу Вконтакте</a></h3>');
+          $('.modal__title--success').css('margin-top', '2rem');
+          modalSuccess.addClass('modal--visible');
         },
         error: function (response) {
           console.error('Ошибка запроса ' + response);
@@ -313,9 +315,11 @@ $(document).ready(function () {
         data: $(form).serialize(),
         success: function (response) {
           $(form)[0].reset();
-          $('.order__form').css('display', 'none');
-          $('.order__title').html('Заявка отправлена, мы свяжемся с вами через 10 минут <br><br> А пока можете подписаться на нашу <a class="modal-success__link" href="#">группу Вконтакте</a>');
-          $('.order__title').css('margin-top', '2rem');
+          // $('.order__form').css('display', 'none');
+          // $('.order__title').html('Заявка отправлена, мы свяжемся с вами через 10 минут <br><br> А пока можете подписаться на нашу <a class="modal-success__link" href="#">группу Вконтакте</a>');
+          // $('.order__title').css('margin-top', '2rem');
+          $('.modal__title--success').css('margin-top', '2rem');
+          modalSuccess.addClass('modal--visible');
         },
         error: function (response) {
           console.error('Ошибка запроса ' + response);
@@ -368,7 +372,9 @@ $(document).ready(function () {
         success: function (response) {
           // alert('Форма отправлена, мы свяжемся с вами через 10 минут');
           $(form)[0].reset();
-          $('.footer__form').replaceWith('<h3 class="footer__success">Заявка отправлена, мы свяжемся с вами через 10 минут <br><br> А пока можете подписаться на нашу <a class="modal-success__link" href="#">группу Вконтакте</a></h3>');
+          // $('.footer__form').replaceWith('<h3 class="footer__success">Заявка отправлена, мы свяжемся с вами через 10 минут <br><br> А пока можете подписаться на нашу <a class="modal-success__link" href="#">группу Вконтакте</a></h3>');
+          $('.modal__title--success').css('margin-top', '2rem');
+          modalSuccess.addClass('modal--visible');
         },
         error: function (response) {
           console.error('Ошибка запроса ' + response);

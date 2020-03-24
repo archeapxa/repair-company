@@ -503,7 +503,9 @@ div.invalid {
   color: tomato;
   position: absolute;
   left: 0;
-  bottom: -1.3rem; }
+  bottom: -1.3rem;
+  width: 23rem;
+  text-align: center; }
   div.invalid--centered {
     left: 50%;
     -webkit-transform: translateX(-50%);
