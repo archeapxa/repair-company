@@ -215,6 +215,7 @@ $(document).ready(function () {
           $('.modal__form').css('display', 'none');
           $('.modal__title').html('Заявка отправлена, мы свяжемся с вами через 10 минут <br><br> А пока можете подписаться на нашу <a class="modal-success__link" href="#">группу Вконтакте</a>');
           $('.modal__title').css('margin-top', '2rem');
+          ym(61217218,'reachGoal','request'); return true;
         },
         error: function (response) {
           console.error('Ошибка запроса ' + response);
