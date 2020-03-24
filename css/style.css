@@ -2363,3 +2363,9 @@ img {
     display: none; }
   .lines-steps {
     display: none; } }
+
+@media screen and (max-height: 500px) {
+  .modal__input-group {
+    margin-bottom: 1rem; }
+  .footer__input-group {
+    margin-bottom: 1rem; } }
