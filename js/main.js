@@ -505,8 +505,8 @@ $(document).ready(function () {
 
     $('ul.stylisation__list').on('click', 'li:not(.active)', function () {
       $(this).addClass('active').siblings().removeClass('active');
-      $('[data-tab-1]').find('div.tabs__content').removeClass('tabs--active').eq($(this).index()).addClass('tabs--active');
-      $('[data-tab-2]').find('div.tabs__content').removeClass('tabs--active').eq($(this).index()).addClass('tabs--active');
+      $('[data-tab-1]').find('div.tabs__content').hide().removeClass('tabs--active').eq($(this).index()).fadeIn(250).addClass('tabs--active');
+      $('[data-tab-2]').find('div.tabs__content').hide().removeClass('tabs--active').eq($(this).index()).fadeIn(250).addClass('tabs--active');
     })
 
   });
