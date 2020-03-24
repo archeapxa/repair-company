@@ -44,9 +44,11 @@
     opacity: 0
     // visibility: hidden
     position: absolute
+    cursor: pointer
     &:checked ~
       .policy__label
         &::before
+          cursor: pointer
           background: $primary url('../img/check.svg') no-repeat center / 0.8rem
   &__label
     display: flex
