@@ -324,14 +324,26 @@
 @media screen and ( max-width: 992px )
   .team
     background-color: $black
+    &__container
+      width: 89%
+      margin-left: 5.5%
+      margin-right: 5.5%
     &__card
       margin-bottom: 9rem
+    &__plate
+      max-width: 19.64rem
     &__section-title
       margin-top: 0
     &__text
       display: none
     &__description
       max-width: 27rem
+    &__img
+      display: none
+      &-mobile
+        display: block
+    &__row
+      align-items: flex-end
 @media screen and ( max-width: 370px )
   .team
     &__icon
@@ -340,7 +352,10 @@
 @media screen and ( max-width: 570px )
   .reviews
     display: none
-
+@media screen and ( max-width: 992px )
+  .reviews
+    &__tags
+      margin-bottom: 9rem
 
 // FOOTER SECTION
 @media screen and ( max-width: 570px )
@@ -357,12 +372,16 @@
     &__title
       margin-top: 0
       font-size: 1.68rem
+      margin-bottom: 4.5rem
     &__input-group
       flex-basis: 100%
+      margin-bottom: 5.2rem
       &--full-width
-        margin-bottom: 1rem
-    &__policy-label
-      justify-content: flex-start
+        margin-bottom: 2rem
+    &__policy
+      margin-bottom: 5.4rem
+      &-label
+        justify-content: flex-start
     &__button
       display: block
       width: 100%
@@ -375,6 +394,9 @@
       max-height: 300px
       max-width: 100%
       margin-bottom: 2rem
+    &__button
+      font-size: 1.3rem
+      padding: 1.4rem
   .map-wrap
     &__head
       order: 1
