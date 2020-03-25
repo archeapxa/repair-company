@@ -207,6 +207,7 @@ $(document).ready(function () {
           // $('.modal__title').html('Заявка отправлена, мы свяжемся с вами через 10 минут <br><br> А пока можете подписаться на нашу <a class="modal-success__link" href="#">группу Вконтакте</a>');
           $('.modal__title--success').css('margin-top', '2rem');
           modalSuccess.addClass('modal--visible');
+          modal.removeClass('modal--visible');
           ym(61217218, 'reachGoal', 'request');
           return true;
         },

@@ -1126,7 +1126,8 @@ img {
           flex-direction: column;
   -webkit-flex-basis: 31%;
       -ms-flex-preferred-size: 31%;
-          flex-basis: 31%; }
+          flex-basis: 31%;
+  margin-bottom: 1.5rem; }
 
 .control__label {
   margin-bottom: -4px; }
@@ -2112,13 +2113,12 @@ img {
       padding-top: 1.6rem;
       padding-bottom: 1.6rem;
       margin-bottom: -2.2rem; }
-    .control__policy-label {
-      margin-bottom: 5.2rem; }
     .control__policy {
       margin-top: 0.5rem;
       -webkit-align-self: start;
           -ms-flex-item-align: start;
-              align-self: start; }
+              align-self: start;
+      margin-bottom: 5.2rem; }
     .control__success {
       color: #fff;
       padding-bottom: 10rem; }
