@@ -674,9 +674,13 @@ img {
       text-align: left; }
     .section-title--light {
       color: #fff; }
-    .section-title__heading--primary {
-      color: #e3b873;
-      line-height: 138.6%; }
+    .section-title__heading {
+      font-weight: normal;
+      font-style: normal;
+      font-size: 1.428rem; }
+      .section-title__heading--primary {
+        color: #e3b873;
+        line-height: 138.6%; }
     .section-title-before-text {
       font-weight: 500;
       font-size: 15px;
@@ -836,7 +840,8 @@ img {
     max-width: 47.85rem;
     margin-left: 4.28rem; }
   .hero__title {
-    max-width: 39rem; }
+    max-width: 39rem;
+    font-weight: normal; }
   .hero__text {
     font-size: 1.57rem;
     max-width: 500px;
