@@ -762,7 +762,12 @@ img {
   font-size: 1.075rem;
   color: #e3b873;
   text-transform: uppercase;
-  text-decoration: none; }
+  text-decoration: none;
+  -webkit-transition: color 0.4s;
+  -o-transition: color 0.4s;
+  transition: color 0.4s; }
+  .logo:hover {
+    color: #fff; }
 
 .nav__item {
   color: #fff;
@@ -784,7 +789,7 @@ img {
 .contacts__phone {
   margin-right: 3.07rem; }
   .contacts__phone:hover {
-    color: #dfad5e; }
+    color: #d99e40; }
 
 .hero {
   position: relative;
@@ -1155,7 +1160,13 @@ img {
 
 .video__play {
   position: relative;
-  margin: auto; }
+  margin: auto;
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s; }
+  .video__play:hover {
+    width: 160px;
+    height: 160px; }
 
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
   .video__play {
@@ -1881,6 +1892,10 @@ img {
     -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
             justify-content: space-between; }
+  .map-wrap__icon:hover {
+    -webkit-box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3);
+            box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3);
+    border-radius: 50%; }
 
 .modal {
   opacity: 0;
