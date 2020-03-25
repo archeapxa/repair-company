@@ -34,6 +34,7 @@ $(document).ready(function () {
   var mySwiper = new Swiper('.swiper-1', {
 
     loop: true,
+    // setWrapperSize: true,
     pagination: {
       el: '.projects__pagination',
       type: 'bullets',
