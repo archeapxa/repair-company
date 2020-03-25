@@ -364,7 +364,9 @@ template {
 .col-30 {
   -webkit-flex-basis: 30%;
       -ms-flex-preferred-size: 30%;
-          flex-basis: 30%;
+          flex-basis: 30%; }
+
+.col-31 {
   -webkit-flex-basis: 31%;
       -ms-flex-preferred-size: 31%;
           flex-basis: 31%; }
@@ -1915,6 +1917,11 @@ img {
     -webkit-box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3);
             box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3);
     border-radius: 50%; }
+  .map-wrap__phone {
+    color: #e3b873;
+    text-decoration: none; }
+    .map-wrap__phone:hover {
+      text-decoration: underline; }
 
 .modal {
   opacity: 0;

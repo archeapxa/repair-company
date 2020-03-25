@@ -32,7 +32,7 @@ $(document).ready(function () {
 
   //initialize swiper when document ready
   var mySwiper = new Swiper('.swiper-1', {
-
+    spaceBetween: 40,
     loop: true,
     // setWrapperSize: true,
     pagination: {
@@ -54,7 +54,14 @@ $(document).ready(function () {
   next.css('left', prev.width() + 21 + bullets.width() + 21 + prev.position().left)
   bullets.css('left', prev.width() + 21 + prev.position().left)
 
+  $(window).resize(function() {
+    next.css('left', prev.width() + 21 + bullets.width() + 21 + prev.position().left)
+    bullets.css('left', prev.width() + 21 + prev.position().left)
+  });
+
+
   var mySwiper2 = new Swiper('.swiper-2', {
+    
     effect: 'fade',
     speed: 800,
     pagination: {
@@ -107,6 +114,7 @@ $(document).ready(function () {
 
   var mySwiper4 = new Swiper('.swiper-4', {
     loop: true,
+    spaceBetween: 40,
     speed: 800,
     navigation: {
       nextEl: '.stylisation__next',
