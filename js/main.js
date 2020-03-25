@@ -181,7 +181,11 @@ $(document).ready(function () {
         rangelength: [2, 15]
       },
       // compound rule
-      userPhone: "required",
+      // userPhone: "required",
+      userPhone: {
+        required: true,
+        minlength: 10
+      },
       userEmail: {
         required: true,
         email: true
@@ -196,7 +200,11 @@ $(document).ready(function () {
         required: "Заполните поле",
         rangelength: "Имя не короче 2 символов и не длиннее 15 символов"
       },
-      userPhone: "Заполните поле",
+      // userPhone: "Заполните поле",
+      userPhone: {
+        required: "Заполните поле",
+        minlength: "Заполните поле"
+      },
       userEmail: {
         required: "Заполните поле",
         email: "Введите корректный email"
@@ -241,7 +249,10 @@ $(document).ready(function () {
         rangelength: [2, 15]
       },
       // compound rule
-      controlPhone: "required",
+      controlPhone: {
+        required: true,
+        minlength: 10
+      },
       controlCheckbox: {
         required: true,
       },
@@ -252,7 +263,10 @@ $(document).ready(function () {
         required: "Заполните поле",
         rangelength: "Имя не короче 2 символов и не длиннее 15 символов"
       },
-      controlPhone: "Заполните поле",
+      controlPhone: {
+        required: "Заполните поле",
+        minlength: "Заполните поле"
+      },
       controlCheckbox: {
         required: "Требуется соглашение с обработкой данных"
       },
@@ -286,7 +300,10 @@ $(document).ready(function () {
         rangelength: [2, 15]
       },
       // compound rule
-      orderPhone: "required",
+      orderPhone: {
+        required: true,
+        minlength: 10
+      },
       orderEmail: {
         required: true,
         email: true
@@ -301,7 +318,10 @@ $(document).ready(function () {
         required: "Заполните поле",
         rangelength: "Имя не короче 2 символов и не длиннее 15 символов"
       },
-      orderPhone: "Заполните поле",
+      orderPhone: {
+        required: "Заполните поле",
+        minlength: "Заполните поле"
+      },
       orderEmail: {
         required: "Заполните поле",
         email: "Введите корректный email"
@@ -346,7 +366,10 @@ $(document).ready(function () {
         rangelength: [2, 15]
       },
       // compound rule
-      footerPhone: "required",
+      footerPhone: {
+        required: true,
+        minlength: 10
+      },
       footerCheckbox: "required",
       footerAsk: {
         required: true,
@@ -359,7 +382,10 @@ $(document).ready(function () {
         required: "Заполните поле",
         rangelength: "Имя не короче 2 символов и не длиннее 15 символов"
       },
-      footerPhone: "Заполните поле",
+      footerPhone: {
+        required: "Заполните поле",
+        minlength: "Заполните поле"
+      },
       footerCheckbox: "Требуется соглашение с обработкой данных",
       footerAsk: {
         required: "Заполните поле",
