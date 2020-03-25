@@ -4,27 +4,17 @@
   border-radius: 2px
   text-transform: uppercase
   font-size: 0.96rem
-  &:hover
-    cursor: pointer
   &--primary
     background-color: $primary
     color: $light
     box-shadow: 0px 5px 15px rgba($primary, 0.2)
     transition: box-shadow 0.2s
-    &:hover
-      box-shadow: none
-      background-color: darken($primary, 10%)
-      text-decoration: underline
   &--outline
     border: 1px solid $light
     background-color: transparent
     color: $light
-    &:hover
-      text-decoration: underline
 .label
   font-size: 1.07rem
-  &--light
-    color: rgba($light, 0.5)
 .input
   background-color: transparent
   border: none
@@ -79,9 +69,6 @@
   font-size: 14px
   text-decoration: none
   z-index: 100
-  &:hover
-    text-decoration: underline
-    background: darken($primary, 5%)
 
 div.invalid
   color: tomato

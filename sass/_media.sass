@@ -4,7 +4,7 @@
   .nav
     &__item
       margin-right: 1rem
-@media screen and ( max-width: 992px )
+@media screen and ( max-width: 991px )
   .nav
     display: none
   .hero
@@ -432,5 +432,56 @@
     &__input
       font-size: 1.5rem
 
-// @media screen and ( min-width: 992px )
-//   .v
+@media screen and ( min-width: 992px )
+  .video__play
+    &:hover
+      width: 160px
+      height: 160px
+  .map-wrap
+    &__icon
+      &:hover
+        box-shadow: 0px 5px 15px rgba($primary, 0.3)
+        border-radius: 50%
+    &__phone
+      &:hover
+        text-decoration: underline
+  .logo
+    &:hover
+      color: $light
+  .nav
+    &__item
+      &:hover
+        color: $primary
+  .contacts  
+    &:hover
+      color: darken($primary, 12%)    
+  .hero
+    &__scroll-down  
+      &:hover
+        color: $primary
+  .instagram
+    &__link
+      &:hover
+        font-size: 1.2rem
+  .stylisation
+    &__list
+      li:hover
+        color: $primary
+  .button 
+    &:hover
+      cursor: pointer
+    &--primary
+      &:hover
+        box-shadow: none
+        background-color: darken($primary, 10%)
+        text-decoration: underline
+    &--outline
+      &:hover
+        text-decoration: underline
+  .label
+    &--light
+      color: rgba($light, 0.5)
+  #toTop 
+    &:hover
+      text-decoration: underline
+      background: darken($primary, 5%)

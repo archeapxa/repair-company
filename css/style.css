@@ -415,8 +415,6 @@ template {
   border-radius: 2px;
   text-transform: uppercase;
   font-size: 0.96rem; }
-  .button:hover {
-    cursor: pointer; }
   .button--primary {
     background-color: #e3b873;
     color: #fff;
@@ -427,22 +425,13 @@ template {
     -o-transition: box-shadow 0.2s;
     transition: box-shadow 0.2s;
     transition: box-shadow 0.2s, -webkit-box-shadow 0.2s; }
-    .button--primary:hover {
-      -webkit-box-shadow: none;
-              box-shadow: none;
-      background-color: #dba249;
-      text-decoration: underline; }
   .button--outline {
     border: 1px solid #fff;
     background-color: transparent;
     color: #fff; }
-    .button--outline:hover {
-      text-decoration: underline; }
 
 .label {
   font-size: 1.07rem; }
-  .label--light {
-    color: rgba(255, 255, 255, 0.5); }
 
 .input {
   background-color: transparent;
@@ -510,9 +499,6 @@ template {
   font-size: 14px;
   text-decoration: none;
   z-index: 100; }
-  #toTop:hover {
-    text-decoration: underline;
-    background: #dfad5e; }
 
 div.invalid {
   color: tomato;
@@ -779,8 +765,6 @@ img {
   -webkit-transition: color 0.4s;
   -o-transition: color 0.4s;
   transition: color 0.4s; }
-  .logo:hover {
-    color: #fff; }
 
 .nav__item {
   color: #fff;
@@ -793,16 +777,12 @@ img {
   word-spacing: 0px; }
   .nav__item:last-of-type {
     margin-right: 0; }
-  .nav__item:hover {
-    color: #e3b873; }
 
 .phone {
   color: #e3b873; }
 
 .contacts__phone {
   margin-right: 3.07rem; }
-  .contacts__phone:hover {
-    color: #d99e40; }
 
 .hero {
   position: relative;
@@ -896,8 +876,6 @@ img {
     font-size: 0.85rem;
     color: #fff;
     text-decoration: none; }
-    .hero__scroll-down:hover {
-      color: #e3b873; }
     .hero__scroll-down::after {
       content: '';
       background: url("../img/arrow-down.svg") no-repeat center;
@@ -948,8 +926,6 @@ img {
       height: 1px;
       background-color: #e3b873;
       margin-left: 12px; }
-    .instagram__link:hover {
-      font-size: 1.2rem; }
 
 .title {
   margin: 0;
@@ -1133,7 +1109,11 @@ img {
       -ms-flex-pack: justify;
           justify-content: space-between;
   max-width: 55rem;
-  margin: auto; }
+  margin: auto;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
 
 .control__input-group {
   display: -webkit-box;
@@ -1178,9 +1158,6 @@ img {
   -webkit-transition: all 1s;
   -o-transition: all 1s;
   transition: all 1s; }
-  .video__play:hover {
-    width: 160px;
-    height: 160px; }
 
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
   .video__play {
@@ -1410,8 +1387,6 @@ img {
     margin-bottom: 6rem;
     margin-top: 0.6rem;
     cursor: pointer; }
-    .stylisation__list li:hover {
-      color: #e3b873; }
   .stylisation__tab-1 {
     display: none;
     margin-top: -2.92rem;
@@ -1922,15 +1897,9 @@ img {
     -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
             justify-content: space-between; }
-  .map-wrap__icon:hover {
-    -webkit-box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3);
-            box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3);
-    border-radius: 50%; }
   .map-wrap__phone {
     color: #e3b873;
     text-decoration: none; }
-    .map-wrap__phone:hover {
-      text-decoration: underline; }
 
 .modal {
   opacity: 0;
@@ -2042,7 +2011,7 @@ img {
   .nav__item {
     margin-right: 1rem; } }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 991px) {
   .nav {
     display: none; }
   .hero__instagram {
@@ -2485,11 +2454,39 @@ img {
   .form__input {
     font-size: 1.5rem; } }
 
-@media screen and (max-width: 992px) {
-  * {
-    color: inherit;
-    font-size: inherit;
+@media screen and (min-width: 992px) {
+  .video__play:hover {
+    width: 160px;
+    height: 160px; }
+  .map-wrap__icon:hover {
+    -webkit-box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3);
+            box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3);
+    border-radius: 50%; }
+  .map-wrap__phone:hover {
+    text-decoration: underline; }
+  .logo:hover {
+    color: #fff; }
+  .nav__item:hover {
+    color: #e3b873; }
+  .contacts:hover {
+    color: #d99e40; }
+  .hero__scroll-down:hover {
+    color: #e3b873; }
+  .instagram__link:hover {
+    font-size: 1.2rem; }
+  .stylisation__list li:hover {
+    color: #e3b873; }
+  .button:hover {
+    cursor: pointer; }
+  .button--primary:hover {
     -webkit-box-shadow: none;
             box-shadow: none;
-    background-color: inherit;
-    text-decoration: none; } }
+    background-color: #dba249;
+    text-decoration: underline; }
+  .button--outline:hover {
+    text-decoration: underline; }
+  .label--light {
+    color: rgba(255, 255, 255, 0.5); }
+  #toTop:hover {
+    text-decoration: underline;
+    background: #dfad5e; } }
