@@ -5,7 +5,7 @@
   // min-height: 864px
   &__section-title
     margin-top: 10rem
-    margin-bottom: 2rem
+    margin-bottom: 2.3rem
     max-width: 29.35rem
     font-style: normal
     font-weight: normal 
@@ -15,11 +15,13 @@
     padding-left: 0
     list-style: none
     color: $light
+    font-family: 'Futura Book', cursive
     font-style: normal
     font-weight: 500
-    font-size: 20px
-    line-height: 220%
-    margin-bottom: 10.3rem
+    font-size: 1.72rem
+    line-height: 207%
+    margin-bottom: 6rem
+    margin-top: 0.6rem
     cursor: pointer
     li:hover
       color: $primary
@@ -63,14 +65,15 @@
 .tabs--active
   display: block
 .active
+  display: inline-block
   color: $primary
   position: relative
   &::after
     content: ''
     position: absolute
-    width: 120px
+    width: 62%
     height: 1px
-    bottom: 0.5rem
+    bottom: 0.65rem
     left: 0
     // right: 0
     background-color: $primary

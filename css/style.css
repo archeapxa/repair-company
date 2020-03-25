@@ -1390,7 +1390,7 @@ img {
   padding-bottom: 0; }
   .stylisation__section-title {
     margin-top: 10rem;
-    margin-bottom: 2rem;
+    margin-bottom: 2.3rem;
     max-width: 29.35rem;
     font-style: normal;
     font-weight: normal;
@@ -1400,11 +1400,13 @@ img {
     padding-left: 0;
     list-style: none;
     color: #fff;
+    font-family: 'Futura Book', cursive;
     font-style: normal;
     font-weight: 500;
-    font-size: 20px;
-    line-height: 220%;
-    margin-bottom: 10.3rem;
+    font-size: 1.72rem;
+    line-height: 207%;
+    margin-bottom: 6rem;
+    margin-top: 0.6rem;
     cursor: pointer; }
     .stylisation__list li:hover {
       color: #e3b873; }
@@ -1447,14 +1449,15 @@ img {
   display: block; }
 
 .active {
+  display: inline-block;
   color: #e3b873;
   position: relative; }
   .active::after {
     content: '';
     position: absolute;
-    width: 120px;
+    width: 62%;
     height: 1px;
-    bottom: 0.5rem;
+    bottom: 0.65rem;
     left: 0;
     background-color: #e3b873; }
 
