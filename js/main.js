@@ -158,7 +158,7 @@ $(document).ready(function () {
 
   // mask for phone
   $('[type=tel]').mask('+7 (000) 000-00-00', {
-    placeholder: "+7 (___) ___-__-__"
+    placeholder: "Ваш номер телефона:"
   });
 
 
