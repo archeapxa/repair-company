@@ -207,7 +207,8 @@ $(document).ready(function () {
           // $('.modal__title').html('Заявка отправлена, мы свяжемся с вами через 10 минут <br><br> А пока можете подписаться на нашу <a class="modal-success__link" href="#">группу Вконтакте</a>');
           $('.modal__title--success').css('margin-top', '2rem');
           modalSuccess.addClass('modal--visible');
-          ym(61217218,'reachGoal','request'); return true;
+          ym(61217218, 'reachGoal', 'request');
+          return true;
         },
         error: function (response) {
           console.error('Ошибка запроса ' + response);
@@ -509,25 +510,26 @@ $(document).ready(function () {
 
   });
 
-// scroll
+  // scroll
 
-  $("body").on('click', '[href*="#"]', function(e){
+  $("body").on('click', '[href*="#"]', function (e) {
     var fixed_offset = 150;
-    $('html,body').stop().animate({ scrollTop: $(this.hash).offset().top - fixed_offset }, 1000);
+    $('html,body').stop().animate({
+      scrollTop: $(this.hash).offset().top - fixed_offset
+    }, 1000);
     e.preventDefault();
   });
 
 
-//появление кнопки Вверх при прокрутке страницы, промотка страницы вверх при нажатии
-  $(function () { 
-    $(window).scroll(function () {
-      if ($(this).scrollTop() != 0) {
-        $('#toTop').fadeIn();
-      } else {
-        $('#toTop').fadeOut();
-      }
-    });
+  //появление кнопки Вверх при прокрутке страницы, промотка страницы вверх при нажатии
+  $(function () {
+      $(window).scroll(function () {
+        if ($(this).scrollTop() != 0, $(window).width() > 768) {
+          $('#toTop').fadeIn();
+        } else {
+          $('#toTop').fadeOut();
+        }
+      });
   });
-
 
 });
