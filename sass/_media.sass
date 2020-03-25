@@ -108,6 +108,8 @@
       color: $light
     &__text
       color: $light
+      font-size: 1.16rem
+      max-width: 29.08rem
     &__label
       color: $secondary
     &__input
@@ -177,6 +179,7 @@
     &__pricetag
       padding: 1rem 2.65rem
       font-size: 1.25rem
+      padding-right: 5.5rem
 
 
 // ORDER SECTION
@@ -209,6 +212,9 @@
 @media screen and ( max-width: 992px )
   .order
     display: none
+  .stylisation
+    &__swiper-title
+      font-size: 1.87rem
 
 // STYLISATION SECTION
 @media screen and ( max-width: 1350px )
@@ -279,10 +285,14 @@
     &-slide
       &__text-wrapper
         margin: auto
-    // &-button 
-    //   &-prev
-    //     left: 50%
-    //     transform: translateX(-100px) 
+      &__heading
+        font-size: 1.16rem
+@media screen and ( max-width: 570px )
+  .projects
+    &__title-col
+      align-self: flex-start
+    &__description
+      max-width: 26rem
       
 // SWIPER
 @media screen and ( max-width: 640px )
@@ -320,6 +330,8 @@
       margin-top: 0
     &__text
       display: none
+    &__description
+      max-width: 27rem
 @media screen and ( max-width: 370px )
   .team
     &__icon
@@ -344,6 +356,7 @@
       padding: 0
     &__title
       margin-top: 0
+      font-size: 1.68rem
     &__input-group
       flex-basis: 100%
       &--full-width
@@ -383,4 +396,12 @@
   .footer
     &__input-group
       margin-bottom: 1rem
+
+@media screen and ( max-width: 640px )  
+  .policy
+    &__label
+      font-size: 1.333rem
+  .form
+    &__input
+      font-size: 1.5rem
   

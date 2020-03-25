@@ -366,11 +366,6 @@ template {
       -ms-flex-preferred-size: 30%;
           flex-basis: 30%; }
 
-.col-31 {
-  -webkit-flex-basis: 31%;
-      -ms-flex-preferred-size: 31%;
-          flex-basis: 31%; }
-
 .col-32 {
   -webkit-flex-basis: 31.7%;
       -ms-flex-preferred-size: 31.7%;
@@ -2127,7 +2122,9 @@ img {
               align-items: stretch;
       color: #fff; }
     .control__text {
-      color: #fff; }
+      color: #fff;
+      font-size: 1.16rem;
+      max-width: 29.08rem; }
     .control__label {
       color: #959595; }
     .control__input {
@@ -2220,7 +2217,8 @@ img {
     margin-bottom: 1.3rem; }
   .card__pricetag {
     padding: 1rem 2.65rem;
-    font-size: 1.25rem; } }
+    font-size: 1.25rem;
+    padding-right: 5.5rem; } }
 
 @media screen and (max-width: 1300px) {
   .order__step {
@@ -2246,7 +2244,9 @@ img {
 
 @media screen and (max-width: 992px) {
   .order {
-    display: none; } }
+    display: none; }
+  .stylisation__swiper-title {
+    font-size: 1.87rem; } }
 
 @media screen and (max-width: 1350px) {
   .stylisation__section-title {
@@ -2320,7 +2320,17 @@ img {
         -ms-transform: translateX(-100px);
             transform: translateX(-100px); }
   .swiper-slide__text-wrapper {
-    margin: auto; } }
+    margin: auto; }
+  .swiper-slide__heading {
+    font-size: 1.16rem; } }
+
+@media screen and (max-width: 570px) {
+  .projects__title-col {
+    -webkit-align-self: flex-start;
+        -ms-flex-item-align: start;
+            align-self: flex-start; }
+  .projects__description {
+    max-width: 26rem; } }
 
 @media screen and (max-width: 640px) {
   .swiper-slide__text-wrapper {
@@ -2349,7 +2359,9 @@ img {
     .team__section-title {
       margin-top: 0; }
     .team__text {
-      display: none; } }
+      display: none; }
+    .team__description {
+      max-width: 27rem; } }
 
 @media screen and (max-width: 370px) {
   .team__icon {
@@ -2373,7 +2385,8 @@ img {
       background: #181818;
       padding: 0; }
     .footer__title {
-      margin-top: 0; }
+      margin-top: 0;
+      font-size: 1.68rem; }
     .footer__input-group {
       -webkit-flex-basis: 100%;
           -ms-flex-preferred-size: 100%;
@@ -2420,3 +2433,9 @@ img {
     margin-bottom: 1rem; }
   .footer__input-group {
     margin-bottom: 1rem; } }
+
+@media screen and (max-width: 640px) {
+  .policy__label {
+    font-size: 1.333rem; }
+  .form__input {
+    font-size: 1.5rem; } }
