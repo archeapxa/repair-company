@@ -28,15 +28,6 @@ $(document).ready(function () {
   });
 
 
-//появление кнопки Вверх при прокрутке страницы, промотка страницы вверх при нажатии
-  $(function () { 
-    var windowHeight = $(window).height();
-    $('.hero__scroll-down').click(function () {
-      $('body,html').animate({
-        scrollTop: windowHeight - 200
-      }, 1500);
-    });
-  });
 
 
   //initialize swiper when document ready
@@ -527,6 +518,16 @@ $(document).ready(function () {
   });
 
 
+//появление кнопки Вверх при прокрутке страницы, промотка страницы вверх при нажатии
+  $(function () { 
+    $(window).scroll(function () {
+      if ($(this).scrollTop() != 0) {
+        $('#toTop').fadeIn();
+      } else {
+        $('#toTop').fadeOut();
+      }
+    });
+  });
 
 
 });
