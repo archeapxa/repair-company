@@ -19,7 +19,7 @@
     font-family: "Arial", sans-serif
     font-style: normal
     font-weight: 400
-    font-size: 1.5rem
+    font-size: 21px
     line-height: 234%
     margin-bottom: 4.4rem
     margin-top: 0.6rem
@@ -29,13 +29,17 @@
     display: none
     margin-top: -2.92rem
     margin-bottom: -2.92rem
+    overflow-x: hidden
   &__tab-2
     display: none
     margin-top: -8.8rem
     margin-bottom: 2.9rem
+    overflow-x: hidden
   &__image
     &:first-of-type
       margin-bottom: 2.9rem
+    object-fit: cover
+    height: 100%
   &__swiper
     display: none
     height: 100%
@@ -50,7 +54,8 @@
       line-height: 2.64rem
       text-align: center
     &-container
-
+  &__center-col
+    // overflow-x: hidden
   &__prev, &__next
     height: 36px
     width: 36px
