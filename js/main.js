@@ -10,6 +10,11 @@ $(document).ready(function () {
   closeBtn.on('click', function () {
     modal.removeClass('modal--visible');
     modalSuccess.removeClass('modal--visible');
+    // modal.val('');
+    $('#user-name').val('').removeClass('invalid');
+    $('#user-phone').val('').removeClass('invalid');
+    $('#user-email').val('').removeClass('invalid');
+    $('div.invalid').css('display', 'none');
   });
 
   $(document).mouseup(function (e) { //переписанная функция закрытия окна по клику вне его. Переделанный код из интернетиков...
@@ -18,12 +23,20 @@ $(document).ready(function () {
       &&
       div.has(e.target).length === 0) { // и не по его дочерним элементам
       modal.removeClass('modal--visible');
+      $('#user-name').val('').removeClass('invalid');
+      $('#user-phone').val('').removeClass('invalid');
+      $('#user-email').val('').removeClass('invalid');
+      $('div.invalid').css('display', 'none');
     }
   });
 
   $(document).keydown(function (eventObject) { //закрытие окна по esc. Еще одна копипаста
     if (eventObject.which == 27) { // нажата клавиша Esc
-      modal.removeClass('modal--visible'); // ваша функция закрытия окна
+      modal.removeClass('modal--visible');
+      $('#user-name').val('').removeClass('invalid');
+      $('#user-phone').val('').removeClass('invalid');
+      $('#user-email').val('').removeClass('invalid');
+      $('div.invalid').css('display', 'none'); // ваша функция закрытия окна
     };
   });
 
@@ -32,7 +45,7 @@ $(document).ready(function () {
 
   //initialize swiper when document ready
   var mySwiper = new Swiper('.swiper-1', {
-    spaceBetween: 40,
+    spaceBetween: 100,
     loop: true,
     // setWrapperSize: true,
     pagination: {
