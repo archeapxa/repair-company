@@ -15,6 +15,7 @@ $(document).ready(function () {
     $('#user-phone').val('').removeClass('invalid');
     $('#user-email').val('').removeClass('invalid');
     // $('div.invalid').css('display', 'none');
+    $('[data-modal]').find("div.invalid").css('display', 'none');
   });
 
   $(document).mouseup(function (e) { //переписанная функция закрытия окна по клику вне его. Переделанный код из интернетиков...
@@ -27,6 +28,7 @@ $(document).ready(function () {
       $('#user-phone').val('').removeClass('invalid');
       $('#user-email').val('').removeClass('invalid');
       // $('div.invalid').css('display', 'none');
+      $('[data-modal]').find("div.invalid").css('display', 'none');
     }
   });
 
@@ -37,6 +39,7 @@ $(document).ready(function () {
       $('#user-phone').val('').removeClass('invalid');
       $('#user-email').val('').removeClass('invalid');
       // $('div.invalid').css('display', 'none'); 
+      $('[data-modal]').find("div.invalid").css('display', 'none');
       // ваша функция закрытия окна
     };
   });
