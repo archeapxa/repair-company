@@ -2082,7 +2082,7 @@ img {
     .container--hero-centered {
       margin-top: 4.8rem; }
   .description {
-    font-size: 1.25rem;
+    font-size: 1.17rem;
     max-width: 25rem;
     line-height: 1.45; } }
 
@@ -2327,7 +2327,7 @@ img {
         -ms-flex-item-align: start;
             align-self: flex-start; }
   .projects__description {
-    max-width: 26rem; } }
+    max-width: 24rem; } }
 
 @media screen and (max-width: 640px) {
   .swiper-slide__text-wrapper {
@@ -2468,7 +2468,9 @@ img {
     font-size: 1.333rem;
     width: 22rem; }
   .form__input {
-    font-size: 1.5rem; } }
+    font-size: 1.5rem; }
+  .swiper-slide__value {
+    font-size: 1.16rem; } }
 
 @media screen and (min-width: 992px) {
   .video__play:hover {
