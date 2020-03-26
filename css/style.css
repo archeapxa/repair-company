@@ -2227,16 +2227,16 @@ img {
     .order__step {
       max-width: 26rem; }
       .order__step--01 {
-        top: 96px;
+        top: 120px;
         left: 215px; }
       .order__step--02 {
-        top: 215px;
+        top: 235px;
         left: 290px; }
       .order__step--03 {
-        top: 376px;
+        top: 395px;
         left: 315px; }
       .order__step--04 {
-        top: 530px;
+        top: 550px;
         left: 250px; } }
 
 @media screen and (max-width: 992px) {
