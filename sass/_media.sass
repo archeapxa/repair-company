@@ -347,11 +347,15 @@
       &-mobile
         display: block
     &__row
-      align-items: flex-end
+      align-items: center
     &__names
       font-size: 1.5rem
     &__position
       font-size: 1.5rem
+@media screen and ( max-width: 400px )
+  .team
+    .row
+      align-items: flex-end
 @media screen and ( max-width: 370px )
   .team
     &__icon

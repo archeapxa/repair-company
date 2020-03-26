@@ -2373,14 +2373,21 @@ img {
       .team__img-mobile {
         display: block; }
     .team__row {
-      -webkit-box-align: end;
-      -webkit-align-items: flex-end;
-          -ms-flex-align: end;
-              align-items: flex-end; }
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center; }
     .team__names {
       font-size: 1.5rem; }
     .team__position {
       font-size: 1.5rem; } }
+
+@media screen and (max-width: 400px) {
+  .team .row {
+    -webkit-box-align: end;
+    -webkit-align-items: flex-end;
+        -ms-flex-align: end;
+            align-items: flex-end; } }
 
 @media screen and (max-width: 370px) {
   .team__icon {
