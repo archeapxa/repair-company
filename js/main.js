@@ -68,9 +68,8 @@ $(document).ready(function () {
   bullets.css('left', prev.width() + 21 + prev.position().left)
 
   $(window).resize(function() {
-    next.css('left', prev.width() + 21 + bullets.width() + 21 + prev.position().left)
-    bullets.css('left', prev.width() + 21 + prev.position().left)
-  });
+    console.log('sadsad');
+  })
 
 
   var mySwiper2 = new Swiper('.swiper-2', {

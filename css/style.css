@@ -19,6 +19,13 @@
   font-style: normal;
   font-display: swap; }
 
+@font-face {
+  font-family: 'Futura';
+  src: url("../fonts/futura/Futura.woff") format("woff"), url("../fonts/futura/Futura.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -1388,12 +1395,12 @@ img {
     padding-left: 0;
     list-style: none;
     color: #fff;
-    font-family: 'Futura Book', cursive;
+    font-family: "Arial", sans-serif;
     font-style: normal;
-    font-weight: 500;
-    font-size: 1.72rem;
-    line-height: 207%;
-    margin-bottom: 6rem;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 234%;
+    margin-bottom: 4.2rem;
     margin-top: 0.6rem;
     cursor: pointer; }
   .stylisation__tab-1 {
