@@ -2122,7 +2122,8 @@ img {
     .control__text {
       color: #fff;
       font-size: 1.16rem;
-      max-width: 29.08rem; }
+      max-width: 29.08rem;
+      line-height: 2rem; }
     .control__label {
       color: #959595; }
     .control__input {
@@ -2214,9 +2215,10 @@ img {
   .card__list {
     margin-bottom: 1.3rem; }
   .card__pricetag {
-    padding: 1rem 2.65rem;
-    font-size: 1.25rem;
-    padding-right: 5.5rem; } }
+    padding: 1rem 2.6rem;
+    font-size: 1.25rem; }
+    .card__pricetag--long {
+      padding: 1rem 4rem; } }
 
 @media screen and (max-width: 1300px) {
   .order__step {
@@ -2374,7 +2376,11 @@ img {
       -webkit-box-align: end;
       -webkit-align-items: flex-end;
           -ms-flex-align: end;
-              align-items: flex-end; } }
+              align-items: flex-end; }
+    .team__names {
+      font-size: 1.5rem; }
+    .team__position {
+      font-size: 1.5rem; } }
 
 @media screen and (max-width: 370px) {
   .team__icon {

@@ -111,6 +111,7 @@
       color: $light
       font-size: 1.16rem
       max-width: 29.08rem
+      line-height: 2rem
     &__label
       color: $secondary
     &__input
@@ -178,9 +179,11 @@
     &__list
       margin-bottom: 1.3rem
     &__pricetag
-      padding: 1rem 2.65rem
+      padding: 1rem 2.6rem
       font-size: 1.25rem
-      padding-right: 5.5rem
+      // padding-right: 5.5rem
+      &--long
+        padding: 1rem 4rem
 
 
 // ORDER SECTION
@@ -345,6 +348,10 @@
         display: block
     &__row
       align-items: flex-end
+    &__names
+      font-size: 1.5rem
+    &__position
+      font-size: 1.5rem
 @media screen and ( max-width: 370px )
   .team
     &__icon
