@@ -14,7 +14,7 @@ $(document).ready(function () {
     $('#user-name').val('').removeClass('invalid');
     $('#user-phone').val('').removeClass('invalid');
     $('#user-email').val('').removeClass('invalid');
-    $('div.invalid').css('display', 'none');
+    // $('div.invalid').css('display', 'none');
   });
 
   $(document).mouseup(function (e) { //переписанная функция закрытия окна по клику вне его. Переделанный код из интернетиков...
@@ -26,7 +26,7 @@ $(document).ready(function () {
       $('#user-name').val('').removeClass('invalid');
       $('#user-phone').val('').removeClass('invalid');
       $('#user-email').val('').removeClass('invalid');
-      $('div.invalid').css('display', 'none');
+      // $('div.invalid').css('display', 'none');
     }
   });
 
@@ -36,7 +36,8 @@ $(document).ready(function () {
       $('#user-name').val('').removeClass('invalid');
       $('#user-phone').val('').removeClass('invalid');
       $('#user-email').val('').removeClass('invalid');
-      $('div.invalid').css('display', 'none'); // ваша функция закрытия окна
+      // $('div.invalid').css('display', 'none'); 
+      // ваша функция закрытия окна
     };
   });
 
@@ -190,7 +191,9 @@ $(document).ready(function () {
       // simple rule, converted to {required:true}
       userName: {
         required: true,
-        rangelength: [2, 15]
+        // rangelength: [2, 15]
+        minlength: 2,
+        maxlength: 15
       },
       // compound rule
       // userPhone: "required",
@@ -210,7 +213,9 @@ $(document).ready(function () {
     messages: {
       userName: {
         required: "Заполните поле",
-        rangelength: "Имя не короче 2 символов и не длиннее 15 символов"
+        // rangelength: "Имя не короче 2 символов и не длиннее 15 символов"
+        minlength: "Не короче 2 символов",
+        maxlength: "Не длиннее 15 символов"
       },
       // userPhone: "Заполните поле",
       userPhone: {
@@ -252,13 +257,15 @@ $(document).ready(function () {
   // validation for control section form
 
   $('.control__form').validate({
-    errorClass: 'invalid invalid--centered',
+    errorClass: 'invalid',
     ignore: ":disabled",
     rules: {
       // simple rule, converted to {required:true}
       controlName: {
         required: true,
-        rangelength: [2, 15]
+        // rangelength: [2, 15]
+        minlength: 2,
+        maxlength: 15,
       },
       // compound rule
       controlPhone: {
@@ -273,7 +280,9 @@ $(document).ready(function () {
     messages: {
       controlName: {
         required: "Заполните поле",
-        rangelength: "Имя не короче 2 символов и не длиннее 15 символов"
+        // rangelength: "Имя не короче 2 символов и не длиннее 15 символов"
+        minlength: "Не короче 2 символов",
+        maxlength: "Не длиннее 15 символов",
       },
       controlPhone: {
         required: "Заполните поле",
@@ -309,7 +318,9 @@ $(document).ready(function () {
       // simple rule, converted to {required:true}
       orderName: {
         required: true,
-        rangelength: [2, 15]
+        // rangelength: [2, 15]
+        minlength: 2,
+        maxlength: 15,
       },
       // compound rule
       orderPhone: {
@@ -328,7 +339,9 @@ $(document).ready(function () {
     messages: {
       orderName: {
         required: "Заполните поле",
-        rangelength: "Имя не короче 2 символов и не длиннее 15 символов"
+        // rangelength: "Имя не короче 2 символов и не длиннее 15 символов"
+        minlength: "Не короче 2 символов",
+        maxlength: "Не длиннее 15 символов"
       },
       orderPhone: {
         required: "Заполните поле",
@@ -369,13 +382,15 @@ $(document).ready(function () {
   // validation for footer section form
 
   $('.footer__form').validate({
-    errorClass: 'invalid invalid--centered',
+    errorClass: 'invalid',
     ignore: ":disabled",
     rules: {
       // simple rule, converted to {required:true}
       footerName: {
         required: true,
-        rangelength: [2, 15]
+        // rangelength: [2, 15]
+        minlength: 2,
+        maxlength: 15,
       },
       // compound rule
       footerPhone: {
@@ -392,7 +407,9 @@ $(document).ready(function () {
     messages: {
       footerName: {
         required: "Заполните поле",
-        rangelength: "Имя не короче 2 символов и не длиннее 15 символов"
+        // rangelength: "Имя не короче 2 символов и не длиннее 15 символов"
+        minlength: "Не короче 2 символов",
+        maxlength: "Не длиннее 15 символов"
       },
       footerPhone: {
         required: "Заполните поле",

@@ -19,13 +19,6 @@
   font-style: normal;
   font-display: swap; }
 
-@font-face {
-  font-family: 'Futura';
-  src: url("../fonts/futura/Futura.woff") format("woff"), url("../fonts/futura/Futura.woff2") format("woff2");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap; }
-
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -1158,9 +1151,8 @@ img {
   font-size: 1.13rem; }
 
 .control__policy {
-  -webkit-flex-basis: 100%;
-      -ms-flex-preferred-size: 100%;
-          flex-basis: 100%;
+  width: 18.14rem;
+  margin: auto;
   margin-top: 1.3rem; }
   .control__policy-label {
     -webkit-box-pack: center;
@@ -1400,7 +1392,7 @@ img {
     font-weight: 400;
     font-size: 1.5rem;
     line-height: 234%;
-    margin-bottom: 4.2rem;
+    margin-bottom: 4.4rem;
     margin-top: 0.6rem;
     cursor: pointer; }
   .stylisation__tab-1 {
@@ -1834,11 +1826,11 @@ img {
             -ms-flex-preferred-size: 100%;
                 flex-basis: 100%; }
   .footer__policy {
-    -webkit-flex-basis: 100%;
-        -ms-flex-preferred-size: 100%;
-            flex-basis: 100%;
+    width: 255px;
+    margin: auto;
     margin-bottom: 3.7rem;
-    margin-top: 0.2rem; }
+    margin-top: 0.2rem;
+    font-size: 14px; }
     .footer__policy-label {
       -webkit-box-pack: center;
       -webkit-justify-content: center;
@@ -1848,6 +1840,12 @@ img {
     margin: auto;
     padding: 1.15rem 4.3rem;
     font-size: 1.13rem; }
+    .footer__button-wrap {
+      -webkit-flex-basis: 100%;
+          -ms-flex-preferred-size: 100%;
+              flex-basis: 100%;
+      margin: auto;
+      text-align: center; }
   .footer__menu {
     background-color: #131313;
     padding: 3.285rem 0;
@@ -2414,7 +2412,8 @@ img {
       .footer__input-group--full-width {
         margin-bottom: 2rem; }
     .footer__policy {
-      margin-bottom: 5.4rem; }
+      margin-bottom: 5.4rem;
+      margin-left: 0; }
       .footer__policy-label {
         -webkit-box-pack: start;
         -webkit-justify-content: flex-start;
@@ -2466,7 +2465,8 @@ img {
 
 @media screen and (max-width: 640px) {
   .policy__label {
-    font-size: 1.333rem; }
+    font-size: 1.333rem;
+    width: 22rem; }
   .form__input {
     font-size: 1.5rem; } }
 
