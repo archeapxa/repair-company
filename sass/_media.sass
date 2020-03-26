@@ -268,29 +268,53 @@
       min-width: 310px
 
 @media screen and ( max-width: 960px )
-  .projects
-    &__section-title
-      text-align: left
-    &__row
-      max-height: 1000px
-      align-items: center
-    &__col-45
-      order: 1
-      max-width: 100%
-    &__col-55
-      max-width: 100%
-      margin-bottom: 2rem
-    &__title-col
-      max-width: 100%
-    &__swiper-button-prev
-      left: 50%
-      transform: translateX(-100px) 
+  // .projects
+  //   &__section-title
+  //     text-align: left
+  //   &__row
+  //     max-height: 1000px
+  //     align-items: center
+  //   &__col-45
+  //     order: 1
+  //     max-width: 100%
+  //   &__col-55
+  //     max-width: 100%
+  //     margin-bottom: 2rem
+  //   &__title-col
+  //     max-width: 100%
+  //   // &__swiper-button-prev
+  //   //   left: 50%
+  //   //   transform: translateX(-100px) 
   .swiper
     &-slide
       &__text-wrapper
         margin: auto
       &__heading
         font-size: 1.16rem
+@media screen and ( max-width: 760px )
+  .projects
+    &__section-title
+      text-align: left
+    &__row
+      max-height: 1000px
+      align-items: flex-start
+    &__col-45
+      order: 0
+      max-width: 100%
+    &__col-55
+      max-width: 100%
+      margin-bottom: 2rem
+      margin-top: 3rem
+    &__title-col
+      max-width: 100%
+    // &__swiper-button-prev
+    //   left: 50%
+    //   transform: translateX(-100px) 
+  .swiper
+    &-slide
+      &__text-wrapper
+        padding-bottom: 2rem
+        margin-left: 0
 @media screen and ( max-width: 570px )
   .projects
     &__title-col

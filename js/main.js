@@ -72,6 +72,7 @@ $(document).ready(function () {
   bullets.css('left', prev.width() + 21 + prev.position().left)
 
   $(window).resize(function() {
+
     console.log('sadsad');
   })
 
