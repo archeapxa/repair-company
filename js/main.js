@@ -199,7 +199,7 @@ $(document).ready(function () {
       // userPhone: "required",
       userPhone: {
         required: true,
-        minlength: 10
+        minlength: 18
       },
       userEmail: {
         required: true,
@@ -270,7 +270,7 @@ $(document).ready(function () {
       // compound rule
       controlPhone: {
         required: true,
-        minlength: 10
+        minlength: 18
       },
       controlCheckbox: {
         required: true,
@@ -325,7 +325,7 @@ $(document).ready(function () {
       // compound rule
       orderPhone: {
         required: true,
-        minlength: 10
+        minlength: 18
       },
       orderEmail: {
         required: true,
@@ -395,7 +395,7 @@ $(document).ready(function () {
       // compound rule
       footerPhone: {
         required: true,
-        minlength: 10
+        minlength: 18
       },
       footerCheckbox: "required",
       footerAsk: {
