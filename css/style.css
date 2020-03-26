@@ -1250,18 +1250,18 @@ img {
     display: -ms-flexbox;
     display: flex; }
     .order__step--01 {
-      top: 137px;
+      top: 158px;
       left: 415px;
       max-width: 26rem; }
     .order__step--02 {
-      top: 258px;
+      top: 280px;
       left: 490px; }
     .order__step--03 {
-      top: 418px;
+      top: 446px;
       left: 515px; }
     .order__step--04 {
-      top: 570px;
-      left: 450px;
+      top: 594px;
+      left: 448px;
       max-width: 21rem; }
   .order__text {
     font-family: 'Futura Medium', cursive;
